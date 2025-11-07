@@ -2876,7 +2876,7 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
         { &vds_eminj_erestahot_rap_dataget, u1s_EMINJ_RESTAHOT_ID }, /* —Dæ“x=32 :‚‰·ÄŽn“®§Œä */
         { &vdg_ekcst_emedi_dataget,         u1s_EMINJ_KCST_ID     }, /* —Dæ“x=34 :Žn“®ŽžÉ¯¸–hŽ~§Œä */
 #endif /* JEEFI */
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_PORT)      /*yALL HVzANDyÎß°Äz*/
+#if JEEFI == u1g_EJCC_PORT      /*yÎß°Äz*/
         { &vds_eminj_erdpn_rap_dataget,     u1g_EMINJ_RDPN_ST_ID  }, /* —Dæ“x=36 :PN’áŒ¸§Œä(Žn“®Žž) */
                                                                      /* ’Êí—v‹‚Ì‚o‚m’áŒ¸§Œä‚ÆŽæ“¾ŠÖ”‚ª•ª‚©‚ê‚½ê‡‚ÍA */
                                                                      /* Žn“®Žž—v‹’²’âA’ÊíŽž—v‹’²’â‚Ì‚o‚m’áŒ¸§Œä‚Ì”»’èArapŠÖ”‚ðíœ‚·‚é‚±‚Æ */
@@ -3017,7 +3017,7 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
         { &vds_eminj_erestahot_rap_dataget, u1s_EMINJ_RESTAHOT_ID }, /* —Dæ“x=32 :‚‰·ÄŽn“®§Œä */
 #endif /* JEEFI */
         { &vdg_efcinjctr_emedi_dataget,     u1g_EMINJ_FCINJCTR_ID }, /* —Dæ“x=50 :FC’†”R—¿•¬ŽË§Œä */
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI != u1g_EJCC_D4)       /*yALL HVzANDyD-4ˆÈŠOz*/
+#if ((JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_DUAL)) || (JEEFI == u1g_EJCC_PORT)       /*yALL HVzANDyÃÞ­±ÙINJz OR yÎß°Äz*/
         { &vds_eminj_erdpn_rap_dataget,     u1g_EMINJ_RDPN_ID     }, /* —Dæ“x=52 :PN’áŒ¸§Œä */
                                                                      /* Žn“®Žž—v‹‚Ì‚o‚m’áŒ¸§Œä‚ÆŽæ“¾ŠÖ”‚ª•ª‚©‚ê‚½ê‡‚ÍA */
                                                                      /* Žn“®Žž—v‹’²’âA’ÊíŽž—v‹’²’â‚Ì‚o‚m’áŒ¸§Œä‚Ì”»’è,rapŠÖ”‚ðíœ‚·‚é‚±‚Æ */
@@ -3088,6 +3088,11 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
 #if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_WC_MEDI == ON) /*yALL HVzANDyPLÏÙÁ•¬ŽË—LzANDyÊß°¼¬ÙØÌÄ•¬ŽË‚ð—p‚¢‚½Šî–{•¬ŽË§Œä(G”}’g‹@Žž)—v‹Žg—pz*/
         { &vdg_ebinjplctr_wc_emedi_dataget,  u1g_EMINJ_BINJPLCTR_WC_ID   },    /* —Dæ“x=22 :Êß°¼¬ÙØÌÄ•¬ŽË‚ð—p‚¢‚½Šî–{•¬ŽË§Œä(G”}’g‹@Žž) */
 #endif /* JEALLHV_E,JEPLMLT_E,EMINJ_BINJPLCTR_WC_MEDI */
+#if JEEFI == u1g_EJCC_DUAL      /*yÃÞ­±ÙINJz*/
+ #if JEFFV != u1g_EJCC_NOT_USE  /*yFFV§Œä—Lz*/
+        { &vds_eminj_dummy_emedi_dataget2,   u1g_EMINJ_CIMPALC_ID   },    /* —Dæ“x=46 :±Ùº°Ù”R—¿”RÄ‰ü‘P§Œä */
+ #endif /* JEFFV */
+#endif /* JEEFI */
 #if (JEEGMG_E == u1g_EJCC_HVPLGR_E) && (JEFFV == u1g_EJCC_NOT_USE) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_STAHV_MEDI == ON) /*yEG-MG—V¯·Þ±zANDyFFV§Œä–³zANDyPLÏÙÁ•¬ŽË—LzANDyÊß°¼¬ÙØÌÄ•¬ŽË‚ð—p‚¢‚½Šî–{•¬ŽË§Œä(HVŽn“®§ŒäŽž)—v‹Žg—pz*/
         { &vdg_ebinjplctr_stahv_emedi_dataget, u1g_EMINJ_BINJPLCTR_STAHV_ID },    /* —Dæ“x=48 :Êß°¼¬ÙØÌÄ•¬ŽË‚ð—p‚¢‚½Šî–{•¬ŽË§Œä(HVŽn“®§ŒäŽž) */
 #endif /* JEEGMG_E,JEFFV,JEPLMLT_E,EMINJ_BINJPLCTR_STAHV_MEDI */
@@ -3101,6 +3106,10 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
         { &vdg_ebinjplctr_emedi_dataget,    u1g_EMINJ_BINJPLCTR_ID   },  /* —Dæ“x=98 :Êß°¼¬ÙØÌÄ•¬ŽË‚ð—p‚¢‚½Šî–{•¬ŽË§Œä */
  #endif /* EMINJ_BINJPLCTR_MEDI */
 #endif /* JEPLMLT_E */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E    /*y•¬–¶—U“±”RÄz*/
+        { &vds_eminj_dummy_emedi_dataget2,  u1g_EMINJ_GORO_ID    },     /* —Dæ“x=100 :ºÞÛºÞÛ‰¹‘ÎôŽÀŒ»•”—v‹ */
+        { &vds_eminj_dummy_emedi_dataget2,  u1g_EMINJ_DTHRCTRL_ID    },     /* —Dæ“x=64 :‹C“›•ÊÃÞ¨»Þ§Œä */
+#endif /* JECOMBCCPT_E */
 #if EMINJ_FREE2 == ON   /*yÌØ°Îß°Ä2Žg—pz*/
         { &vdg_eminj_efree2_emedi_dataget,  u1g_EMINJ_FREE2_ID    },     /* —Dæ“x=202 :ÌØ°Îß°Ä2—p•¬ŽË—v‹ */
 #endif /* EMINJ_FREE2 */
@@ -4453,6 +4462,13 @@ vds_eminj_einj_datacopy2( st_EMINJ_EMINJ_BUF *ptt_data, const st_EMINJ_EMINJ_BUF
     {
         ptt_data->s4_eqinjflfix[u1t_injnum]  = ptt_copy->s4_eqinjflfix[u1t_injnum];
         ptt_data->s4_eqinjplfix[u1t_injnum]  = ptt_copy->s4_eqinjplfix[u1t_injnum];
+    }
+
+    /* ‹C“›•Ê•¬ŽË—Ê•â³‚ÌƒRƒs[ */
+    ptt_data->u1_stepkcyl = ptt_copy->u1_stepkcyl;
+    for ( u1t_cyl = (u1)0U; u1t_cyl < u1t_ncyl_c; u1t_cyl++ )
+    {
+        ptt_data->f4_kqcyl[u1t_cyl] = ptt_copy->f4_kqcyl[u1t_cyl];
     }
 
 }
