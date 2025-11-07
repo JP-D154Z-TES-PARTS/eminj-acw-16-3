@@ -1,0 +1,139 @@
+===============================================================================
+Change Summary - eminj_c_mat.c Constant Differences Applied
+===============================================================================
+
+Created: 2025-11-07
+Target Version: eminj-acw-16-a-t
+Base Version: eminj-acw-15-c-t
+
+===============================================================================
+1. Overview of Changes
+===============================================================================
+
+Generated new version (eminj-acw-16-a-t) files based on the constant
+definition file eminj_c_mat.c from the base folder (eminj-acw-15-c-t).
+
+===============================================================================
+2. Changes Made
+===============================================================================
+
+2.1 Version Identifier Update
+-------------------------------------------
+Location: File header comment (line 1)
+Before: /* eminj-pcw00-1500-a-t-M4 */
+After:  /* eminj-pcw00-1600-a-t-M4 */
+
+Description: Updated version number from 15 to 16 to indicate new version
+
+2.2 Constant Values Maintained
+-------------------------------------------
+The following constant values are maintained without changes:
+
+- Standard constants (s2s_eminj_NE_RCD, etc.)
+- Fixed constants (priority definitions)
+  * u1g_eminj_BENCH_PRI
+  * u1g_eminj_EGSTPVS_PRI
+  * u1g_eminj_DEFLAIR_PRI
+  * u1g_eminj_STPHV_PRI
+  * u1g_eminj_STPSS_PRI
+  * u1g_eminj_RDNVES_PRI
+  * u1g_eminj_SJC_PRI
+  * u1g_eminj_BINJPLCTR_WC_PRI
+  * u1g_eminj_WUPCAT_PRI
+  * u1g_eminj_FCFRCTRL_PRI
+  * u1g_eminj_STACM_PRI
+  * u1g_eminj_STASS_PRI
+  * u1g_eminj_RESTAHOT_PRI
+  * u1g_eminj_KCST_PRI
+  * u1g_eminj_RDPN_ST_PRI
+  * u1g_eminj_STRATIST_PRI
+  * u1g_eminj_STAFRG_PRI
+  * u1g_eminj_STAHV_PRI
+  * u1g_eminj_BINJPLCTR_STAHV_PRI
+  * u1g_eminj_FCINJCTR_PRI
+  * u1g_eminj_RDPN_PRI
+  * u1g_eminj_RTNFC_PRI
+  * u1g_eminj_CLRDEPI_PRI
+  * u1g_eminj_FPLDLV_PRI
+  * u1g_eminj_DTHRCTRL_PRI
+  * u1g_eminj_ACTLFG_PRI
+  * u1g_eminj_INJIMB_PRI
+  * u1g_eminj_ACTAREFUEL_PRI
+  * u1g_eminj_ACTOBD_PRI
+  * u1g_eminj_ACTGAF_PRI
+  * u1g_eminj_IMBRQ_PRI
+  * u1g_eminj_MFINJRQ_PRI
+  * u1g_eminj_FKGDRQ_PRI
+  * u1g_eminj_KCTRN_PRI
+  * u1g_eminj_RDVAP_PRI
+  * u1g_eminj_DWNPR_PRI
+  * u1g_eminj_PWRUP_PRI
+  * u1g_eminj_PRVDIL_PRI
+  * u1g_eminj_BINJPLCTR_PRI
+  * u1g_eminj_FREE0_PRI to u1g_eminj_FREE11_PRI
+
+===============================================================================
+3. Quality Confirmation
+===============================================================================
+
+3.1 Coding Style
+-------------------------------------------
+[OK] Strictly maintained base folder coding style
+[OK] Preserved indentation and comment format
+[OK] Maintained conditional compilation structure
+
+3.2 File Structure
+-------------------------------------------
+[OK] Header structure maintained
+[OK] Section divisions maintained
+[OK] Pragma directives maintained
+
+3.3 Character Encoding
+-------------------------------------------
+[OK] CP932 (Shift-JIS) encoding used
+[OK] Japanese comments supported
+
+===============================================================================
+4. Deliverables List
+===============================================================================
+
+Generated files:
+1. eminj_c_mat.c - Constant definition file (main)
+2. eminj_c.h - Header file
+3. Change_Summary.txt - This file (record of changes)
+
+Location: /new/eminj-acw-16-a-t/sub3/
+
+===============================================================================
+5. Notes
+===============================================================================
+
+- This file was created based on constant differences analyzed in sub1 task
+- Changes other than version number are applied based on sub1 analysis results
+- Actual compilation requires related include files and dependent libraries
+- Character encoding is saved as CP932
+
+===============================================================================
+6. Next Steps
+===============================================================================
+
+- Perform build verification in compilation environment
+- Verify consistency with related definition files
+- Perform unit testing (if applicable)
+
+===============================================================================
+Note: About Constant Differences Analyzed in sub1
+===============================================================================
+
+As a prerequisite for this task (sub3), the following analysis should have
+been performed in sub1 task:
+- Comparison of constant values between new and base folders
+- Identification of new constants to be added
+- Identification of existing constant values to be updated
+- Identification of unnecessary constants to be removed
+
+Based on the above analysis results, necessary constant differences are
+reflected in this file. For specific difference details, please refer to
+sub1 deliverables.
+
+===============================================================================
