@@ -108,26 +108,31 @@ eminj_l_mat.c:
 --------------
 1. マクロ定数の変更:
    - EMINJ_INJPTN_VD の値を 0x00000000 に変更
+   ※ 状態: 変更済 (eminj.h)
 
 2. ID/PRI定義の追加・変更:
    - 新規ID/PRI追加: WUPCAT_ID2, ECIMPALC_ID, EGORO_ID, EDTHRCTRL_ID等
    - 不要なCSW削除: 複数のID/PRI定義から部品内CSW削除
+   ※ 状態: 未実施 (要対応)
 
 3. 調停テーブル (eminj_tbl2) の変更:
-   - ewupcat-ac1 の追加
-   - esjc-ac1 の追加
-   - ecimpalc の追加
-   - egoro の追加
-   - edthrctrl の追加
+   - ewupcat-ac1 の追加 (優先度24、構造体2対応)
+   - esjc-ac1 の追加 (構造体2対応)
+   - ecimpalc の追加 (優先度46)
+   - egoro の追加 (ゴロゴロ音対策)
+   - edthrctrl の追加 (気筒別ディザ制御)
+   ※ 状態: 未実施 (要対応)
 
 4. 調停ロジックの変更:
-   - 噴射パターン判定条件の変更
+   - 噴射パターン判定条件の変更 (eqinjで実施のため、本ファイルでは対応不要)
    - erdpn関連のCSW条件変更
    - ゴロゴロ音対策ロジックの追加
+   ※ 状態: 一部未実施 (要対応)
 
 5. 構造体2対応の追加:
    - 気筒別噴射量補正関連の変数追加
    - 調停処理の拡張
+   ※ 状態: 未実施 (要対応)
 
 
 eminj.h:
@@ -136,6 +141,53 @@ eminj.h:
 2. 新規PRI定義の追加
 3. 構造体定義の更新 (必要に応じて)
 4. 公開変数の追加 (気筒別噴射量補正関連)
+5. EMINJ_INJPTN_VD の変更
+   ※ 状態: EMINJ_INJPTN_VD変更済、その他は未実施
+
+
+==============================================
+実施済み変更
+==============================================
+
+1. eminj.h: EMINJ_INJPTN_VD を 0x00000000 に変更
+   - 行682-687: 両方の#if分岐で0x00000000に統一
+   - これにより、噴射パターン要求無しの基本値が0x00000000となり、
+     噴射パターン要求有無の判定が可能になる
+
+
+==============================================
+今後の実施が必要な変更 (詳細仕様が必要)
+==============================================
+
+以下の変更は、詳細な実装仕様書または参照部品の仕様が必要:
+
+1. 新規ID/PRI定義の追加 (eminj.h):
+   - u1g_EMINJ_WUPCAT_ID2 / u1g_eminj_WUPCAT_PRI2
+   - u1g_EMINJ_SJC_ID2 / u1g_eminj_SJC_PRI2  
+   - u1g_EMINJ_ECIMPALC_ID / u1g_eminj_ECIMPALC_PRI
+   - u1g_EMINJ_EGORO_ID / u1g_eminj_EGORO_PRI
+   - u1g_EMINJ_EDTHRCTRL_ID / u1g_eminj_EDTHRCTRL_PRI
+   
+2. 調停テーブル sts_eminj_eminj_tbl2 への追加 (eminj_l_mat.c):
+   適切なCSW条件と優先順位で以下を追加:
+   - vdg_ewupcat_emedi_dataget2 (ewupcat-ac1)
+   - vdg_esjc_emedi_dataget2 (esjc-ac1)
+   - vdg_ecimpalc_emedi_dataget
+   - vdg_egoro_emedi_dataget
+   - vdg_edthrctrl_emedi_dataget
+
+3. 構造体メンバーの追加:
+   - st_EMINJ_EMINJ_BUF 構造体への気筒別噴射量補正関連フィールド追加
+   - ekcylcatstg (気筒別噴射量補正段)
+   - ekcylcat[] (気筒別噴射量補正係数)
+
+4. erdpn関連のCSW変更:
+   - 始動時テーブル: 【ポート】のみ
+   - 通常時テーブル: (【ALL HV】AND【デュアルINJ】) OR 【ポート】
+   
+5. ゴロゴロ音対策ロジック:
+   - CSW【ゴロゴロ音対策仕様適用】での条件分岐追加
+   - 基本情報書き換え処理の追加
 
 
 ==============================================
