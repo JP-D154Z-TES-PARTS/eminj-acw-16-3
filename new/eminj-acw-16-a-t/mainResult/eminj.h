@@ -4,93 +4,93 @@
 /*********************************************************************/
 
 /*********************************************************************/
-/* ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½  |  ï¿½ï¿½ï¿½Ë—vï¿½ï¿½ï¿½Ì’ï¿½ï¿½ï¿½                                 */
-/* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½        |                                                 */
+/* ƒIƒuƒWƒFƒNƒg–¼  |  •¬Ë—v‹‚Ì’²’â                                 */
+/* ’ˆÓ–€        |                                                 */
 /*-------------------------------------------------------------------*/
-/*  I/Fï¿½ÏXï¿½ï¿½ï¿½ï¿½    | acw-11 : ï¿½Wï¿½ï¿½ÎÛ—pï¿½\ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş°ï¿½ï¿½\ï¿½ï¿½ï¿½Ì‚ï¿½ï¿½ï¿½  */
-/*                 |          ï¿½È‰ï¿½ï¿½Ìƒï¿½ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½íœ                     */
+/*  I/F•ÏX—š—ğ    | acw-11 : W–ñ‘ÎÛ—p\‘¢‘Ì,“¯«ÃŞ°À\‘¢‘Ì‚©‚ç  */
+/*                 |          ˆÈ‰º‚Ìƒƒ“ƒo‚ğíœ                     */
 /*                 |            s4_eqinjclmt                         */
-/*                 |          ï¿½È‰ï¿½ï¿½ï¿½IFï¿½ï¿½ï¿½íœ                         */
+/*                 |          ˆÈ‰º‚ÌIF‚ğíœ                         */
 /*                 |            u4g_EMINJ_RQQINJCLMT                 */
-/*                 |          ï¿½È‰ï¿½ï¿½ï¿½IFï¿½ï¿½ï¿½ï¿½ï¿½J                         */
-/*                 |          ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½Ä—Lï¿½zORï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½Ó°ï¿½Ş—Lï¿½z*/
+/*                 |          ˆÈ‰º‚ÌIF‚ğŒöŠJ                         */
+/*                 |          yÍŞİÁ“K‡—p¿ÌÄ—LzORyÍŞİÁ“K‡Ó°ÄŞ—Lz*/
 /*                 |            u1g_EMINJ_BENCH_ID                   */
-/*                 |          ï¿½È‰ï¿½ï¿½ï¿½IFï¿½ÌƒRï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ÏX             */
-/*                 |          ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½Ä—Lï¿½z->ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½Ä—Lï¿½zORï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½Ó°ï¿½Ş—Lï¿½z*/
+/*                 |          ˆÈ‰º‚ÌIF‚ÌƒRƒ“ƒpƒCƒ‹SW•ÏX             */
+/*                 |          yÍŞİÁ“K‡—p¿ÌÄ—Lz->yÍŞİÁ“K‡—p¿ÌÄ—LzORyÍŞİÁ“K‡Ó°ÄŞ—Lz*/
 /*                 |            u1g_eminj_BENCH_PRI                  */
-/*                 |          ï¿½yHVï¿½z->ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zORï¿½yEG-MGï¿½ï¿½ï¿½ï¿½ï¿½z*/
+/*                 |          yHVz->yEG-MG—V¯·Ş±zORyEG-MG’¼Œ‹z*/
 /*                 |            u1g_EMINJ_STPHV_ID,u1g_eminj_STPHV_PRI */
-/*                 |          ï¿½yHVï¿½z->ï¿½yALL HVï¿½z                     */
+/*                 |          yHVz->yALL HVz                     */
 /*                 |            u1g_EMINJ_WUPCAT_ID,u1g_eminj_WUPCAT_PRI */
-/*                 |          ï¿½ySSï¿½ï¿½ï¿½ï¿½Lï¿½z->ï¿½ySSï¿½ï¿½ï¿½ï¿½Lï¿½zORï¿½yEG-MGï¿½×¯ï¿½ï¿½z */
+/*                 |          ySS§Œä—Lz->ySS§Œä—LzORyEG-MG¸×¯Áz */
 /*                 |            u1g_EMINJ_STPSS_ID,u1g_eminj_STPSS_PRI */
 /*                 |            u1g_EMINJ_STASS_ID,u1g_eminj_STASS_PRI */
-/*                 |          ï¿½yHVï¿½zANDï¿½yï¿½ß°Äz->ï¿½yALL HVï¿½zANDï¿½yD-4ï¿½ÈŠOï¿½z */
+/*                 |          yHVzANDyÎß°Äz->yALL HVzANDyD-4ˆÈŠOz */
 /*                 |            u1g_EMINJ_STAHV_ID,u1g_eminj_STAHV_PRI */
 #if (JEFFV != u1g_EJCC_NOT_USE)  && ((JEEFI == u1g_EJCC_DUAL)  || (JEEFI == u1g_EJCC_D4))  && (JEEGMG_E == u1g_EJCC_HVPLGR_E)  && (JEMDVVT == u1g_EJCC_USE)   /* Alcohol fuel combustion improvement ID */
-#define u1g_EMINJ_CIMPALC_ID               ((u1)(46))         /* ï¿½Ùºï¿½Ù”Rï¿½ï¿½ï¿½Rï¿½Ä‰ï¿½ï¿½Pï¿½ï¿½ï¿½ï¿½(ID) */
+#define u1g_EMINJ_CIMPALC_ID               ((u1)(46))         /* ƒAƒ‹ƒR[ƒ‹”R—¿”RÄ‰ü‘P§Œä(ID) */
 #endif                                                                  /* CSW for CIMPALC */
-/*                 |          ï¿½yHVï¿½zANDï¿½yD-4ï¿½ÈŠOï¿½z-> ï¿½Rï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½È‚ï¿½ */
+/*                 |          yHVzANDyD-4ˆÈŠOz-> ƒRƒ“ƒpƒCƒ‹SW‚È‚µ */
 /*                 |            u1g_EMINJ_RDPN_ID,u1g_eminj_RDPN_PRI */
-/*                 | acw-12 : ï¿½È‰ï¿½ï¿½Ì•Ïï¿½ï¿½ï¿½Ç‰ï¿½                       */
-/*                 |            f4g_eminj_eprreqlï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½z  */
+/*                 | acw-12 : ˆÈ‰º‚Ì•Ï”‚ğ’Ç‰Á                       */
+/*                 |            f4g_eminj_eprreqly‰Â•Ï”Rˆ³§Œä—Lz  */
 /*                 |            s2g_eminj_ecqinjast_8m               */
 /*                 |            u1g_eminj_explreq                    */
-/*                 |          ï¿½È‰ï¿½ï¿½Ì’è”ï¿½ï¿½Ç‰ï¿½                       */
+/*                 |          ˆÈ‰º‚Ì’è”‚ğ’Ç‰Á                       */
 /*                 |            u1g_EMINJ_NONE_ID                    */
-/*                 |            u1g_EMINJ_RDNVES_IDï¿½yALL HVï¿½z        */
-/*                 |            u1g_EMINJ_RDPN_ST_IDï¿½yALL HVï¿½zANDï¿½yï¿½ß°Äz*/
-/*                 |            u1g_EMINJ_FCFRCTRL_IDï¿½yGPFï¿½Lï¿½z       */
-/*                 |            u1g_eminj_RDNVES_PRIï¿½yALL HVï¿½z       */
-/*                 |            u1g_eminj_RDPN_ST_PRIï¿½yALL HVï¿½zANDï¿½yï¿½ß°Äz*/
-/*                 |            u1g_eminj_FCFRCTRL_PRIï¿½yGPFï¿½Lï¿½z      */
-/*                 |          ï¿½È‰ï¿½ï¿½ï¿½IFï¿½ÌƒRï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ÏX             */
-/*                 |          ï¿½Rï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½È‚ï¿½ ->ï¿½yALL HVï¿½zANDï¿½yD-4ï¿½ÈŠOï¿½z */
+/*                 |            u1g_EMINJ_RDNVES_IDyALL HVz        */
+/*                 |            u1g_EMINJ_RDPN_ST_IDyALL HVzANDyÎß°Äz*/
+/*                 |            u1g_EMINJ_FCFRCTRL_IDyGPF—Lz       */
+/*                 |            u1g_eminj_RDNVES_PRIyALL HVz       */
+/*                 |            u1g_eminj_RDPN_ST_PRIyALL HVzANDyÎß°Äz*/
+/*                 |            u1g_eminj_FCFRCTRL_PRIyGPF—Lz      */
+/*                 |          ˆÈ‰º‚ÌIF‚ÌƒRƒ“ƒpƒCƒ‹SW•ÏX             */
+/*                 |          ƒRƒ“ƒpƒCƒ‹SW‚È‚µ ->yALL HVzANDyD-4ˆÈŠOz */
 /*                 |            u1g_EMINJ_RDPN_ID                    */
 /*                 |            u1g_eminj_RDPN_PRI                   */
 /*                 | acw-13 :                                        */
-/*                 |          ï¿½È‰ï¿½ï¿½Ì•Ïï¿½ï¿½ï¿½Ç‰ï¿½                       */
+/*                 |          ˆÈ‰º‚Ì•Ï”‚ğ’Ç‰Á                       */
 /*                 |            u4g_eminj_einjptn                    */
-/*                 |            s2g_eminj_eainjpn[5]ï¿½yD-4ï¿½ÈŠOï¿½z      */
-/*                 |            f4g_eminj_eainjpn[5]ï¿½yD-4ï¿½ÈŠOï¿½z      */
-/*                 |            s2g_eminj_eainjdn[5]ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            f4g_eminj_eainjdn[5]ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            s4g_eminj_eqinjstpn[5]ï¿½yD-4ï¿½ÈŠOï¿½z    */
-/*                 |            f4g_eminj_eqinjstpn[5]ï¿½yD-4ï¿½ÈŠOï¿½z    */
-/*                 |            s4g_eminj_eqinjstdn[5]ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            f4g_eminj_eqinjstdn[5]ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
+/*                 |            s2g_eminj_eainjpn[5]yD-4ˆÈŠOz      */
+/*                 |            f4g_eminj_eainjpn[5]yD-4ˆÈŠOz      */
+/*                 |            s2g_eminj_eainjdn[5]yÃŞ­±ÙINJzORyD-4z */
+/*                 |            f4g_eminj_eainjdn[5]yÃŞ­±ÙINJzORyD-4z */
+/*                 |            s4g_eminj_eqinjstpn[5]yD-4ˆÈŠOz    */
+/*                 |            f4g_eminj_eqinjstpn[5]yD-4ˆÈŠOz    */
+/*                 |            s4g_eminj_eqinjstdn[5]yÃŞ­±ÙINJzORyD-4z */
+/*                 |            f4g_eminj_eqinjstdn[5]yÃŞ­±ÙINJzORyD-4z */
 /*                 |            s4g_eminj_eqinjflfix[8]              */
 /*                 |            f4g_eminj_eqinjflfix[8]              */
 /*                 |            s4g_eminj_eqinjplfix[8]              */
 /*                 |            f4g_eminj_eqinjplfix[8]              */
 /*                 |            stg_eminj_eminj                      */
-/*                 |          ï¿½È‰ï¿½ï¿½ÌWï¿½ï¿½ÎÛ—pï¿½\ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş°ï¿½ï¿½\ï¿½ï¿½ï¿½Ì‚ï¿½Ç‰ï¿½ */
+/*                 |          ˆÈ‰º‚ÌW–ñ‘ÎÛ—p\‘¢‘Ì,“¯«ÃŞ°À\‘¢‘Ì‚ğ’Ç‰Á */
 /*                 |           st_EMINJ_EMINJ_BUF                    */
 /*                 |           st_EMINJ_EMINJ                        */
-/*                 |          ï¿½È‰ï¿½ï¿½ï¿½st_EMINJ_EMINJ_DEF,st_EMINJ_EINJï¿½Ìƒï¿½ï¿½ï¿½ï¿½oï¿½ï¿½ */
-/*                 |           ï¿½Rï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ÏX                      */
-/*                 |           ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yE-EGRï¿½z              */
-/*                 |           ->ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yEGRï¿½ï¿½ï¿½ï¿½Lï¿½z        */
+/*                 |          ˆÈ‰º‚Ìst_EMINJ_EMINJ_DEF,st_EMINJ_EINJ‚Ìƒƒ“ƒo‚Ì */
+/*                 |           ƒRƒ“ƒpƒCƒ‹SW•ÏX                      */
+/*                 |           yÃŞ­±ÙINJzANDyE-EGRz              */
+/*                 |           ->yÃŞ­±ÙINJzANDyEGR§Œä—Lz        */
 /*                 |            f4_ekpfiegr                          */
 /*                 |            f4_ekpfiegrn[u1g_EJCC_NOX]           */
-/*                 |          ï¿½È‰ï¿½ï¿½ÌŠÖï¿½ï¿½ï¿½Ç‰ï¿½                       */
+/*                 |          ˆÈ‰º‚ÌŠÖ”‚ğ’Ç‰Á                       */
 /*                 |            vdg_eminj_eminj_dataget()            */
-/*                 |          ï¿½È‰ï¿½ï¿½Ì’è”ï¿½ï¿½Ç‰ï¿½                       */
-/*                 |            u1g_EMINJ_BINJPLCTR_IDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            u1g_eminj_BINJPLCTR_PRIï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
+/*                 |          ˆÈ‰º‚Ì’è”‚ğ’Ç‰Á                       */
+/*                 |            u1g_EMINJ_BINJPLCTR_IDyÃŞ­±ÙINJzORyD-4z */
+/*                 |            u1g_eminj_BINJPLCTR_PRIyÃŞ­±ÙINJzORyD-4z */
 /*                 |            u4g_EMINJ_INJPTN_VD                  */
-/*                 |            u1g_eminj_FREE2_PRIï¿½yï¿½Ø°ï¿½ß°ï¿½2ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_eminj_FREE3_PRIï¿½yï¿½Ø°ï¿½ß°ï¿½3ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_eminj_FREE4_PRIï¿½yï¿½Ø°ï¿½ß°ï¿½4ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_eminj_FREE5_PRIï¿½yï¿½Ø°ï¿½ß°ï¿½5ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_eminj_FREE6_PRIï¿½yï¿½Ø°ï¿½ß°ï¿½6ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_eminj_FREE7_PRIï¿½yï¿½Ø°ï¿½ß°ï¿½7ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_EMINJ_FREE2_IDï¿½yï¿½Ø°ï¿½ß°ï¿½2ï¿½gï¿½pï¿½z   */
-/*                 |            u1g_EMINJ_FREE3_IDï¿½yï¿½Ø°ï¿½ß°ï¿½3ï¿½gï¿½pï¿½z   */
-/*                 |            u1g_EMINJ_FREE4_IDï¿½yï¿½Ø°ï¿½ß°ï¿½4ï¿½gï¿½pï¿½z   */
-/*                 |            u1g_EMINJ_FREE5_IDï¿½yï¿½Ø°ï¿½ß°ï¿½5ï¿½gï¿½pï¿½z   */
-/*                 |            u1g_EMINJ_FREE6_IDï¿½yï¿½Ø°ï¿½ß°ï¿½6ï¿½gï¿½pï¿½z   */
-/*                 |            u1g_EMINJ_FREE7_IDï¿½yï¿½Ø°ï¿½ß°ï¿½7ï¿½gï¿½pï¿½z   */
+/*                 |            u1g_eminj_FREE2_PRIyÌØ°Îß°Ä2g—pz  */
+/*                 |            u1g_eminj_FREE3_PRIyÌØ°Îß°Ä3g—pz  */
+/*                 |            u1g_eminj_FREE4_PRIyÌØ°Îß°Ä4g—pz  */
+/*                 |            u1g_eminj_FREE5_PRIyÌØ°Îß°Ä5g—pz  */
+/*                 |            u1g_eminj_FREE6_PRIyÌØ°Îß°Ä6g—pz  */
+/*                 |            u1g_eminj_FREE7_PRIyÌØ°Îß°Ä7g—pz  */
+/*                 |            u1g_EMINJ_FREE2_IDyÌØ°Îß°Ä2g—pz   */
+/*                 |            u1g_EMINJ_FREE3_IDyÌØ°Îß°Ä3g—pz   */
+/*                 |            u1g_EMINJ_FREE4_IDyÌØ°Îß°Ä4g—pz   */
+/*                 |            u1g_EMINJ_FREE5_IDyÌØ°Îß°Ä5g—pz   */
+/*                 |            u1g_EMINJ_FREE6_IDyÌØ°Îß°Ä6g—pz   */
+/*                 |            u1g_EMINJ_FREE7_IDyÌØ°Îß°Ä7g—pz   */
 /*                 |            u4g_EMINJ_RQINJPTN                   */
 /*                 |            u4g_EMINJ_RQAINJPN                   */
 /*                 |            u4g_EMINJ_RQAINJDN                   */
@@ -99,99 +99,102 @@
 /*                 |            u4g_EMINJ_RQQINJFLFIX                */
 /*                 |            u4g_EMINJ_RQQINJPLFIX                */
 /*                 |            u2g_EMINJ_MOD007                     */
-/*                 |          ï¿½È‰ï¿½ï¿½Ì•Ïï¿½ï¿½ï¿½ï¿½íœ                       */
+/*                 |          ˆÈ‰º‚Ì•Ï”‚ğíœ                       */
 /*                 |            s4g_eminj_eqfccyl[u1g_EJCC_NCYL]     */
 /*                 |            f4g_eminj_eqfccyl[u1g_EJCC_NCYL]     */
 /*                 |            u1g_eminj_explrq[u1g_EJCC_NCYL]      */
-/*                 |          ï¿½È‰ï¿½ï¿½ï¿½IFï¿½ÌƒRï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ÏX             */
-/*                 |          ï¿½yALL HVï¿½zANDï¿½yD-4ï¿½ÈŠOï¿½z->ï¿½yALL HVï¿½z   */
+/*                 |          ˆÈ‰º‚ÌIF‚ÌƒRƒ“ƒpƒCƒ‹SW•ÏX             */
+/*                 |          yALL HVzANDyD-4ˆÈŠOz->yALL HVz   */
 /*                 |           u1g_EMINJ_STAHV_ID,u1g_eminj_STAHV_PRI */
-/*                 |          ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yE-EGRï¿½z               */
-/*                 |           ->ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yEGRï¿½ï¿½ï¿½ï¿½Lï¿½z        */
+#if (JEFFV != u1g_EJCC_NOT_USE)  && ((JEEFI == u1g_EJCC_DUAL)  || (JEEFI == u1g_EJCC_D4))  && (JEEGMG_E == u1g_EJCC_HVPLGR_E)  && (JEMDVVT == u1g_EJCC_USE)   /* Alcohol fuel combustion improvement ID */
+#define u1g_EMINJ_CIMPALC_ID               ((u1)(46))         /* ƒAƒ‹ƒR[ƒ‹”R—¿”RÄ‰ü‘P§Œä(ID) */
+#endif                                                                  /* CSW for CIMPALC */
+/*                 |          yÃŞ­±ÙINJzANDyE-EGRz               */
+/*                 |           ->yÃŞ­±ÙINJzANDyEGR§Œä—Lz        */
 /*                 |           f4g_eminj_ekpfiegr,                   */
 /*                 |           f4g_eminj_ekpfiegrn[u1g_EJCC_NOX]     */
-/*                 | acw-14 : ï¿½È‰ï¿½ï¿½è”ï¿½Ì’Ç‰ï¿½                         */
+/*                 | acw-14 : ˆÈ‰º’è”‚Ì’Ç‰Á                         */
 /*                 |            u1g_EMINJ_STACM_ID                   */
-/*                 |             (ï¿½yï¿½ï¿½ï¿½ï¿½Ä¼ŞµÌªİ¼İ¸Ş—Lï¿½zORï¿½yï¿½ï¿½Şºï¿½ï¿½Û°Ù—Lï¿½z)ANDï¿½ySUB-CPUï¿½ÈŠOï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½Şï¿½ï¿½Ìnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_ACTGAF_IDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z      */
-/*                 |            u1g_EMINJ_IMBRQ_IDï¿½yAFï¿½Cï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½İ½ï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½İ½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_MFINJRQ_IDï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_FKGDRQ_IDï¿½yï¿½Rï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½Rï¿½ï¿½ï¿½nOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
+/*                 |             (y»°·¯Ä¼ŞµÌªİ¼İ¸Ş—LzORyÅËŞºİÄÛ°Ù—Lz)ANDySUB-CPUˆÈŠOzANDy»°·¯ÄÓ°ÄŞ‚Ìn“®§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_ACTGAF_IDyÃŞ­±ÙINJz      */
+/*                 |            u1g_EMINJ_IMBRQ_IDyAF‹C“›ŠÔ²İÊŞ×İ½—LzANDyÃŞ­±ÙINJzANDy²İÊŞ×İ½OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_MFINJRQ_IDy¸‰ÎOBD—LzANDyÃŞ­±ÙINJzANDy¸‰ÎOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_FKGDRQ_IDy”R—¿OBD—LzANDyÃŞ­±ÙINJzANDy”R—¿ŒnOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
 /*                 |            u1g_eminj_STACM_PRI                  */
-/*                 |             (ï¿½yï¿½ï¿½ï¿½ï¿½Ä¼ŞµÌªİ¼İ¸Ş—Lï¿½zORï¿½yï¿½ï¿½Şºï¿½ï¿½Û°Ù—Lï¿½z)ANDï¿½ySUB-CPUï¿½ÈŠOï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½Şï¿½ï¿½Ìnï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_IMBRQ_PRIï¿½yAFï¿½Cï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½İ½ï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½İ½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_MFINJRQ_PRIï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_FKGDRQ_PRIï¿½yï¿½Rï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½Rï¿½ï¿½ï¿½nOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |          ï¿½È‰ï¿½ï¿½è”ï¿½ÌƒRï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ÏX             */
-/*                 |            u1g_EMINJ_STAHV_IDï¿½yALL HVï¿½zANDï¿½yHVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_FCFRCTRL_IDï¿½yGPFï¿½Lï¿½zANDï¿½y1ï¿½Cï¿½ï¿½FCï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_ACTOBD_IDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_ACTLFG_ID(ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z)ANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ÄŠwï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_BINJPLCTR_ID(ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z)ANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_STAHV_PRIï¿½yALL HVï¿½zANDï¿½yHVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_FCFRCTRL_PRIï¿½yGPFï¿½Lï¿½zANDï¿½y1ï¿½Cï¿½ï¿½FCï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_INJIMB_PRIï¿½yAFï¿½Cï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½İ½ï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_ACTOBD_PRIï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_ACTLFG_PRI(ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z)ANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ÄŠwï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_BINJPLCTR_PRI(ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z)ANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |          ï¿½È‰ï¿½ï¿½Ïï¿½ï¿½ï¿½Ç‰ï¿½                         */
-/*                 |            f4g_eminj_eainjd1fixï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            f4g_eminj_eainjd2fixï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            f4g_eminj_eainjd3fixï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            f4g_eminj_eainjd4fixï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
+/*                 |             (y»°·¯Ä¼ŞµÌªİ¼İ¸Ş—LzORyÅËŞºİÄÛ°Ù—Lz)ANDySUB-CPUˆÈŠOzANDy»°·¯ÄÓ°ÄŞ‚Ìn“®§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_IMBRQ_PRIyAF‹C“›ŠÔ²İÊŞ×İ½—LzANDyÃŞ­±ÙINJzANDy²İÊŞ×İ½OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_MFINJRQ_PRIy¸‰ÎOBD—LzANDyÃŞ­±ÙINJzANDy¸‰ÎOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_FKGDRQ_PRIy”R—¿OBD—LzANDyÃŞ­±ÙINJzANDy”R—¿ŒnOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |          ˆÈ‰º’è”‚ÌƒRƒ“ƒpƒCƒ‹SW•ÏX             */
+/*                 |            u1g_EMINJ_STAHV_IDyALL HVzANDyHVn“®§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_FCFRCTRL_IDyGPF—LzANDy1‹C“›FC§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_ACTOBD_IDyÃŞ­±ÙINJzANDyOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_ACTLFG_ID(yÃŞ­±ÙINJzORyD-4z)ANDyÊß°¼¬ÙØÌÄŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_BINJPLCTR_ID(yÃŞ­±ÙINJzORyD-4z)ANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_STAHV_PRIyALL HVzANDyHVn“®§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_FCFRCTRL_PRIyGPF—LzANDy1‹C“›FC§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_INJIMB_PRIyAF‹C“›ŠÔ²İÊŞ×İ½—LzANDyÃŞ­±ÙINJzANDy²İÊŞ×İ½‚Ì•¬Ë§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_ACTOBD_PRIyÃŞ­±ÙINJzANDyOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_ACTLFG_PRI(yÃŞ­±ÙINJzORyD-4z)ANDyÊß°¼¬ÙØÌÄŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_BINJPLCTR_PRI(yÃŞ­±ÙINJzORyD-4z)ANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä—v‹g—pz*/
+/*                 |          ˆÈ‰º•Ï”‚ğ’Ç‰Á                         */
+/*                 |            f4g_eminj_eainjd1fixyÃŞ­±ÙINJzORyD-4z*/
+/*                 |            f4g_eminj_eainjd2fixyÃŞ­±ÙINJzORyD-4z*/
+/*                 |            f4g_eminj_eainjd3fixyÃŞ­±ÙINJzORyD-4z*/
+/*                 |            f4g_eminj_eainjd4fixyÃŞ­±ÙINJzORyD-4z*/
 /*                 |            f4g_eminj_ek1ffix                    */
 /*                 |            f4g_eminj_ek2ffix                    */
 /*                 |            f4g_eminj_ek3ffix                    */
-/*                 | acw-15 : ï¿½Wï¿½ï¿½ÎÛ—pï¿½\ï¿½ï¿½ï¿½ï¿½st_EMINJ_EMINJ_BUFï¿½ï¿½ï¿½ï¿½ */
-/*                 |          ï¿½È‰ï¿½ï¿½Ìƒï¿½ï¿½ï¿½ï¿½oï¿½Ì”zï¿½ï¿½vï¿½fï¿½ï¿½ï¿½ï¿½ÏX         */
-/*                 |            s2_eainjdn[]   ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            s4_eqinjstdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |          ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş°ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½st_EMINJ_EMINJï¿½ï¿½ï¿½ï¿½     */
-/*                 |          ï¿½È‰ï¿½ï¿½Ìƒï¿½ï¿½ï¿½ï¿½oï¿½Ì”zï¿½ï¿½vï¿½fï¿½ï¿½ï¿½ï¿½ÏX         */
-/*                 |            s2_eainjdn[]   ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            f4_eainjdn[]   ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            s4_eqinjstdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |            f4_eqinjstdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-/*                 |          ï¿½È‰ï¿½ï¿½è”ï¿½Ì’Ç‰ï¿½                         */
-/*                 |            u1g_EMINJ_BINJPLCTR_WC_ID ï¿½yALL HVï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_BINJPLCTR_STAHV_ID ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zANDï¿½yFFVï¿½ï¿½ï¿½ä–³ï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ä)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_FREE8_ID ï¿½yï¿½Ø°ï¿½ß°ï¿½8ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_EMINJ_FREE9_ID ï¿½yï¿½Ø°ï¿½ß°ï¿½9ï¿½gï¿½pï¿½z  */
-/*                 |            u1g_EMINJ_FREE10_ID ï¿½yï¿½Ø°ï¿½ß°ï¿½10ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_FREE11_ID ï¿½yï¿½Ø°ï¿½ß°ï¿½11ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_BINJPLCTR_WC_PRI ï¿½yALL HVï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_BINJPLCTR_STAHV_PRI ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zANDï¿½yFFVï¿½ï¿½ï¿½ä–³ï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ä)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_FREE8_PRI ï¿½yï¿½Ø°ï¿½ß°ï¿½8ï¿½gï¿½pï¿½z */
-/*                 |            u1g_eminj_FREE9_PRI ï¿½yï¿½Ø°ï¿½ß°ï¿½9ï¿½gï¿½pï¿½z */
-/*                 |            u1g_eminj_FREE10_PRI ï¿½yï¿½Ø°ï¿½ß°ï¿½10ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_FREE11_PRI ï¿½yï¿½Ø°ï¿½ß°ï¿½11ï¿½gï¿½pï¿½z*/
-/*                 |          ï¿½È‰ï¿½ï¿½è”ï¿½ÌƒRï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ÏX             */
-/*                 |            u1g_EMINJ_STACM_ID (ï¿½yï¿½Ó°Äºï¿½ï¿½Û°Ù—Lï¿½zORï¿½yï¿½ï¿½Şºï¿½ï¿½Û°Ù—Lï¿½z)ANDï¿½ySUB-CPUï¿½ÈŠOï¿½zANDï¿½yï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½è§ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_BINJPLCTR_ID ï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_STACM_PRI (ï¿½yï¿½Ó°Äºï¿½ï¿½Û°Ù—Lï¿½zORï¿½yï¿½ï¿½Şºï¿½ï¿½Û°Ù—Lï¿½z)ANDï¿½ySUB-CPUï¿½ÈŠOï¿½zANDï¿½yï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½è§ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_eminj_BINJPLCTR_PRI ï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-/*                 |            u1g_EMINJ_RDNVES_ID ï¿½Rï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½È‚ï¿½ */
-/*                 |          ï¿½È‰ï¿½ï¿½Ïï¿½ï¿½ï¿½Ç‰ï¿½                         */
-/*                 |            f4g_eminj_eainjd5fix ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            f4g_eminj_eainjd6fix ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |          ï¿½È‰ï¿½ï¿½Ïï¿½ï¿½Ì”zï¿½ï¿½vï¿½fï¿½ï¿½ï¿½ï¿½ÏX             */
-/*                 |            s2g_eminj_eainjdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            f4g_eminj_eainjdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            s4g_eminj_eqinjstdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |            f4g_eminj_eqinjstdn[] ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-/*                 |          ï¿½È‰ï¿½ï¿½İŠï¿½ï¿½pï¿½}ï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½íœ                 */
+/*                 | acw-15 : W–ñ‘ÎÛ—p\‘¢‘Ìst_EMINJ_EMINJ_BUF‚©‚ç */
+/*                 |          ˆÈ‰º‚Ìƒƒ“ƒo‚Ì”z—ñ—v‘f”‚ğ•ÏX         */
+/*                 |            s2_eainjdn[]   yÃŞ­±ÙINJzORyD-4z */
+/*                 |            s4_eqinjstdn[] yÃŞ­±ÙINJzORyD-4z */
+/*                 |          “¯«ÃŞ°À\‘¢‘Ìst_EMINJ_EMINJ‚©‚ç     */
+/*                 |          ˆÈ‰º‚Ìƒƒ“ƒo‚Ì”z—ñ—v‘f”‚ğ•ÏX         */
+/*                 |            s2_eainjdn[]   yÃŞ­±ÙINJzORyD-4z */
+/*                 |            f4_eainjdn[]   yÃŞ­±ÙINJzORyD-4z */
+/*                 |            s4_eqinjstdn[] yÃŞ­±ÙINJzORyD-4z */
+/*                 |            f4_eqinjstdn[] yÃŞ­±ÙINJzORyD-4z */
+/*                 |          ˆÈ‰º’è”‚Ì’Ç‰Á                         */
+/*                 |            u1g_EMINJ_BINJPLCTR_WC_ID yALL HVzANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(G”}’g‹@)—v‹g—pz*/
+/*                 |            u1g_EMINJ_BINJPLCTR_STAHV_ID yEG-MG—V¯·Ş±zANDyFFV§Œä–³zANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(HVn“®§Œä)—v‹g—pz*/
+/*                 |            u1g_EMINJ_FREE8_ID yÌØ°Îß°Ä8g—pz  */
+/*                 |            u1g_EMINJ_FREE9_ID yÌØ°Îß°Ä9g—pz  */
+/*                 |            u1g_EMINJ_FREE10_ID yÌØ°Îß°Ä10g—pz*/
+/*                 |            u1g_EMINJ_FREE11_ID yÌØ°Îß°Ä11g—pz*/
+/*                 |            u1g_eminj_BINJPLCTR_WC_PRI yALL HVzANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(G”}’g‹@)—v‹g—pz*/
+/*                 |            u1g_eminj_BINJPLCTR_STAHV_PRI yEG-MG—V¯·Ş±zANDyFFV§Œä–³zANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(HVn“®§Œä)—v‹g—pz*/
+/*                 |            u1g_eminj_FREE8_PRI yÌØ°Îß°Ä8g—pz */
+/*                 |            u1g_eminj_FREE9_PRI yÌØ°Îß°Ä9g—pz */
+/*                 |            u1g_eminj_FREE10_PRI yÌØ°Îß°Ä10g—pz*/
+/*                 |            u1g_eminj_FREE11_PRI yÌØ°Îß°Ä11g—pz*/
+/*                 |          ˆÈ‰º’è”‚ÌƒRƒ“ƒpƒCƒ‹SW•ÏX             */
+/*                 |            u1g_EMINJ_STACM_ID (yØÓ°ÄºİÄÛ°Ù—LzORyÅËŞºİÄÛ°Ù—Lz)ANDySUB-CPUˆÈŠOzANDyn“®‚¯ã‚ª‚è§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_BINJPLCTR_ID yPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_STACM_PRI (yØÓ°ÄºİÄÛ°Ù—LzORyÅËŞºİÄÛ°Ù—Lz)ANDySUB-CPUˆÈŠOzANDyn“®‚¯ã‚ª‚è§Œä—v‹g—pz*/
+/*                 |            u1g_eminj_BINJPLCTR_PRI yPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä—v‹g—pz*/
+/*                 |            u1g_EMINJ_RDNVES_ID ƒRƒ“ƒpƒCƒ‹SW‚È‚µ */
+/*                 |          ˆÈ‰º•Ï”‚ğ’Ç‰Á                         */
+/*                 |            f4g_eminj_eainjd5fix yÃŞ­±ÙINJzORyD-4z*/
+/*                 |            f4g_eminj_eainjd6fix yÃŞ­±ÙINJzORyD-4z*/
+/*                 |          ˆÈ‰º•Ï”‚Ì”z—ñ—v‘f”‚ğ•ÏX             */
+/*                 |            s2g_eminj_eainjdn[] yÃŞ­±ÙINJzORyD-4z*/
+/*                 |            f4g_eminj_eainjdn[] yÃŞ­±ÙINJzORyD-4z*/
+/*                 |            s4g_eminj_eqinjstdn[] yÃŞ­±ÙINJzORyD-4z*/
+/*                 |            f4g_eminj_eqinjstdn[] yÃŞ­±ÙINJzORyD-4z*/
+/*                 |          ˆÈ‰ºŒİŠ·—pƒ}ƒNƒ‚ğíœ                 */
 /*                 |            u4g_EMINJ_RQPRLREQ                   */
 /*-------------------------------------------------------------------*/
-/*  ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½\ï¿½ï¿½   |  eminj_l_mat.c, eminj_c_mat.c, eminj_c.h        */
+/*  ƒtƒ@ƒCƒ‹\¬   |  eminj_l_mat.c, eminj_c_mat.c, eminj_c.h        */
 /*-------------------------------------------------------------------*/
-/*     ï¿½Â•Ê•ÏXï¿½ï¿½ï¿½ï¿½ ï¿½iï¿½Â•Ê•ÏXï¿½ï¿½ï¿½ÍˆÈ‰ï¿½ï¿½É•ÏXï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½eï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½é‚±ï¿½Æj */
+/*     ŒÂ•Ê•ÏX—š—ğ iŒÂ•Ê•ÏX‚ÍˆÈ‰º‚É•ÏX“úA“à—e‚ğ‹L“ü‚·‚é‚±‚Æj */
 /*********************************************************************/
 
 #ifndef EMINJ_H
 #define EMINJ_H
 
 /*-------------------------------------------------------------------*/
-/* ï¿½wï¿½bï¿½_ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ÌƒCï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½[ï¿½h                                      */
+/* ƒwƒbƒ_ƒtƒ@ƒCƒ‹‚ÌƒCƒ“ƒNƒ‹[ƒh                                      */
 /*-------------------------------------------------------------------*/
 #include <engsrc/espc/ejcc.h>   /* JEEFI,u1g_EJCC_D4,u1g_EJCC_DUAL,u1g_EJCC_PORT,u1g_EJCC_NOX,JEPRDEMAND,JESS */
                                 /* JEEGR,u1g_EJCC_NCYL,JECOMBCCPT_E,u1g_EJCC_SPRAYG_E,JEMAT_BENCHI */
@@ -201,7 +204,7 @@
                                 /* JEOBDFKG,JEPLMLT_E,JERMTCTR,JEFFV */
 
 /*-------------------------------------------------------------------*/
-/* ï¿½Rï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ï¿½ï¿½ï¿½`ï¿½`ï¿½Fï¿½bï¿½N                                        */
+/* ƒRƒ“ƒpƒCƒ‹SW–¢’è‹`ƒ`ƒFƒbƒN                                        */
 /*-------------------------------------------------------------------*/
 #if !defined JEEFI
 #error "JEEFI is undeclared"
@@ -320,320 +323,320 @@
 #endif
 
 /*-------------------------------------------------------------------*/
-/* ï¿½^ï¿½ï¿½`                                                            */
+/* Œ^’è‹`                                                            */
 /*-------------------------------------------------------------------*/
-/* ï¿½Wï¿½ï¿½ÎÛ—pï¿½\ï¿½ï¿½ï¿½ÌŒ^ */
+/* W–ñ‘ÎÛ—p\‘¢‘ÌŒ^ */
 typedef struct
 {
-    u1 u1_pri;                        /* lsb=1 :ï¿½Dï¿½ï¿½x */
-    u4 u4_einjrq_dat;                 /* lsb=1 :ï¿½vï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½Êq */
-    u2 u2_einjmod;                    /* lsb=1 :ï¿½ï¿½ï¿½Ëƒï¿½ï¿½[ï¿½h */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjp1;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjp2;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjp3;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjp4;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    u1 u1_pri;                        /* lsb=1 :—Dæ“x */
+    u4 u4_einjrq_dat;                 /* lsb=1 :—v‹—L¯•Êq */
+    u2 u2_einjmod;                    /* lsb=1 :•¬Ëƒ‚[ƒh */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjp1;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg1‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjp2;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg2‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjp3;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg3‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjp4;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg4‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjd1;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjd2;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjd3;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjd4;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjd1;                    /* lsb=1024/128/256,unit=BTDC :“›“à1‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjd2;                    /* lsb=1024/128/256,unit=BTDC :“›“à2‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjd3;                    /* lsb=1024/128/256,unit=BTDC :“›“à3‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjd4;                    /* lsb=1024/128/256,unit=BTDC :“›“à4‰ñ–Ú•¬ËŠJnŠú */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s4 s4_eqinjstp1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstp2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstp3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstp4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s4 s4_eqinjstp1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg1‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstp2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg2‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstp3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg3‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstp4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg4‰ñ–Ún“®•¬Ë—Ê */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s4 s4_eqinjstd1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstd2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstd3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstd4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s4 s4_eqinjstd1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à1‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstd2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à2‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstd3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à3‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstd4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à4‰ñ–Ún“®•¬Ë—Ê */
 #endif /* JEEFI */
-    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s2 s2_ek1f;                       /* lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek2f;                       /* lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek3f;                       /* lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eprreq;                     /* lsb=(32*2)/128/256,unit=MPa :ï¿½ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
+    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FC’†•¬Ë—Ê */
+    s2 s2_ek1f;                       /* lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek2f;                       /* lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek3f;                       /* lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eprreq;                     /* lsb=(32*2)/128/256,unit=MPa :‚ˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
 #endif /* JEEFI */
-#if JEPRDEMAND == u1g_EJCC_NOT_USE    /*ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ä–³ï¿½z*/
-    s2 s2_eqfreq;                     /* lsb=512/128/256,unit=L/h :ï¿½Rï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½fï¿½oï¿½ï¿½ï¿½ï¿½ */
-#else                                 /*ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-    s2 s2_eprreql;                    /* lsb=1280/128/256,unit=kPa :ï¿½áˆ³ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
+#if JEPRDEMAND == u1g_EJCC_NOT_USE    /*y‰Â•Ï”Rˆ³§Œä–³z*/
+    s2 s2_eqfreq;                     /* lsb=512/128/256,unit=L/h :”R—¿ƒ|ƒ“ƒv“fo—¬—Ê */
+#else                                 /*y‰Â•Ï”Rˆ³§Œä—Lz*/
+    s2 s2_eprreql;                    /* lsb=1280/128/256,unit=kPa :’áˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
 #endif /* JEPRDEMAND */
-    u1 bi_exqinjast :1;               /* lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-    u1 bi_dummy     :7;               /* ï¿½_ï¿½~ï¿½[ */
-    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    u1 u1_explreq;                    /* lsb=1 :PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ */
+    u1 bi_exqinjast :1;               /* lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+    u1 bi_dummy     :7;               /* ƒ_ƒ~[ */
+    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    u1 u1_explreq;                    /* lsb=1 :PL•¬ËÀ{—v‹ */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*ï¿½yï¿½ï¿½ï¿½Ú°ï¿½Ş²ï¿½Şz*/
-    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*y½ÌßÚ°¶Ş²ÄŞz*/
+    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :–c’£s’ö•¬Ë—Ê */
 #endif /* JECOMBCCPT_E */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjp;                     /* lsb=1024/128/256,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½(ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î‰ï¿½ï¿½ï¿½ï¿½iï¿½İŠï¿½ï¿½p) */
-    s4 s4_eqinjstp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ß°Änï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½(ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î‰ï¿½ï¿½ï¿½ï¿½iï¿½İŠï¿½ï¿½p) */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjp;                     /* lsb=1024/128/256,unit=BTDC :Îß°Ä•¬ËŠJnŠú(Îß°ÄÏÙÁ–¢‘Î‰•”•iŒİŠ·—p) */
+    s4 s4_eqinjstp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :Îß°Än“®•¬Ë—Ê(Îß°ÄÏÙÁ–¢‘Î‰•”•iŒİŠ·—p) */
 #endif /* JEEFI */
 } st_EMINJ_EMINJ_DEF;
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½\ï¿½ï¿½ï¿½ÌŒ^ */
+/* “¯«ƒf[ƒ^\‘¢‘ÌŒ^ */
 typedef struct
 {
-    u2 u2_einjmod;                    /* lsb=1 :ï¿½ï¿½ï¿½Ëƒï¿½ï¿½[ï¿½h */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjp1;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjp1;                    /* unit=BTDC :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjp2;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjp2;                    /* unit=BTDC :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjp3;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjp3;                    /* unit=BTDC :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjp4;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjp4;                    /* unit=BTDC :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_einjend;                    /* unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    u2 u2_einjmod;                    /* lsb=1 :•¬Ëƒ‚[ƒh */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjp1;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg1‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjp1;                    /* unit=BTDC :ƒ|[ƒg1‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjp2;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg2‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjp2;                    /* unit=BTDC :ƒ|[ƒg2‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjp3;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg3‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjp3;                    /* unit=BTDC :ƒ|[ƒg3‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjp4;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg4‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjp4;                    /* unit=BTDC :ƒ|[ƒg4‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
+    f4 f4_einjend;                    /* unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjd1;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjd1;                    /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjd2;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjd2;                    /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjd3;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjd3;                    /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_eainjd4;                    /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjd4;                    /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjd1;                    /* lsb=1024/128/256,unit=BTDC :“›“à1‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjd1;                    /* unit=BTDC :“›“à1‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjd2;                    /* lsb=1024/128/256,unit=BTDC :“›“à2‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjd2;                    /* unit=BTDC :“›“à2‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjd3;                    /* lsb=1024/128/256,unit=BTDC :“›“à3‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjd3;                    /* unit=BTDC :“›“à3‰ñ–Ú•¬ËŠJnŠú */
+    s2 s2_eainjd4;                    /* lsb=1024/128/256,unit=BTDC :“›“à4‰ñ–Ú•¬ËŠJnŠú */
+    f4 f4_eainjd4;                    /* unit=BTDC :“›“à4‰ñ–Ú•¬ËŠJnŠú */
 #endif /* JEEFI */
-#if JEEFI == u1g_EJCC_PORT            /*ï¿½yï¿½ß°Äz*/
-    s2 s2_eainjpadd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
+#if JEEFI == u1g_EJCC_PORT            /*yÎß°Äz*/
+    s2 s2_eainjpadd;                  /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg’Ç‰Á•¬ËŠJnŠú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjdadd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjdadd;                  /* lsb=1024/128/256,unit=BTDC :“›“à’Ç‰Á•¬ËŠJnŠú */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s4 s4_eqinjstp1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstp1;                  /* unit=mg/st :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstp2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstp2;                  /* unit=mg/st :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstp3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstp3;                  /* unit=mg/st :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstp4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstp4;                  /* unit=mg/st :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s4 s4_eqinjstp1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg1‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstp1;                  /* unit=mg/st :ƒ|[ƒg1‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstp2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg2‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstp2;                  /* unit=mg/st :ƒ|[ƒg2‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstp3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg3‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstp3;                  /* unit=mg/st :ƒ|[ƒg3‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstp4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg4‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstp4;                  /* unit=mg/st :ƒ|[ƒg4‰ñ–Ún“®•¬Ë—Ê */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s4 s4_eqinjstd1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstd1;                  /* unit=mg/st :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstd2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstd2;                  /* unit=mg/st :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstd3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstd3;                  /* unit=mg/st :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s4 s4_eqinjstd4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjstd4;                  /* unit=mg/st :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s4 s4_eqinjstd1;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à1‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstd1;                  /* unit=mg/st :“›“à1‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstd2;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à2‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstd2;                  /* unit=mg/st :“›“à2‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstd3;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à3‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstd3;                  /* unit=mg/st :“›“à3‰ñ–Ún“®•¬Ë—Ê */
+    s4 s4_eqinjstd4;                  /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à4‰ñ–Ún“®•¬Ë—Ê */
+    f4 f4_eqinjstd4;                  /* unit=mg/st :“›“à4‰ñ–Ún“®•¬Ë—Ê */
 #endif /* JEEFI */
-    f4 f4_eqfc[u1g_EJCC_NCYL];        /* unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s2 s2_ek1f;                       /* lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    f4 f4_ek1f;                       /* unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    s2 s2_ek2f;                       /* lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    f4 f4_ek2f;                       /* unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    s2 s2_ek3f;                       /* lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    f4 f4_ek3f;                       /* unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ek1fn[u1g_EJCC_NOX];        /* unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ek2fn[u1g_EJCC_NOX];        /* unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ek3fn[u1g_EJCC_NOX];        /* unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ekrchref[u1g_EJCC_NOX];     /* unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    u1 bi_exqinjast :1;               /* lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-    u1 bi_dummy     :7;               /* ï¿½_ï¿½~ï¿½[ */
-    u1 u1_exqinjast;                  /* lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    u1 u1_explreq;                    /* lsb=1 :PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ */
+    f4 f4_eqfc[u1g_EJCC_NCYL];        /* unit=mg/st :FC’†•¬Ë—Ê */
+    s2 s2_ek1f;                       /* lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    f4 f4_ek1f;                       /* unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    s2 s2_ek2f;                       /* lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    f4 f4_ek2f;                       /* unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    s2 s2_ek3f;                       /* lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    f4 f4_ek3f;                       /* unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ek1fn[u1g_EJCC_NOX];        /* unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ek2fn[u1g_EJCC_NOX];        /* unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ek3fn[u1g_EJCC_NOX];        /* unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ekrchref[u1g_EJCC_NOX];     /* unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+    u1 bi_exqinjast :1;               /* lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+    u1 bi_dummy     :7;               /* ƒ_ƒ~[ */
+    u1 u1_exqinjast;                  /* lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    u1 u1_explreq;                    /* lsb=1 :PL•¬ËÀ{—v‹ */
 #endif /* JEEFI */
-#if JEEFI == u1g_EJCC_DUAL            /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-    s2 s2_ekpfit;                     /* lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-    f4 f4_ekpfit;                     /* unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-    s2 s2_ekpfitn[u1g_EJCC_NOX];      /* lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½ï¿½) */
-    f4 f4_ekpfitn[u1g_EJCC_NOX];      /* unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½ï¿½) */
+#if JEEFI == u1g_EJCC_DUAL            /*yÃŞ­±ÙINJz*/
+    s2 s2_ekpfit;                     /* lsb=(1*4)/128/256,unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+    f4 f4_ekpfit;                     /* unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+    s2 s2_ekpfitn[u1g_EJCC_NOX];      /* lsb=(1*4)/128/256,unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸•Ê) */
+    f4 f4_ekpfitn[u1g_EJCC_NOX];      /* unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸•Ê) */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    f4 f4_ek1fpt;                     /* unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë‚Ì‚İ—vï¿½ï¿½ï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    f4 f4_ek1fpt;                     /* unit=”{ :Îß°Ä•¬Ë‚Ì‚İ—v‹‚Ì–Ú•WÎß°Ä1‰ñ–Ú•¬Ë—ÊZoŒW” */
 #endif /* JEEFI */
-#if JEEFI == u1g_EJCC_DUAL            /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
- #if JEEGR == u1g_EJCC_USE            /*ï¿½yEGRï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-    f4 f4_ekpfiegr;                   /* unit=ï¿½{ :EGR-ONï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-    f4 f4_ekpfiegrn[u1g_EJCC_NOX];    /* unit=ï¿½{ :EGR-ONï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½ï¿½) */
+#if JEEFI == u1g_EJCC_DUAL            /*yÃŞ­±ÙINJz*/
+ #if JEEGR == u1g_EJCC_USE            /*yEGR§Œä—Lz*/
+    f4 f4_ekpfiegr;                   /* unit=”{ :EGR-ON‚Ì–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+    f4 f4_ekpfiegrn[u1g_EJCC_NOX];    /* unit=”{ :EGR-ON‚Ì–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸•Ê) */
  #endif /* JEEGR */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-    f4 f4_eainjcutp;                  /* unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
+    f4 f4_eainjcutp;                  /* unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-    f4 f4_eainjcutd;                  /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
+    f4 f4_eainjcutd;                  /* unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*ï¿½yï¿½ï¿½ï¿½Ú°ï¿½Ş²ï¿½Şz*/
-    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjexp;                   /* unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FC’†•¬Ë—Ê */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*y½ÌßÚ°¶Ş²ÄŞz*/
+    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :–c’£s’ö•¬Ë—Ê */
+    f4 f4_eqinjexp;                   /* unit=mg/st :–c’£s’ö•¬Ë—Ê */
 #endif /* JECOMBCCPT_E */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_ek1fpt;                     /* lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë‚Ì‚İ—vï¿½ï¿½ï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_ek1fpt;                     /* lsb=(1*4)/128/256,unit=”{ :Îß°Ä•¬Ë‚Ì‚İ—v‹‚Ì–Ú•WÎß°Ä1‰ñ–Ú•¬Ë—ÊZoŒW” */
 #endif /* JEEFI */
 } st_EMINJ_EINJ;
 
-/* ï¿½Wï¿½ï¿½ÎÛ—pï¿½\ï¿½ï¿½ï¿½ÌŒ^ */
+/* W–ñ‘ÎÛ—p\‘¢‘ÌŒ^ */
 typedef struct
 {
-    u1 u1_pri;                        /* lsb=1 :ï¿½Dï¿½ï¿½x */
-    u4 u4_einjrq_dat;                 /* lsb=1 :ï¿½vï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½Êq */
-    u2 u2_einjmod;                    /* lsb=1 :ï¿½ï¿½ï¿½Ëƒï¿½ï¿½[ï¿½h */
-    u4 u4_einjptn;                    /* lsb=1 :ï¿½ï¿½ï¿½Ëƒpï¿½^ï¿½[ï¿½ï¿½ */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjpn[5];                 /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    u1 u1_pri;                        /* lsb=1 :—Dæ“x */
+    u4 u4_einjrq_dat;                 /* lsb=1 :—v‹—L¯•Êq */
+    u2 u2_einjmod;                    /* lsb=1 :•¬Ëƒ‚[ƒh */
+    u4 u4_einjptn;                    /* lsb=1 :•¬Ëƒpƒ^[ƒ“ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjpn[5];                 /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒgn‰ñ–Ú•¬ËŠJnŠúi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjdn[6];                 /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjdn[6];                 /* lsb=1024/128/256,unit=BTDC :“›“àn‰ñ–Ú•¬ËŠJnŠúi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s4 s4_eqinjstpn[5];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s4 s4_eqinjstpn[5];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒgn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s4 s4_eqinjstdn[6];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s4 s4_eqinjstdn[6];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“àn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
 #endif /* JEEFI */
-    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eprreq;                     /* lsb=(32*2)/128/256,unit=MPa :ï¿½ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
+    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FC’†•¬Ë—Ê */
+    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eprreq;                     /* lsb=(32*2)/128/256,unit=MPa :‚ˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
 #endif /* JEEFI */
-#if JEPRDEMAND == u1g_EJCC_NOT_USE    /*ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ä–³ï¿½z*/
-    s2 s2_eqfreq;                     /* lsb=512/128/256,unit=L/h :ï¿½Rï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½fï¿½oï¿½ï¿½ï¿½ï¿½ */
-#else                                 /*ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-    s2 s2_eprreql;                    /* lsb=1280/128/256,unit=kPa :ï¿½áˆ³ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
+#if JEPRDEMAND == u1g_EJCC_NOT_USE    /*y‰Â•Ï”Rˆ³§Œä–³z*/
+    s2 s2_eqfreq;                     /* lsb=512/128/256,unit=L/h :”R—¿ƒ|ƒ“ƒv“fo—¬—Ê */
+#else                                 /*y‰Â•Ï”Rˆ³§Œä—Lz*/
+    s2 s2_eprreql;                    /* lsb=1280/128/256,unit=kPa :’áˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
 #endif /* JEPRDEMAND */
-    u1 bi_exqinjast :1;               /* lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-    u1 bi_dummy     :7;               /* ï¿½_ï¿½~ï¿½[ */
-    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    u1 u1_explreq;                    /* lsb=1 :PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ */
+    u1 bi_exqinjast :1;               /* lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+    u1 bi_dummy     :7;               /* ƒ_ƒ~[ */
+    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    u1 u1_explreq;                    /* lsb=1 :PL•¬ËÀ{—v‹ */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*ï¿½yï¿½ï¿½ï¿½Ú°ï¿½Ş²ï¿½Şz*/
-    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*y½ÌßÚ°¶Ş²ÄŞz*/
+    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :–c’£s’ö•¬Ë—Ê */
 #endif /* JECOMBCCPT_E */
-    s4 s4_eqinjflfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-    s4 s4_eqinjplfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :PLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-    u1 u1_stepkcyl;                   /* lsb=1 :ï¿½Cï¿½ï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½i */
-    f4 f4_kqcyl[u1g_EJCC_NCYL];       /* unit=ï¿½{ :ï¿½Cï¿½ï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ */
+    s4 s4_eqinjflfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FLŒÅ’è•¬Ë—Ê */
+    s4 s4_eqinjplfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :PLŒÅ’è•¬Ë—Ê */
 } st_EMINJ_EMINJ_BUF;
 
-/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½\ï¿½ï¿½ï¿½ÌŒ^ */
+/* “¯«ƒf[ƒ^\‘¢‘ÌŒ^ */
 typedef struct
 {
-    u2 u2_einjmod;                    /* lsb=1 :ï¿½ï¿½ï¿½Ëƒï¿½ï¿½[ï¿½h */
-    u4 u4_einjptn;                    /* lsb=1 :ï¿½ï¿½ï¿½Ëƒpï¿½^ï¿½[ï¿½ï¿½ */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjpn[5];                 /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eainjpn[5];                 /* unit=BTDC :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_einjend;                    /* unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+    u2 u2_einjmod;                    /* lsb=1 :•¬Ëƒ‚[ƒh */
+    u4 u4_einjptn;                    /* lsb=1 :•¬Ëƒpƒ^[ƒ“ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjpn[5];                 /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒgn‰ñ–Ú•¬ËŠJnŠúi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+    f4 f4_eainjpn[5];                 /* unit=BTDC :ƒ|[ƒgn‰ñ–Ú•¬ËŠJnŠúi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+    s2 s2_einjend;                    /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
+    f4 f4_einjend;                    /* unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjdn[6];                 /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
-    f4 f4_eainjdn[6];                 /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½iï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjdn[6];                 /* lsb=1024/128/256,unit=BTDC :“›“àn‰ñ–Ú•¬ËŠJnŠúi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
+    f4 f4_eainjdn[6];                 /* unit=BTDC :“›“àn‰ñ–Ú•¬ËŠJnŠúi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
 #endif /* JEEFI */
-#if JEEFI == u1g_EJCC_PORT            /*ï¿½yï¿½ß°Äz*/
-    s2 s2_eainjpadd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
+#if JEEFI == u1g_EJCC_PORT            /*yÎß°Äz*/
+    s2 s2_eainjpadd;                  /* lsb=1024/128/256,unit=BTDC :ƒ|[ƒg’Ç‰Á•¬ËŠJnŠú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjdadd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjdadd;                  /* lsb=1024/128/256,unit=BTDC :“›“à’Ç‰Á•¬ËŠJnŠú */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s4 s4_eqinjstpn[5];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-    f4 f4_eqinjstpn[5];               /* unit=mg/st :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s4 s4_eqinjstpn[5];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒgn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+    f4 f4_eqinjstpn[5];               /* unit=mg/st :ƒ|[ƒgn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s4 s4_eqinjstdn[6];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
-    f4 f4_eqinjstdn[6];               /* unit=mg/st :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s4 s4_eqinjstdn[6];               /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“àn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
+    f4 f4_eqinjstdn[6];               /* unit=mg/st :“›“àn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
 #endif /* JEEFI */
-    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqfc[u1g_EJCC_NCYL];        /* unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ek1fn[u1g_EJCC_NOX];        /* unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ek2fn[u1g_EJCC_NOX];        /* unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ek3fn[u1g_EJCC_NOX];        /* unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    f4 f4_ekrchref[u1g_EJCC_NOX];     /* unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-    u1 bi_exqinjast :1;               /* lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-    u1 bi_dummy     :7;               /* ï¿½_ï¿½~ï¿½[ */
-    u1 u1_exqinjast;                  /* lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    u1 u1_explreq;                    /* lsb=1 :PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ */
+    s4 s4_eqfc[u1g_EJCC_NCYL];        /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FC’†•¬Ë—Ê */
+    f4 f4_eqfc[u1g_EJCC_NCYL];        /* unit=mg/st :FC’†•¬Ë—Ê */
+    s2 s2_ek1fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ek1fn[u1g_EJCC_NOX];        /* unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek2fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ek2fn[u1g_EJCC_NOX];        /* unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ek3fn[u1g_EJCC_NOX];        /* lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ek3fn[u1g_EJCC_NOX];        /* unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+    s2 s2_ekrchref[u1g_EJCC_NOX];     /* lsb=(32*2)/128/256,unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+    f4 f4_ekrchref[u1g_EJCC_NOX];     /* unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+    u1 bi_exqinjast :1;               /* lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+    u1 bi_dummy     :7;               /* ƒ_ƒ~[ */
+    u1 u1_exqinjast;                  /* lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    u1 u1_explreq;                    /* lsb=1 :PL•¬ËÀ{—v‹ */
 #endif /* JEEFI */
-#if JEEFI == u1g_EJCC_DUAL            /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-    s2 s2_ekpfit;                     /* lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-    f4 f4_ekpfit;                     /* unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-    s2 s2_ekpfitn[u1g_EJCC_NOX];      /* lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½ï¿½) */
-    f4 f4_ekpfitn[u1g_EJCC_NOX];      /* unit=ï¿½{ :ï¿½Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½ï¿½) */
+#if JEEFI == u1g_EJCC_DUAL            /*yÃŞ­±ÙINJz*/
+    s2 s2_ekpfit;                     /* lsb=(1*4)/128/256,unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+    f4 f4_ekpfit;                     /* unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+    s2 s2_ekpfitn[u1g_EJCC_NOX];      /* lsb=(1*4)/128/256,unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸•Ê) */
+    f4 f4_ekpfitn[u1g_EJCC_NOX];      /* unit=”{ :–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸•Ê) */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_ek1fpt;                     /* lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë‚Ì‚İ—vï¿½ï¿½ï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ */
-    f4 f4_ek1fpt;                     /* unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë‚Ì‚İ—vï¿½ï¿½ï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_ek1fpt;                     /* lsb=(1*4)/128/256,unit=”{ :Îß°Ä•¬Ë‚Ì‚İ—v‹‚Ì–Ú•WÎß°Ä1‰ñ–Ú•¬Ë—ÊZoŒW” */
+    f4 f4_ek1fpt;                     /* unit=”{ :Îß°Ä•¬Ë‚Ì‚İ—v‹‚Ì–Ú•WÎß°Ä1‰ñ–Ú•¬Ë—ÊZoŒW” */
 #endif /* JEEFI */
-#if JEEFI == u1g_EJCC_DUAL            /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
- #if JEEGR == u1g_EJCC_USE            /*ï¿½yEGRï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-    f4 f4_ekpfiegr;                   /* unit=ï¿½{ :EGR-ONï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-    f4 f4_ekpfiegrn[u1g_EJCC_NOX];    /* unit=ï¿½{ :EGR-ONï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½ï¿½) */
+#if JEEFI == u1g_EJCC_DUAL            /*yÃŞ­±ÙINJz*/
+ #if JEEGR == u1g_EJCC_USE            /*yEGR§Œä—Lz*/
+    f4 f4_ekpfiegr;                   /* unit=”{ :EGR-ON‚Ì–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+    f4 f4_ekpfiegrn[u1g_EJCC_NOX];    /* unit=”{ :EGR-ON‚Ì–Ú•WÎß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸•Ê) */
  #endif /* JEEGR */
 #endif /* JEEFI */
-#if JEEFI != u1g_EJCC_D4              /*ï¿½yD-4ï¿½ÈŠOï¿½z*/
-    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-    f4 f4_eainjcutp;                  /* unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if JEEFI != u1g_EJCC_D4              /*yD-4ˆÈŠOz*/
+    s2 s2_eainjcutp;                  /* lsb=1024/128/256,unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
+    f4 f4_eainjcutp;                  /* unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-    f4 f4_eainjcutd;                  /* unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)  /*yÃŞ­±ÙINJzORyD-4z*/
+    s2 s2_eainjcutd;                  /* lsb=1024/128/256,unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
+    f4 f4_eainjcutd;                  /* unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
 #endif /* JEEFI */
-#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*ï¿½yï¿½ï¿½ï¿½Ú°ï¿½Ş²ï¿½Şz*/
-    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-    f4 f4_eqinjexp;                   /* unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E /*y½ÌßÚ°¶Ş²ÄŞz*/
+    s4 s4_eqinjexp;                   /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :–c’£s’ö•¬Ë—Ê */
+    f4 f4_eqinjexp;                   /* unit=mg/st :–c’£s’ö•¬Ë—Ê */
 #endif /* JECOMBCCPT_E */
-    s4 s4_eqinjflfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-    f4 f4_eqinjflfix[8];              /* unit=mg/st :FLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-    s4 s4_eqinjplfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :PLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-    f4 f4_eqinjplfix[8];              /* unit=mg/st :PLï¿½Å’è•¬ï¿½Ë—ï¿½ */
+    s4 s4_eqinjflfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :FLŒÅ’è•¬Ë—Ê */
+    f4 f4_eqinjflfix[8];              /* unit=mg/st :FLŒÅ’è•¬Ë—Ê */
+    s4 s4_eqinjplfix[8];              /* lsb=(4096*1024)/128/256/256/256,unit=mg/st :PLŒÅ’è•¬Ë—Ê */
+    u1 u1_stepkcyl;                   /* lsb=1 :‹C“›•Ê•¬Ë—Ê•â³’i */
+    f4 f4_kqcyl[u1g_EJCC_NCYL];       /* unit=”{ :‹C“›•Ê•¬Ë—Ê•â³ŒW” */
+    f4 f4_eqinjplfix[8];              /* unit=mg/st :PLŒÅ’è•¬Ë—Ê */
 } st_EMINJ_EMINJ;
 
 /*-------------------------------------------------------------------*/
-/* ï¿½tï¿½ï¿½ï¿½[ï¿½|ï¿½[ï¿½gï¿½pï¿½wï¿½bï¿½_ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ÌƒCï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½[ï¿½h                        */
+/* ƒtƒŠ[ƒ|[ƒg—pƒwƒbƒ_ƒtƒ@ƒCƒ‹‚ÌƒCƒ“ƒNƒ‹[ƒh                        */
 /*-------------------------------------------------------------------*/
 #include <engsrc/eactmedi/einj/eminj_c.h>
 
 /*-------------------------------------------------------------------*/
-/* ï¿½Rï¿½ï¿½ï¿½pï¿½Cï¿½ï¿½SWï¿½ï¿½ï¿½ï¿½`ï¿½`ï¿½Fï¿½bï¿½N                                        */
+/* ƒRƒ“ƒpƒCƒ‹SW–¢’è‹`ƒ`ƒFƒbƒN                                        */
 /*-------------------------------------------------------------------*/
 #if !defined EMINJ_STAHV_MEDI
 #error "EMINJ_STAHV_MEDI is undeclared"
@@ -680,668 +683,668 @@ typedef struct
 #endif
 
 /*-------------------------------------------------------------------*/
-/* ï¿½}ï¿½Nï¿½ï¿½ï¿½ï¿½`                                                        */
+/* ƒ}ƒNƒ’è‹`                                                        */
 /*-------------------------------------------------------------------*/
-/* $$$ï¿½}ï¿½Nï¿½ï¿½ï¿½è”_ï¿½Wï¿½ï¿½_v4.11 */
+/* $$$ƒ}ƒNƒ’è”_•W€_v4.11 */
 
-#if (JEEFI == u1g_EJCC_D4)                                              /* ï¿½yD-4ï¿½z */
-#define u4g_EMINJ_INJPTN_VD ((u4)(0x00000000U))                         /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ–ï¿½ï¿½ï¿½ï¿½l */
+#if (JEEFI == u1g_EJCC_D4)                                              /* yD-4z */
+#define u4g_EMINJ_INJPTN_VD ((u4)(0x00000000U))                         /* m=eminj,lsb=,ofs=,unit= :•¬ËÊßÀ°İ‰Šú’l */
+
+#else                                                                   /* yD-4ˆÈŠOz */
+#define u4g_EMINJ_INJPTN_VD ((u4)(0x00000000U))                         /* m=eminj,lsb=,ofs=,unit= :•¬ËÊßÀ°İ‰Šú’l */
+#endif                                                                  /* JEEFI */
 
 /* Cylinder-specific injection correction constants (acw-16-a-t new) */
-#define u1g_EMINJ_STEPKCYL_VD                    0b11111111           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½ï¿½ï¿½ï¿½ï¿½l */
-#define s2g_EMINJ_KQCYL_VD                       1                    /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½l */
-#define s2s_EMINJ_KQCYL_MN                       0                    /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½l */
-#define s2s_EMINJ_KQCYL_MX                       2                    /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½l */
-#define u4g_EMINJ_RQSTEPKCYL                     0x00004000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQKQCYL                        0x00008000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u1g_EMINJ_STEPKCYL1                      0b10000000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i1ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL2                      0b01000000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i2ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL3                      0b00100000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i3ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL4                      0b00010000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i4ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL5                      0b00001000           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i5ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL6                      0b00000100           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i6ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL7                      0b00000010           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i7ï¿½iï¿½Új */
-#define u1g_EMINJ_STEPKCYL8                      0b00000001           /* ï¿½Cï¿½ï¿½ï¿½Ê•ï¿½ï¿½Ë—Ê•â³ï¿½iï¿½i8ï¿½iï¿½Új */
+#define u1g_EMINJ_STEPKCYL_VD                    0b11111111           /* ‹C“›•Ê•¬Ë—Ê•â³’i‚Ì‰Šú’l */
+#define s2g_EMINJ_KQCYL_VD                       1                    /* ‹C“›•Ê•¬Ë—Ê•â³ŒW”‚Ì‰Šú’l */
+#define s2s_EMINJ_KQCYL_MN                       0                    /* ‹C“›•Ê•¬Ë—Ê•â³ŒW”‚ÌÅ¬’l */
+#define s2s_EMINJ_KQCYL_MX                       2                    /* ‹C“›•Ê•¬Ë—Ê•â³ŒW”‚ÌÅ‘å’l */
+#define u4g_EMINJ_RQSTEPKCYL                     0x00004000           /* ‹C“›•Ê•¬Ë—Ê•â³’i‚Ì—v‹ƒtƒ‰ƒO */
+#define u4g_EMINJ_RQKQCYL                        0x00008000           /* ‹C“›•Ê•¬Ë—Ê•â³ŒW”‚Ì—v‹ƒtƒ‰ƒO */
+#define u1g_EMINJ_STEPKCYL1                      0b10000000           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ1’ij */
+#define u1g_EMINJ_STEPKCYL2                      0b01000000           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ2’ij */
+#define u1g_EMINJ_STEPKCYL3                      0b00100000           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ3’ij */
+#define u1g_EMINJ_STEPKCYL4                      0b00010000           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ4’ij */
+#define u1g_EMINJ_STEPKCYL5                      0b00001000           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ5’ij */
+#define u1g_EMINJ_STEPKCYL6                      0b00000100           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ6’ij */
+#define u1g_EMINJ_STEPKCYL7                      0b00000010           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ7’ij */
+#define u1g_EMINJ_STEPKCYL8                      0b00000001           /* ‹C“›•Ê•¬Ë—Ê•â³’ii‘æ8’ij */
 
-#else                                                                   /* ï¿½yD-4ï¿½ÈŠOï¿½z */
-#define u4g_EMINJ_INJPTN_VD ((u4)(0x00000000U))                         /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ–ï¿½ï¿½ï¿½ï¿½l */
-#endif                                                                  /* JEEFI */
+#define u1g_EMINJ_PRINORQ ((u1)(((0.)/(1.))+0.5))                       /* m=eminj,lsb=1,ofs=,unit=- :—Dæ—v‹–³‚µ”»’è’l */
+#define u1g_EMINJ_NONE_ID ((u1)(((0.)/(1.))+0.5))                       /* m=eminj,lsb=1,ofs=,unit=- :•¬Ë§Œä‚Ì—Dæ’²’â—v‹–³‚µID */
 
-#define u1g_EMINJ_PRINORQ ((u1)(((0.)/(1.))+0.5))                       /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Dï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½l */
-#define u1g_EMINJ_NONE_ID ((u1)(((0.)/(1.))+0.5))                       /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½Ì—Dï¿½æ’²ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ID */
-
-#if (JEMAT_BENCHI == u1g_EJCC_USE) || (JEMAT_BENCH_E == u1g_EJCC_USE)   /* ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½Ä—Lï¿½zORï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½Ó°ï¿½Ş—Lï¿½z */
-#define u1g_EMINJ_BENCH_ID ((u1)(((2.)/(1.))+0.5))                      /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½ï¿½Ë—vï¿½ï¿½(ID) */
+#if (JEMAT_BENCHI == u1g_EJCC_USE) || (JEMAT_BENCH_E == u1g_EJCC_USE)   /* yÍŞİÁ“K‡—p¿ÌÄ—LzORyÍŞİÁ“K‡Ó°ÄŞ—Lz */
+#define u1g_EMINJ_BENCH_ID ((u1)(((2.)/(1.))+0.5))                      /* m=eminj,lsb=1,ofs=,unit=- :ÍŞİÁ“K‡—p•¬Ë—v‹(ID) */
 #endif                                                                  /* JEMAT_BENCHI JEMAT_BENCH_E */
 
-#define u1g_EMINJ_EGSTPVS_ID ((u1)(((4.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ï¿½ï¿½Ë’ï¿½~(ID) */
+#define u1g_EMINJ_EGSTPVS_ID ((u1)(((4.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :•¬Ë’â~(ID) */
 
-#if JEEFI == u1g_EJCC_DUAL                                              /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z */
-#define u1g_EMINJ_DEFLAIR_ID ((u1)(((6.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Hï¿½ê´±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ID) */
+#if JEEFI == u1g_EJCC_DUAL                                              /* yÃŞ­±ÙINJz */
+#define u1g_EMINJ_DEFLAIR_ID ((u1)(((6.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :Hê´±”²‚«§Œä(ID) */
 #endif                                                                  /* JEEFI */
 
-#if (JEEGMG_E == u1g_EJCC_HVPLGR_E) || (JEEGMG_E == u1g_EJCC_HVDIRECT_E)    /* ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zORï¿½yEG-MGï¿½ï¿½ï¿½ï¿½ï¿½z */
-#define u1g_EMINJ_STPHV_ID ((u1)(((12.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :HVï¿½ï¿½~ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JEEGMG_E == u1g_EJCC_HVPLGR_E) || (JEEGMG_E == u1g_EJCC_HVDIRECT_E)    /* yEG-MG—V¯·Ş±zORyEG-MG’¼Œ‹z */
+#define u1g_EMINJ_STPHV_ID ((u1)(((12.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :HV’â~§Œä(ID) */
 #endif                                                                  /* JEEGMG_E */
 
-#if (JESS == u1g_EJCC_USE) || (JEEGMG_E == u1g_EJCC_HVCLUTCH_E)         /* ï¿½ySSï¿½ï¿½ï¿½ï¿½Lï¿½zORï¿½yEG-MGï¿½×¯ï¿½ï¿½z */
-#define u1g_EMINJ_STPSS_ID ((u1)(((14.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :SSï¿½ï¿½~ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JESS == u1g_EJCC_USE) || (JEEGMG_E == u1g_EJCC_HVCLUTCH_E)         /* ySS§Œä—LzORyEG-MG¸×¯Áz */
+#define u1g_EMINJ_STPSS_ID ((u1)(((14.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :SS’â~§Œä(ID) */
 #endif                                                                  /* JESS JEEGMG_E */
 
-#define u1g_EMINJ_RDNVES_ID ((u1)(((16.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½İ¼ï¿½İ’ï¿½~ï¿½Eï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÌUï¿½ï¿½ï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½(ID) */
+#define u1g_EMINJ_RDNVES_ID ((u1)(((16.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :´İ¼Şİ’â~En“®‚ÌU“®’áŒ¸§Œä(ID) */
 
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)                  /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-#define u1g_EMINJ_SJC_ID ((u1)(((20.)/(1.))+0.5))                       /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Gï¿½}ï¿½}ï¿½ï¿½ï¿½gï¿½@ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)                  /* yÃŞ­±ÙINJzORyD-4z */
+#define u1g_EMINJ_SJC_ID ((u1)(((20.)/(1.))+0.5))                       /* m=eminj,lsb=1,ofs=,unit=- :G”}‹}‘¬’g‹@§Œä(ID) */
 #endif                                                                  /* JEEFI */
 
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_WC_MEDI == ON)   /* ï¿½yALL HVï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_BINJPLCTR_WC_ID ((u1)(((22.)/(1.))+0.5))              /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½)(ID) */
+#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_WC_MEDI == ON)   /* yALL HVzANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(G”}’g‹@)—v‹g—pz */
+#define u1g_EMINJ_BINJPLCTR_WC_ID ((u1)(((22.)/(1.))+0.5))              /* m=eminj,lsb=1,ofs=,unit=- :Êß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(G”}’g‹@)(ID) */
 #endif                                                                  /* JEALLHV_E JEPLMLT_E EMINJ_BINJPLCTR_WC_MEDI */
 
-#if JEALLHV_E == u1g_EJCC_ALLHV_E                                       /* ï¿½yALL HVï¿½z */
-#define u1g_EMINJ_WUPCAT_ID ((u1)(((24.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½ï¿½ï¿½(ID) */
+#if JEALLHV_E == u1g_EJCC_ALLHV_E                                       /* yALL HVz */
+#define u1g_EMINJ_WUPCAT_ID ((u1)(((24.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :G”}’g‹@§Œä(ID) */
 #endif                                                                  /* JEALLHV_E */
 
-#if (JENGPF_E != u1g_EJCC_NOT_USE) && (EMINJ_FCFRCTRL_MEDI == ON)       /* ï¿½yGPFï¿½Lï¿½zANDï¿½y1ï¿½Cï¿½ï¿½FCï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FCFRCTRL_ID ((u1)(((26.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :1ï¿½Cï¿½ï¿½FCï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JENGPF_E != u1g_EJCC_NOT_USE) && (EMINJ_FCFRCTRL_MEDI == ON)       /* yGPF—LzANDy1‹C“›FC§Œä—v‹g—pz */
+#define u1g_EMINJ_FCFRCTRL_ID ((u1)(((26.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :1‹C“›FC§Œä(ID) */
 #endif                                                                  /* JENGPF_E EMINJ_FCFRCTRL_MEDI */
 
-#if ((JERMTCTR == u1g_EJCC_USE) || (JENVCTR == u1g_EJCC_USE)) && (JEMICN_E != u1g_EJCC_SUB_E) && (EMINJ_STACM_MEDI == ON)   /* (ï¿½yï¿½Ó°Äºï¿½ï¿½Û°Ù—Lï¿½zORï¿½yï¿½ï¿½Şºï¿½ï¿½Û°Ù—Lï¿½z)ANDï¿½ySUB-CPUï¿½ÈŠOï¿½zANDï¿½yï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½è§ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_STACM_ID ((u1)(((28.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½è§ï¿½ï¿½(ID) */
+#if ((JERMTCTR == u1g_EJCC_USE) || (JENVCTR == u1g_EJCC_USE)) && (JEMICN_E != u1g_EJCC_SUB_E) && (EMINJ_STACM_MEDI == ON)   /* (yØÓ°ÄºİÄÛ°Ù—LzORyÅËŞºİÄÛ°Ù—Lz)ANDySUB-CPUˆÈŠOzANDyn“®‚¯ã‚ª‚è§Œä—v‹g—pz */
+#define u1g_EMINJ_STACM_ID ((u1)(((28.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :n“®‚¯ã‚ª‚è§Œä(ID) */
 #endif                                                                  /* JERMTCTR JENVCTR JEMICN_E EMINJ_STACM_MEDI */
 
-#if (JESS == u1g_EJCC_USE) || (JEEGMG_E == u1g_EJCC_HVCLUTCH_E)         /* ï¿½ySSï¿½ï¿½ï¿½ï¿½Lï¿½zORï¿½yEG-MGï¿½×¯ï¿½ï¿½z */
-#define u1g_EMINJ_STASS_ID ((u1)(((30.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :SSï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JESS == u1g_EJCC_USE) || (JEEGMG_E == u1g_EJCC_HVCLUTCH_E)         /* ySS§Œä—LzORyEG-MG¸×¯Áz */
+#define u1g_EMINJ_STASS_ID ((u1)(((30.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :SSn“®§Œä(ID) */
 #endif                                                                  /* JESS JEEGMG_E */
 
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_PORT)         /* ï¿½yALL HVï¿½zANDï¿½yï¿½ß°Äz */
-#define u1g_EMINJ_RDPN_ST_ID ((u1)(((36.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :PNï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½(ï¿½nï¿½ï¿½ï¿½ï¿½)(ID) */
+#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_PORT)         /* yALL HVzANDyÎß°Äz */
+#define u1g_EMINJ_RDPN_ST_ID ((u1)(((36.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :PN’áŒ¸§Œä(n“®)(ID) */
 #endif                                                                  /* JEALLHV_E JEEFI */
 
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)                  /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-#define u1g_EMINJ_STRATIST_ID ((u1)(((42.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ï¿½ï¿½wï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)                  /* yÃŞ­±ÙINJzORyD-4z */
+#define u1g_EMINJ_STRATIST_ID ((u1)(((42.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :¬‘wn“®§Œä(ID) */
 #endif                                                                  /* JEEFI */
 
-#if JEEFI == u1g_EJCC_DUAL                                              /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z */
-#define u1g_EMINJ_STAFRG_ID ((u1)(((44.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½É’á‰·ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ID) */
+#if JEEFI == u1g_EJCC_DUAL                                              /* yÃŞ­±ÙINJz */
+#define u1g_EMINJ_STAFRG_ID ((u1)(((44.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :‹É’á‰·n“®§Œä(ID) */
 #endif                                                                  /* JEEFI */
 
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (EMINJ_STAHV_MEDI == ON)         /* ï¿½yALL HVï¿½zANDï¿½yHVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_STAHV_ID ((u1)(((46.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (EMINJ_STAHV_MEDI == ON)         /* yALL HVzANDyHVn“®§Œä—v‹g—pz */
+#define u1g_EMINJ_STAHV_ID ((u1)(((46.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :HVn“®§Œä(ID) */
 #endif                                                                  /* JEALLHV_E EMINJ_STAHV_MEDI */
 
-#if (JEEGMG_E == u1g_EJCC_HVPLGR_E) && (JEFFV == u1g_EJCC_NOT_USE) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_STAHV_MEDI == ON) /* ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zANDï¿½yFFVï¿½ï¿½ï¿½ä–³ï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ä)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_BINJPLCTR_STAHV_ID ((u1)(((48.)/(1.))+0.5))           /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ä)(ID) */
+#if (JEEGMG_E == u1g_EJCC_HVPLGR_E) && (JEFFV == u1g_EJCC_NOT_USE) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_STAHV_MEDI == ON) /* yEG-MG—V¯·Ş±zANDyFFV§Œä–³zANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(HVn“®§Œä)—v‹g—pz */
+#define u1g_EMINJ_BINJPLCTR_STAHV_ID ((u1)(((48.)/(1.))+0.5))           /* m=eminj,lsb=1,ofs=,unit=- :Êß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(HVn“®§Œä)(ID) */
 #endif                                                                  /* JEEGMG_E JEFFV JEPLMLT_E EMINJ_BINJPLCTR_STAHV_MEDI */
 
-#define u1g_EMINJ_FCINJCTR_ID ((u1)(((50.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :FCï¿½ï¿½ï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ID) */
+#define u1g_EMINJ_FCINJCTR_ID ((u1)(((50.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :FC’†”R—¿•¬Ë§Œä(ID) */
 #if JEGORO_E == u1g_EJCC_USE   /* GORO noise countermeasure ID */
-#define u1g_EMINJ_GORO_ID                 ((u1)(100))         /* ï¿½ï¿½Ûºï¿½Û‰ï¿½ï¿½Îï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½(ID) */
+#define u1g_EMINJ_GORO_ID                 ((u1)(100))         /* ƒSƒƒSƒ‰¹‘ÎôÀŒ»•”—v‹(ID) */
 #endif                                                                  /* JEGORO_E */
 
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI != u1g_EJCC_D4)           /* ï¿½yALL HVï¿½zANDï¿½yD-4ï¿½ÈŠOï¿½z */
-#define u1g_EMINJ_RDPN_ID ((u1)(((52.)/(1.))+0.5))                      /* m=eminj,lsb=1,ofs=,unit=- :PNï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½(ID) */
+#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI != u1g_EJCC_D4)           /* yALL HVzANDyD-4ˆÈŠOz */
+#define u1g_EMINJ_RDPN_ID ((u1)(((52.)/(1.))+0.5))                      /* m=eminj,lsb=1,ofs=,unit=- :PN’áŒ¸§Œä(ID) */
 #endif                                                                  /* JEALLHV_E JEEFI */
 
-#if JEEFI == u1g_EJCC_DUAL                                              /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z */
-#define u1g_EMINJ_DTHRCTRL_ID ((u1)(((64.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Ş¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+#if JEEFI == u1g_EJCC_DUAL                                              /* yÃŞ­±ÙINJz */
+#define u1g_EMINJ_DTHRCTRL_ID ((u1)(((64.)/(1.))+0.5))                  /* m=eminj,lsb=1,ofs=,unit=- :‹C“›•ÊÃŞ¨»Ş§Œä(ID) */
 #endif                                                                  /* JEEFI */
 
-#if ((JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)) && (EMINJ_ACTLFG_MEDI == ON)   /* (ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z)ANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ÄŠwï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_ACTLFG_ID ((u1)(((66.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ÄŠwï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+#if ((JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)) && (EMINJ_ACTLFG_MEDI == ON)   /* (yÃŞ­±ÙINJzORyD-4z)ANDyÊß°¼¬ÙØÌÄŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä—v‹g—pz */
+#define u1g_EMINJ_ACTLFG_ID ((u1)(((66.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :Êß°¼¬ÙØÌÄŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä(ID) */
 #endif                                                                  /* JEEFI EMINJ_ACTLFG_MEDI */
 
-#if JEEFI == u1g_EJCC_DUAL                                              /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z */
- #if EMINJ_ACTOBD_MEDI == ON                                            /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_ACTOBD_ID ((u1)(((76.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+#if JEEFI == u1g_EJCC_DUAL                                              /* yÃŞ­±ÙINJz */
+ #if EMINJ_ACTOBD_MEDI == ON                                            /* yÃŞ­±ÙINJzANDyOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz */
+#define u1g_EMINJ_ACTOBD_ID ((u1)(((76.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä(ID) */
  #endif                                                                 /* EMINJ_ACTOBD_MEDI */
 
-#define u1g_EMINJ_ACTGAF_ID ((u1)(((84.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :A/Fï¿½wï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+#define u1g_EMINJ_ACTGAF_ID ((u1)(((84.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :A/FŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä(ID) */
 
- #if (JEOBDAFIMB_D == u1g_EJCC_USE) && (EMINJ_IMBRQ_MEDI == ON)         /* ï¿½yAFï¿½Cï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½İ½ï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½İ½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_IMBRQ_ID ((u1)(((78.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ï¿½ï¿½ï¿½ï¿½İ½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+ #if (JEOBDAFIMB_D == u1g_EJCC_USE) && (EMINJ_IMBRQ_MEDI == ON)         /* yAF‹C“›ŠÔ²İÊŞ×İ½—LzANDyÃŞ­±ÙINJzANDy²İÊŞ×İ½OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz */
+#define u1g_EMINJ_IMBRQ_ID ((u1)(((78.)/(1.))+0.5))                     /* m=eminj,lsb=1,ofs=,unit=- :²İÊŞ×İ½OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä(ID) */
  #endif                                                                 /* JEOBDAFIMB_D EMINJ_IMBRQ_MEDI */
 
- #if (JEOBDMF == u1g_EJCC_USE) && (EMINJ_MFINJRQ_MEDI == ON)            /* ï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_MFINJRQ_ID ((u1)(((80.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ï¿½ï¿½ï¿½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+ #if (JEOBDMF == u1g_EJCC_USE) && (EMINJ_MFINJRQ_MEDI == ON)            /* y¸‰ÎOBD—LzANDyÃŞ­±ÙINJzANDy¸‰ÎOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz */
+#define u1g_EMINJ_MFINJRQ_ID ((u1)(((80.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :¸‰ÎOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä(ID) */
  #endif                                                                 /* JEOBDMF EMINJ_MFINJRQ_MEDI */
 
- #if (JEOBDFKG == u1g_EJCC_USE) && (EMINJ_FKGDRQ_MEDI == ON)            /* ï¿½yï¿½Rï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½Rï¿½ï¿½ï¿½nOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FKGDRQ_ID ((u1)(((82.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Rï¿½ï¿½ï¿½nOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½(ID) */
+ #if (JEOBDFKG == u1g_EJCC_USE) && (EMINJ_FKGDRQ_MEDI == ON)            /* y”R—¿OBD—LzANDyÃŞ­±ÙINJzANDy”R—¿ŒnOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz */
+#define u1g_EMINJ_FKGDRQ_ID ((u1)(((82.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :”R—¿ŒnOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä(ID) */
  #endif                                                                 /* JEOBDFKG EMINJ_FKGDRQ_MEDI */
 #endif                                                                  /* JEEFI */
 
-#if (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_MEDI == ON)         /* ï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_BINJPLCTR_ID ((u1)(((98.)/(1.))+0.5))                 /* m=eminj,lsb=1,ofs=,unit=- :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ID) */
+#if (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_MEDI == ON)         /* yPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä—v‹g—pz */
+#define u1g_EMINJ_BINJPLCTR_ID ((u1)(((98.)/(1.))+0.5))                 /* m=eminj,lsb=1,ofs=,unit=- :Êß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(ID) */
 #endif                                                                  /* JEPLMLT_E EMINJ_BINJPLCTR_MEDI */
 
-#if EMINJ_FREE0 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½0ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE0_ID ((u1)(((200.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½0ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE0 == ON                                                   /* yÌØ°Îß°Ä0g—pz */
+#define u1g_EMINJ_FREE0_ID ((u1)(((200.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä0—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE0 */
 
-#if EMINJ_FREE1 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½1ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE1_ID ((u1)(((201.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½1ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE1 == ON                                                   /* yÌØ°Îß°Ä1g—pz */
+#define u1g_EMINJ_FREE1_ID ((u1)(((201.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä1—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE1 */
 
-#if EMINJ_FREE2 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½2ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE2_ID ((u1)(((202.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½2ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE2 == ON                                                   /* yÌØ°Îß°Ä2g—pz */
+#define u1g_EMINJ_FREE2_ID ((u1)(((202.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä2—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE2 */
 
-#if EMINJ_FREE3 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½3ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE3_ID ((u1)(((203.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½3ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE3 == ON                                                   /* yÌØ°Îß°Ä3g—pz */
+#define u1g_EMINJ_FREE3_ID ((u1)(((203.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä3—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE3 */
 
-#if EMINJ_FREE4 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½4ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE4_ID ((u1)(((204.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½4ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE4 == ON                                                   /* yÌØ°Îß°Ä4g—pz */
+#define u1g_EMINJ_FREE4_ID ((u1)(((204.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä4—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE4 */
 
-#if EMINJ_FREE5 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½5ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE5_ID ((u1)(((205.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½5ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE5 == ON                                                   /* yÌØ°Îß°Ä5g—pz */
+#define u1g_EMINJ_FREE5_ID ((u1)(((205.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä5—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE5 */
 
-#if EMINJ_FREE6 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½6ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE6_ID ((u1)(((206.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½6ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE6 == ON                                                   /* yÌØ°Îß°Ä6g—pz */
+#define u1g_EMINJ_FREE6_ID ((u1)(((206.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä6—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE6 */
 
-#if EMINJ_FREE7 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½7ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE7_ID ((u1)(((207.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½7ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE7 == ON                                                   /* yÌØ°Îß°Ä7g—pz */
+#define u1g_EMINJ_FREE7_ID ((u1)(((207.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä7—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE7 */
 
-#if EMINJ_FREE8 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½8ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE8_ID ((u1)(((208.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½8ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE8 == ON                                                   /* yÌØ°Îß°Ä8g—pz */
+#define u1g_EMINJ_FREE8_ID ((u1)(((208.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä8—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE8 */
 
-#if EMINJ_FREE9 == ON                                                   /* ï¿½yï¿½Ø°ï¿½ß°ï¿½9ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE9_ID ((u1)(((209.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½9ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE9 == ON                                                   /* yÌØ°Îß°Ä9g—pz */
+#define u1g_EMINJ_FREE9_ID ((u1)(((209.)/(1.))+0.5))                    /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä9—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE9 */
 
-#if EMINJ_FREE10 == ON                                                  /* ï¿½yï¿½Ø°ï¿½ß°ï¿½10ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE10_ID ((u1)(((210.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½10ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE10 == ON                                                  /* yÌØ°Îß°Ä10g—pz */
+#define u1g_EMINJ_FREE10_ID ((u1)(((210.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä10—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE10 */
 
-#if EMINJ_FREE11 == ON                                                  /* ï¿½yï¿½Ø°ï¿½ß°ï¿½11ï¿½gï¿½pï¿½z */
-#define u1g_EMINJ_FREE11_ID ((u1)(((211.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :ï¿½Ø°ï¿½ß°ï¿½11ï¿½pï¿½ï¿½ï¿½ï¿½(ID) */
+#if EMINJ_FREE11 == ON                                                  /* yÌØ°Îß°Ä11g—pz */
+#define u1g_EMINJ_FREE11_ID ((u1)(((211.)/(1.))+0.5))                   /* m=eminj,lsb=1,ofs=,unit=- :ÌØ°Îß°Ä11—p§Œä(ID) */
 #endif                                                                  /* EMINJ_FREE11 */
 
-#define u4g_EMINJ_RQID_VD ((u4)(0x00000000U))                           /* m=eminj,lsb=,ofs=,unit= :ï¿½vï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½Êqï¿½ï¿½ï¿½ï¿½ï¿½l */
-#define u4g_EMINJ_RQINJMODE ((u4)(0x00000001U))                         /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½Ó°ï¿½Ş—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQINJPTN ((u4)(0x00000002U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJP1 ((u4)(0x00000002U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJPN ((u4)(0x00000004U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Lï¿½iï¿½ï¿½ï¿½Ë–ï¿½ï¿½j */
-#define u4g_EMINJ_RQAINJP2 ((u4)(0x00000004U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJDN ((u4)(0x00000008U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Lï¿½iï¿½ï¿½ï¿½Ë–ï¿½ï¿½j */
-#define u4g_EMINJ_RQAINJP3 ((u4)(0x00000008U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJP4 ((u4)(0x00000010U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQINJEND ((u4)(0x00000020U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°Ä•ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJCUTP ((u4)(0x00000040U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ */
-#define u4g_EMINJ_RQAINJCUTD ((u4)(0x00000080U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ */
-#define u4g_EMINJ_RQAINJD1 ((u4)(0x00000100U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJD2 ((u4)(0x00000200U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJD3 ((u4)(0x00000008U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJD4 ((u4)(0x00000010U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTPN ((u4)(0x00000400U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½Lï¿½iï¿½ï¿½ï¿½Ë–ï¿½ï¿½j */
-#define u4g_EMINJ_RQQINJSTP1 ((u4)(0x00000400U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTDN ((u4)(0x00000800U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½Lï¿½iï¿½ï¿½ï¿½Ë–ï¿½ï¿½j */
-#define u4g_EMINJ_RQQINJSTP2 ((u4)(0x00000800U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJFLFIX ((u4)(0x00001000U))                       /* m=eminj,lsb=,ofs=,unit= :FLï¿½Å’è•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½Lï¿½iï¿½ï¿½ï¿½Ë–ï¿½ï¿½j */
-#define u4g_EMINJ_RQQINJSTP3 ((u4)(0x00001000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJPLFIX ((u4)(0x00002000U))                       /* m=eminj,lsb=,ofs=,unit= :PLï¿½Å’è•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½Lï¿½iï¿½ï¿½ï¿½Ë–ï¿½ï¿½j */
-#define u4g_EMINJ_RQQINJSTP4 ((u4)(0x00002000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTD1 ((u4)(0x00004000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTD2 ((u4)(0x00008000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTD3 ((u4)(0x00001000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTD4 ((u4)(0x00002000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQFC ((u4)(0x00010000U))                             /* m=eminj,lsb=,ofs=,unit= :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJEXP ((u4)(0x00020000U))                         /* m=eminj,lsb=,ofs=,unit= :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQK1FN ((u4)(0x00040000U))                            /* m=eminj,lsb=,ofs=,unit= :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L(ï¿½ï¿½İ¸ï¿½ï¿½) */
-#define u4g_EMINJ_RQK2FN ((u4)(0x00080000U))                            /* m=eminj,lsb=,ofs=,unit= :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L(ï¿½ï¿½İ¸ï¿½ï¿½) */
-#define u4g_EMINJ_RQK3FN ((u4)(0x00100000U))                            /* m=eminj,lsb=,ofs=,unit= :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L(ï¿½ï¿½İ¸ï¿½ï¿½) */
-#define u4g_EMINJ_RQK1F ((u4)(0x00200000U))                             /* m=eminj,lsb=,ofs=,unit= :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQK2F ((u4)(0x00400000U))                             /* m=eminj,lsb=,ofs=,unit= :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQK3F ((u4)(0x00800000U))                             /* m=eminj,lsb=,ofs=,unit= :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQPRREQ ((u4)(0x01000000U))                           /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß–Ú•Wï¿½Rï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQFREQ ((u4)(0x02000000U))                           /* m=eminj,lsb=,ofs=,unit= :ï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß“fï¿½oï¿½Ê—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQPRREQL ((u4)(0x04000000U))                          /* m=eminj,lsb=,ofs=,unit= :ï¿½áˆ³ï¿½ï¿½ï¿½ï¿½ß–Ú•Wï¿½Rï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQXQINJAST ((u4)(0x08000000U))                        /* m=eminj,lsb=,ofs=,unit= :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½×¸Ş—vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQKRCHREF ((u4)(0x10000000U))                         /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQPLREQ ((u4)(0x20000000U))                           /* m=eminj,lsb=,ofs=,unit= :PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQAINJP ((u4)(0x40000000U))                           /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°Ä•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½L */
-#define u4g_EMINJ_RQQINJSTP ((u4)(0x80000000U))                         /* m=eminj,lsb=,ofs=,unit= :ï¿½ß°Änï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
+#define u4g_EMINJ_RQID_VD ((u4)(0x00000000U))                           /* m=eminj,lsb=,ofs=,unit= :—v‹—L¯•Êq–³Œø’l */
+#define u4g_EMINJ_RQINJMODE ((u4)(0x00000001U))                         /* m=eminj,lsb=,ofs=,unit= :•¬ËÓ°ÄŞ—v‹—L */
+#define u4g_EMINJ_RQINJPTN ((u4)(0x00000002U))                          /* m=eminj,lsb=,ofs=,unit= :•¬ËÊßÀ°İ—v‹—L */
+#define u4g_EMINJ_RQAINJP1 ((u4)(0x00000002U))                          /* m=eminj,lsb=,ofs=,unit= :Îß°Ä1‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQAINJPN ((u4)(0x00000004U))                          /* m=eminj,lsb=,ofs=,unit= :Îß°Än‰ñ–Ú•¬ËŠJnŠú—v‹—Li•¬Ë–ˆj */
+#define u4g_EMINJ_RQAINJP2 ((u4)(0x00000004U))                          /* m=eminj,lsb=,ofs=,unit= :Îß°Ä2‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQAINJDN ((u4)(0x00000008U))                          /* m=eminj,lsb=,ofs=,unit= :“›“àn‰ñ–Ú•¬ËŠJnŠú—v‹—Li•¬Ë–ˆj */
+#define u4g_EMINJ_RQAINJP3 ((u4)(0x00000008U))                          /* m=eminj,lsb=,ofs=,unit= :Îß°Ä3‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQAINJP4 ((u4)(0x00000010U))                          /* m=eminj,lsb=,ofs=,unit= :Îß°Ä4‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQINJEND ((u4)(0x00000020U))                          /* m=eminj,lsb=,ofs=,unit= :Îß°Ä•¬ËI—¹Šú—v‹—L */
+#define u4g_EMINJ_RQAINJCUTP ((u4)(0x00000040U))                        /* m=eminj,lsb=,ofs=,unit= :Îß°Ä•¬Ë‹­§¶¯ÄŠú—v‹ */
+#define u4g_EMINJ_RQAINJCUTD ((u4)(0x00000080U))                        /* m=eminj,lsb=,ofs=,unit= :“›“à•¬Ë‹­§¶¯ÄŠú—v‹ */
+#define u4g_EMINJ_RQAINJD1 ((u4)(0x00000100U))                          /* m=eminj,lsb=,ofs=,unit= :“›“à1‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQAINJD2 ((u4)(0x00000200U))                          /* m=eminj,lsb=,ofs=,unit= :“›“à2‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQAINJD3 ((u4)(0x00000008U))                          /* m=eminj,lsb=,ofs=,unit= :“›“à3‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQAINJD4 ((u4)(0x00000010U))                          /* m=eminj,lsb=,ofs=,unit= :“›“à4‰ñ–Ú•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQQINJSTPN ((u4)(0x00000400U))                        /* m=eminj,lsb=,ofs=,unit= :Îß°Än‰ñ–Ún“®•¬Ë—Ê—v‹—Li•¬Ë–ˆj */
+#define u4g_EMINJ_RQQINJSTP1 ((u4)(0x00000400U))                        /* m=eminj,lsb=,ofs=,unit= :Îß°Ä1‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJSTDN ((u4)(0x00000800U))                        /* m=eminj,lsb=,ofs=,unit= :“›“àn‰ñ–Ún“®•¬Ë—Ê—v‹—Li•¬Ë–ˆj */
+#define u4g_EMINJ_RQQINJSTP2 ((u4)(0x00000800U))                        /* m=eminj,lsb=,ofs=,unit= :Îß°Ä2‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJFLFIX ((u4)(0x00001000U))                       /* m=eminj,lsb=,ofs=,unit= :FLŒÅ’è•¬Ë—Ê—v‹—Li•¬Ë–ˆj */
+#define u4g_EMINJ_RQQINJSTP3 ((u4)(0x00001000U))                        /* m=eminj,lsb=,ofs=,unit= :Îß°Ä3‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJPLFIX ((u4)(0x00002000U))                       /* m=eminj,lsb=,ofs=,unit= :PLŒÅ’è•¬Ë—Ê—v‹—Li•¬Ë–ˆj */
+#define u4g_EMINJ_RQQINJSTP4 ((u4)(0x00002000U))                        /* m=eminj,lsb=,ofs=,unit= :Îß°Ä4‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJSTD1 ((u4)(0x00004000U))                        /* m=eminj,lsb=,ofs=,unit= :“›“à1‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJSTD2 ((u4)(0x00008000U))                        /* m=eminj,lsb=,ofs=,unit= :“›“à2‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJSTD3 ((u4)(0x00001000U))                        /* m=eminj,lsb=,ofs=,unit= :“›“à3‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJSTD4 ((u4)(0x00002000U))                        /* m=eminj,lsb=,ofs=,unit= :“›“à4‰ñ–Ún“®•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQFC ((u4)(0x00010000U))                             /* m=eminj,lsb=,ofs=,unit= :FC’†•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQQINJEXP ((u4)(0x00020000U))                         /* m=eminj,lsb=,ofs=,unit= :–c’£s’ö•¬Ë—Ê—v‹—L */
+#define u4g_EMINJ_RQK1FN ((u4)(0x00040000U))                            /* m=eminj,lsb=,ofs=,unit= :1‰ñ–Ú•¬Ë—ÊZoŒW”—v‹—L(ÊŞİ¸•Ê) */
+#define u4g_EMINJ_RQK2FN ((u4)(0x00080000U))                            /* m=eminj,lsb=,ofs=,unit= :2‰ñ–Ú•¬Ë—ÊZoŒW”—v‹—L(ÊŞİ¸•Ê) */
+#define u4g_EMINJ_RQK3FN ((u4)(0x00100000U))                            /* m=eminj,lsb=,ofs=,unit= :3‰ñ–Ú•¬Ë—ÊZoŒW”—v‹—L(ÊŞİ¸•Ê) */
+#define u4g_EMINJ_RQK1F ((u4)(0x00200000U))                             /* m=eminj,lsb=,ofs=,unit= :1‰ñ–Ú•¬Ë—ÊZoŒW”—v‹—L */
+#define u4g_EMINJ_RQK2F ((u4)(0x00400000U))                             /* m=eminj,lsb=,ofs=,unit= :2‰ñ–Ú•¬Ë—ÊZoŒW”—v‹—L */
+#define u4g_EMINJ_RQK3F ((u4)(0x00800000U))                             /* m=eminj,lsb=,ofs=,unit= :3‰ñ–Ú•¬Ë—ÊZoŒW”—v‹—L */
+#define u4g_EMINJ_RQPRREQ ((u4)(0x01000000U))                           /* m=eminj,lsb=,ofs=,unit= :‚ˆ³ÎßİÌß–Ú•W”Rˆ³—v‹—L */
+#define u4g_EMINJ_RQQFREQ ((u4)(0x02000000U))                           /* m=eminj,lsb=,ofs=,unit= :”R—¿ÎßİÌß“fo—Ê—v‹—L */
+#define u4g_EMINJ_RQPRREQL ((u4)(0x04000000U))                          /* m=eminj,lsb=,ofs=,unit= :’áˆ³ÎßİÌß–Ú•W”Rˆ³—v‹—L */
+#define u4g_EMINJ_RQXQINJAST ((u4)(0x08000000U))                        /* m=eminj,lsb=,ofs=,unit= :n“®Œã•¬Ë—Ê—v‹Ì×¸Ş—v‹—L */
+#define u4g_EMINJ_RQKRCHREF ((u4)(0x10000000U))                         /* m=eminj,lsb=,ofs=,unit= :•¬Ë—Ê•â³ŒW”—v‹—L */
+#define u4g_EMINJ_RQPLREQ ((u4)(0x20000000U))                           /* m=eminj,lsb=,ofs=,unit= :PL•¬ËÀ{—v‹—L */
+#define u4g_EMINJ_RQAINJP ((u4)(0x40000000U))                           /* m=eminj,lsb=,ofs=,unit= :Îß°Ä•¬ËŠJnŠú—v‹—L */
+#define u4g_EMINJ_RQQINJSTP ((u4)(0x80000000U))                         /* m=eminj,lsb=,ofs=,unit= :Îß°Än“®•¬Ë—Ê—v‹—L */
 
-#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)                  /* ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z */
-#define u2g_EMINJ_MOD0N1 ((u2)(0x0081U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½) */
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)                  /* yÃŞ­±ÙINJzORyD-4z */
+#define u2g_EMINJ_MOD0N1 ((u2)(0x0081U))                                /* m=eminj,lsb=,ofs=,unit= :“›“à•¬ËN‰ñ(“Áê—v‹) */
 #endif                                                                  /* JEEFI */
 
-#define u2g_EMINJ_MOD002 ((u2)(0x0002U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëiï¿½Gï¿½}ï¿½}ï¿½ï¿½ï¿½gï¿½@ï¿½j */
-#define u2g_EMINJ_MOD003 ((u2)(0x0003U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëiï¿½ï¿½ï¿½wï¿½nï¿½ï¿½ï¿½j */
-#define u2g_EMINJ_MOD004 ((u2)(0x0004U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½Rï¿½ÄŒï¿½ï¿½ã¬ï¿½wï¿½Rï¿½Äï¿½ï¿½ï¿½ */
-#define u2g_EMINJ_MOD005 ((u2)(0x0005U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëiï¿½Gï¿½}ï¿½}ï¿½ï¿½ï¿½gï¿½@ï¿½Fï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ëj */
-#define u2g_EMINJ_MOD006 ((u2)(0x0006U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëiï¿½ï¿½ï¿½wï¿½nï¿½ï¿½ï¿½Fï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ëj */
-#define u2g_EMINJ_MOD007 ((u2)(0x0007U))                                /* m=eminj,lsb=,ofs=,unit= :ï¿½Cï¿½ÓŒÅ’ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-/* $$$ï¿½}ï¿½Nï¿½ï¿½ï¿½è”_ï¿½Wï¿½ï¿½_v4.11 */
+#define u2g_EMINJ_MOD002 ((u2)(0x0002U))                                /* m=eminj,lsb=,ofs=,unit= :“›“à•¬ËiG”}‹}‘¬’g‹@j */
+#define u2g_EMINJ_MOD003 ((u2)(0x0003U))                                /* m=eminj,lsb=,ofs=,unit= :“›“à•¬Ëi¬‘wn“®j */
+#define u2g_EMINJ_MOD004 ((u2)(0x0004U))                                /* m=eminj,lsb=,ofs=,unit= :”RÄŒüã¬‘w”RÄ§Œä */
+#define u2g_EMINJ_MOD005 ((u2)(0x0005U))                                /* m=eminj,lsb=,ofs=,unit= :“›“à•¬ËiG”}‹}‘¬’g‹@F–c’£s’ö•¬Ëj */
+#define u2g_EMINJ_MOD006 ((u2)(0x0006U))                                /* m=eminj,lsb=,ofs=,unit= :“›“à•¬Ëi¬‘wn“®F–c’£s’ö•¬Ëj */
+#define u2g_EMINJ_MOD007 ((u2)(0x0007U))                                /* m=eminj,lsb=,ofs=,unit= :”CˆÓŒÅ’èÏÙÁ•¬Ë */
+/* $$$ƒ}ƒNƒ’è”_•W€_v4.11 */
 
 /*-------------------------------------------------------------------*/
-/* ï¿½Öï¿½                                                              */
+/* ŠÖ”                                                              */
 /*-------------------------------------------------------------------*/
-void vdg_eminj_pwon( void );            /* ï¿½ï¿½ï¿½ï¿½ï¿½lï¿½İ’ï¿½ */
-                                        /* ï¿½Rï¿½[ï¿½ï¿½ï¿½ï¿½ : vdg_elmng_pwon() */
-                                        /* ï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : vdg_emprlp_pwon()ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-                                        /*            : vdg_ebinjctr_pwon_seq()ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-void vdg_eminj_8msm( void );            /* ï¿½ï¿½ï¿½Ë—vï¿½ï¿½ï¿½Ì’ï¿½ï¿½âˆï¿½ï¿½ */
-                                        /* ï¿½Rï¿½[ï¿½ï¿½ï¿½ï¿½ : vdg_elmng_8msm() */
-
-void vdg_eminj_einj_dataget( st_EMINJ_EINJ *ptt_retval );   /* ï¿½ï¿½ï¿½Ëï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½\ï¿½ï¿½ï¿½ï¿½1ï¿½j */
-                                                            /* ï¿½Rï¿½[ï¿½ï¿½ï¿½ï¿½ :ï¿½ï¿½ï¿½ï¿½SACï¿½AAPL */
-                                                            /* ï¿½ï¿½ï¿½ï¿½ ptt_retval :ï¿½ï¿½ï¿½Ëï¿½ï¿½æ“¾ï¿½oï¿½bï¿½tï¿½@ï¿½iï¿½\ï¿½ï¿½ï¿½ï¿½1ï¿½jï¿½ÌƒAï¿½hï¿½ï¿½ï¿½X */
-
-void vdg_eminj_eminj_dataget( st_EMINJ_EMINJ *ptt_retval ); /* ï¿½ï¿½ï¿½Ëï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½\ï¿½ï¿½ï¿½ï¿½2ï¿½j */
-                                                            /* ï¿½Rï¿½[ï¿½ï¿½ï¿½ï¿½ :ï¿½ï¿½ï¿½ï¿½SACï¿½AAPL */
-                                                            /* ï¿½ï¿½ï¿½ï¿½ ptt_retval :ï¿½ï¿½ï¿½Ëï¿½ï¿½æ“¾ï¿½oï¿½bï¿½tï¿½@ï¿½iï¿½\ï¿½ï¿½ï¿½ï¿½2ï¿½jï¿½ÌƒAï¿½hï¿½ï¿½ï¿½X */
-
-/*-------------------------------------------------------------------*/
-/* ï¿½ï¿½ï¿½Jï¿½Ïï¿½                                                          */
-/*-------------------------------------------------------------------*/
-extern st_EMINJ_EINJ stg_eminj_einj;                        /* ï¿½ï¿½ï¿½Ë•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ */
-#define u2g_eminj_einjmod   (stg_eminj_einj.u2_einjmod)     /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½Ëƒï¿½ï¿½[ï¿½h */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-#define s2g_eminj_eainjp1   (stg_eminj_einj.s2_eainjp1)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjp1   (stg_eminj_einj.f4_eainjp1)     /* m=eminj,unit=BTDC :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s2g_eminj_eainjp2   (stg_eminj_einj.s2_eainjp2)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjp2   (stg_eminj_einj.f4_eainjp2)     /* m=eminj,unit=BTDC :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s2g_eminj_eainjp3   (stg_eminj_einj.s2_eainjp3)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjp3   (stg_eminj_einj.f4_eainjp3)     /* m=eminj,unit=BTDC :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s2g_eminj_eainjp4   (stg_eminj_einj.s2_eainjp4)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjp4   (stg_eminj_einj.f4_eainjp4)     /* m=eminj,unit=BTDC :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s2g_eminj_einjend   (stg_eminj_einj.s2_einjend)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-extern f4 f4g_eminj_einjend;                                /* m=eminj,unit=BTDC :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½ËIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-                                                            /*          : ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½é•”ï¿½iï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ï‚ï¿½é‚½ï¿½ï¿½f4ï¿½^ï¿½Ïï¿½ï¿½Íƒ}ï¿½Nï¿½ï¿½ï¿½ï¿½`ï¿½Ö‚Ì•ÏXï¿½Ö~ */
-
-#define s2g_eminj_eainjcutp (stg_eminj_einj.s2_eainjcutp)   /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjcutp (stg_eminj_einj.f4_eainjcutp)   /* m=eminj,unit=BTDC :ï¿½ß°Ä•ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s2g_eminj_eainjd1   (stg_eminj_einj.s2_eainjd1)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjd1   (stg_eminj_einj.f4_eainjd1)     /* m=eminj,unit=BTDC :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-#define s2g_eminj_eainjd2   (stg_eminj_einj.s2_eainjd2)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjd2   (stg_eminj_einj.f4_eainjd2)     /* m=eminj,unit=BTDC :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-#define s2g_eminj_eainjd3   (stg_eminj_einj.s2_eainjd3)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjd3   (stg_eminj_einj.f4_eainjd3)     /* m=eminj,unit=BTDC :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-#define s2g_eminj_eainjd4   (stg_eminj_einj.s2_eainjd4)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjd4   (stg_eminj_einj.f4_eainjd4)     /* m=eminj,unit=BTDC :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-#define s2g_eminj_eainjcutd (stg_eminj_einj.s2_eainjcutd)   /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-#define f4g_eminj_eainjcutd (stg_eminj_einj.f4_eainjcutd)   /* m=eminj,unit=BTDC :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë‹ï¿½ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-#define s4g_eminj_eqinjstp1 (stg_eminj_einj.s4_eqinjstp1)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-#define f4g_eminj_eqinjstp1 (stg_eminj_einj.f4_eqinjstp1)   /* m=eminj,unit=mg/st :ï¿½|ï¿½[ï¿½g1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s4g_eminj_eqinjstp2 (stg_eminj_einj.s4_eqinjstp2)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-#define f4g_eminj_eqinjstp2 (stg_eminj_einj.f4_eqinjstp2)   /* m=eminj,unit=mg/st :ï¿½|ï¿½[ï¿½g2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s4g_eminj_eqinjstp3 (stg_eminj_einj.s4_eqinjstp3)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-#define f4g_eminj_eqinjstp3 (stg_eminj_einj.f4_eqinjstp3)   /* m=eminj,unit=mg/st :ï¿½|ï¿½[ï¿½g3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s4g_eminj_eqinjstp4 (stg_eminj_einj.s4_eqinjstp4)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-#define f4g_eminj_eqinjstp4 (stg_eminj_einj.f4_eqinjstp4)   /* m=eminj,unit=mg/st :ï¿½|ï¿½[ï¿½g4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define s4g_eminj_eqinjstd1 (stg_eminj_einj.s4_eqinjstd1)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqinjstd1;                              /* m=eminj,unit=mg/st :ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-                                                            /*          : ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½é•”ï¿½iï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ï‚ï¿½é‚½ï¿½ï¿½f4ï¿½^ï¿½Ïï¿½ï¿½Íƒ}ï¿½Nï¿½ï¿½ï¿½ï¿½`ï¿½Ö‚Ì•ÏXï¿½Ö~ */
-
-#define s4g_eminj_eqinjstd2 (stg_eminj_einj.s4_eqinjstd2)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqinjstd2;                              /* m=eminj,unit=mg/st :ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-                                                            /*          : ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½é•”ï¿½iï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ï‚ï¿½é‚½ï¿½ï¿½f4ï¿½^ï¿½Ïï¿½ï¿½Íƒ}ï¿½Nï¿½ï¿½ï¿½ï¿½`ï¿½Ö‚Ì•ÏXï¿½Ö~ */
-
-#define s4g_eminj_eqinjstd3 (stg_eminj_einj.s4_eqinjstd3)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqinjstd3;                              /* m=eminj,unit=mg/st :ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-                                                            /*          : ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½é•”ï¿½iï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ï‚ï¿½é‚½ï¿½ï¿½f4ï¿½^ï¿½Ïï¿½ï¿½Íƒ}ï¿½Nï¿½ï¿½ï¿½ï¿½`ï¿½Ö‚Ì•ÏXï¿½Ö~ */
-
-#define s4g_eminj_eqinjstd4 (stg_eminj_einj.s4_eqinjstd4)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqinjstd4;                              /* m=eminj,unit=mg/st :ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-                                                            /*          : ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½é•”ï¿½iï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ï‚ï¿½é‚½ï¿½ï¿½f4ï¿½^ï¿½Ïï¿½ï¿½Íƒ}ï¿½Nï¿½ï¿½ï¿½ï¿½`ï¿½Ö‚Ì•ÏXï¿½Ö~ */
-
-extern s4 s4g_eminj_eqfc[u1g_EJCC_NCYL];                    /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqfc[u1g_EJCC_NCYL];                    /* m=eminj,unit=mg/st :FCï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-#define s4g_eminj_eqinjexp  (stg_eminj_einj.s4_eqinjexp)    /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-#define f4g_eminj_eqinjexp  (stg_eminj_einj.f4_eqinjexp)    /* m=eminj,unit=mg/st :ï¿½cï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½ï¿½Ë—ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½ï¿½ï¿½Ú°ï¿½Ş²ï¿½Şz*/
-
-#define s2g_eminj_ek1f      (stg_eminj_einj.s2_ek1f)        /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-#define f4g_eminj_ek1f      (stg_eminj_einj.f4_ek1f)        /* m=eminj,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-#define s2g_eminj_ek2f      (stg_eminj_einj.s2_ek2f)        /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-#define f4g_eminj_ek2f      (stg_eminj_einj.f4_ek2f)        /* m=eminj,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-#define s2g_eminj_ek3f      (stg_eminj_einj.s2_ek3f)        /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-#define f4g_eminj_ek3f      (stg_eminj_einj.f4_ek3f)        /* m=eminj,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-extern s2 s2g_eminj_ek1fn[u1g_EJCC_NOX];                    /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-extern f4 f4g_eminj_ek1fn[u1g_EJCC_NOX];                    /* m=eminj,unit=ï¿½{ :1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-extern s2 s2g_eminj_ek2fn[u1g_EJCC_NOX];                    /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-extern f4 f4g_eminj_ek2fn[u1g_EJCC_NOX];                    /* m=eminj,unit=ï¿½{ :2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-extern s2 s2g_eminj_ek3fn[u1g_EJCC_NOX];                    /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½)  */
-extern f4 f4g_eminj_ek3fn[u1g_EJCC_NOX];                    /* m=eminj,unit=ï¿½{ :3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½)  */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-extern f4 f4g_eminj_ek1ffix;                                /* m=eminj,unit=ï¿½{ :ï¿½mï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-
-extern f4 f4g_eminj_ek2ffix;                                /* m=eminj,unit=ï¿½{ :ï¿½mï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-
-extern f4 f4g_eminj_ek3ffix;                                /* m=eminj,unit=ï¿½{ :ï¿½mï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-
-#define big_eminj_exqinjast (stg_eminj_einj.bi_exqinjast)   /* m=eminj,lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-#define u1g_eminj_exqinjast ((u1)stg_eminj_einj.bi_exqinjast)   /* m=eminj,lsb=1 :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½tï¿½ï¿½ï¿½O */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ : ON = ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½L */
-
-#define u1g_eminj_explreq   (stg_eminj_einj.u1_explreq)     /* m=eminj,lsb=1 :PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ : ON = PLï¿½ï¿½ï¿½Ëï¿½ï¿½{ï¿½vï¿½ï¿½ï¿½L */
-                                                            /*          :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-#define f4g_eminj_ekpfit    (stg_eminj_einj.f4_ekpfit)      /* m=eminj,unit=ï¿½{ :ï¿½Ú•Wï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-extern s2 s2g_eminj_ekpfit;                                 /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½Ú•Wï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-                                                            /*          : ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Qï¿½Æ‚ï¿½ï¿½Ä‚ï¿½ï¿½é•”ï¿½iï¿½ÌƒIï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ï‚ï¿½é‚½ï¿½ï¿½s2ï¿½^ï¿½Ïï¿½ï¿½Íƒ}ï¿½Nï¿½ï¿½ï¿½ï¿½`ï¿½Ö‚Ì•ÏXï¿½Ö~ */
-
-extern s2 s2g_eminj_ekpfitn[u1g_EJCC_NOX];                  /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½Ú•Wï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-extern f4 f4g_eminj_ekpfitn[u1g_EJCC_NOX];                  /* m=eminj,unit=ï¿½{ :ï¿½Ú•Wï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-
-#define s2g_eminj_ek1fpt    (stg_eminj_einj.s2_ek1fpt)      /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë‚Ì‚İ—vï¿½ï¿½ï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ */
-#define f4g_eminj_ek1fpt    (stg_eminj_einj.f4_ek1fpt)      /* m=eminj,unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë‚Ì‚İ—vï¿½ï¿½ï¿½ï¿½ï¿½Ì–Ú•Wï¿½ß°ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½ */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-#define f4g_eminj_ekpfiegr  (stg_eminj_einj.f4_ekpfiegr)    /* m=eminj,unit=ï¿½{ :EGR-ONï¿½ï¿½ï¿½Ì–Ú•Wï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yEGRï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-
-extern f4 f4g_eminj_ekpfiegrn[u1g_EJCC_NOX];                /* m=eminj,unit=ï¿½{ :EGR-ONï¿½ï¿½ï¿½Ì–Ú•Wï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-                                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yEGRï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-
-extern u2 u2g_eminj_einjmodfix;             /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½İŠmï¿½è•¬ï¿½ï¿½Ó°ï¿½ï¿½ */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : 8msm */
-
-extern s2 s2g_eminj_ekpfix;                 /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-extern f4 f4g_eminj_ekpfix;                 /* m=eminj,unit=ï¿½{ :ï¿½ß°Ä•ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½ï¿½İ¸ï¿½Ô•ï¿½ï¿½Ï’l(Â²İ¾İ»)) */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-
-extern s2 s2g_eminj_ekpfi;                  /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-extern f4 f4g_eminj_ekpfi;                  /* m=eminj,unit=ï¿½{ :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½Ô•ï¿½ï¿½Ï’l(ï¿½cï¿½Cï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½T)) */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-
-extern s2 s2g_eminj_ekpfin[u1g_EJCC_NOX];   /* m=eminj,lsb=(1*4)/128/256,unit=ï¿½{ :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-extern f4 f4g_eminj_ekpfin[u1g_EJCC_NOX];   /* m=eminj,unit=ï¿½{ :ï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ë—ÊZï¿½oï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-
-extern s2 s2g_eminj_eprreq;                 /* m=eminj,lsb=(32*2)/128/256,unit=MPa :ï¿½ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
-extern f4 f4g_eminj_eprreq;                 /* m=eminj,unit=MPa :ï¿½ï¿½ï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : 8msm */
-                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern s2 s2g_eminj_eqfreq;                 /* m=eminj,lsb=512/128/256,unit=L/h :ï¿½Rï¿½ï¿½ï¿½|ï¿½ï¿½ï¿½vï¿½fï¿½oï¿½ï¿½ï¿½ï¿½ */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : 8msm */
-                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ä–³ï¿½z*/
-
-extern s2 s2g_eminj_eprreql;                /* m=eminj,lsb=1280/128/256,unit=kPa :ï¿½áˆ³ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
-extern f4 f4g_eminj_eprreql;                /* m=eminj,unit=kPa :ï¿½áˆ³ï¿½|ï¿½ï¿½ï¿½vï¿½Ú•Wï¿½Rï¿½ï¿½ */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-                                            /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-
-extern s2 s2g_eminj_ekrichx;                /* m=eminj,lsb=(32*2)/128/256,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ */
-extern f4 f4g_eminj_ekrichx;                /* m=eminj,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½ */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-
-extern s2 s2g_eminj_ekrchref[u1g_EJCC_NOX]; /* m=eminj,lsb=(32*2)/128/256,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-extern f4 f4g_eminj_ekrchref[u1g_EJCC_NOX]; /* m=eminj,unit=ï¿½{ :ï¿½ï¿½ï¿½Ë—Ê•â³ï¿½Wï¿½ï¿½(ï¿½oï¿½ï¿½ï¿½Nï¿½ï¿½) */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : pwon,8msm */
-
-extern u1 u1g_eminj_einjmedislid;           /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½Ë•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½ï¿½ï¿½Êq */
-                                            /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : 8msm */
-
-extern st_EMINJ_EMINJ stg_eminj_eminj;                              /* ï¿½ï¿½ï¿½Ë•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ */
-
-#define u4g_eminj_einjptn       (stg_eminj_eminj.u4_einjptn)        /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½Ëƒpï¿½^ï¿½[ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O : 8msm */
-
-extern s2 s2g_eminj_eainjpn[5];                                     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½) */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-extern f4 f4g_eminj_eainjpn[5];                                     /* m=eminj,unit=BTDC :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½) */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-extern f4 f4g_eminj_eainjd1fix;                                     /* m=eminj,unit=BTDC :ï¿½mï¿½è“›ï¿½ï¿½1ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern f4 f4g_eminj_eainjd2fix;                                     /* m=eminj,unit=BTDC :ï¿½mï¿½è“›ï¿½ï¿½2ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern f4 f4g_eminj_eainjd3fix;                                     /* m=eminj,unit=BTDC :ï¿½mï¿½è“›ï¿½ï¿½3ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern f4 f4g_eminj_eainjd4fix;                                     /* m=eminj,unit=BTDC :ï¿½mï¿½è“›ï¿½ï¿½4ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern f4 f4g_eminj_eainjd5fix;                                     /* m=eminj,unit=BTDC :ï¿½mï¿½è“›ï¿½ï¿½5ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern f4 f4g_eminj_eainjd6fix;                                     /* m=eminj,unit=BTDC :ï¿½mï¿½è“›ï¿½ï¿½6ï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F 8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern s2 s2g_eminj_eainjdn[6];                                     /* m=eminj,lsb=1024/128/256,unit=BTDC :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½) */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
-extern f4 f4g_eminj_eainjdn[6];                                     /* m=eminj,unit=BTDC :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Ú•ï¿½ï¿½ËŠJï¿½nï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½) */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern s4 s4g_eminj_eqinjstpn[5];                                   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-extern f4 f4g_eminj_eqinjstpn[5];                                   /* m=eminj,unit=mg/st :ï¿½|ï¿½[ï¿½gnï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* 2025ï¿½Nï¿½ï¿½5ï¿½ñ•¬Ë‚Ü‚Ålï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½vï¿½fï¿½ï¿½[5]ï¿½Æ‚ï¿½ï¿½Ä’ï¿½`ï¿½ï¿½ï¿½ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yD-4ï¿½ÈŠOï¿½z*/
-
-extern s4 s4g_eminj_eqinjstdn[6];                                   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
-extern f4 f4g_eminj_eqinjstdn[6];                                   /* m=eminj,unit=mg/st :ï¿½ï¿½ï¿½ï¿½nï¿½ï¿½Únï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Êiï¿½ï¿½ï¿½Ë‰ñ””zï¿½ï¿½j */ /* ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÉÅ‘ï¿½6ï¿½ñ•¬ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½) */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-                                                                    /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-
-extern s4 s4g_eminj_eqinjflfix[8];                                  /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :FLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqinjflfix[8];                                  /* m=eminj,unit=mg/st :FLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
-
-extern s4 s4g_eminj_eqinjplfix[8];                                  /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :PLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-extern f4 f4g_eminj_eqinjplfix[8];                                  /* m=eminj,unit=mg/st :PLï¿½Å’è•¬ï¿½Ë—ï¿½ */
-                                                                    /* ï¿½Xï¿½Vï¿½^ï¿½Cï¿½~ï¿½ï¿½ï¿½O ï¿½F pwon,8msm */
+void vdg_eminj_pwon( void );            /* ‰Šú’lİ’è */
+                                        /* ƒR[ƒ‹Œ³ : vdg_elmng_pwon() */
+                                        /* –‘O‰Šú‰» : vdg_emprlp_pwon()y‰Â•Ï”Rˆ³§Œä—Lz*/
+                                        /*            : vdg_ebinjctr_pwon_seq()yD-4ˆÈŠOz*/
+
+void vdg_eminj_8msm( void );            /* •¬Ë—v‹‚Ì’²’âˆ— */
+                                        /* ƒR[ƒ‹Œ³ : vdg_elmng_8msm() */
+
+void vdg_eminj_einj_dataget( st_EMINJ_EINJ *ptt_retval );   /* •¬Ëî•ñæ“¾ˆ—i\‘¢‘Ì1j */
+                                                            /* ƒR[ƒ‹Œ³ :•¬ËSACAAPL */
+                                                            /* ˆø” ptt_retval :•¬Ëî•ñæ“¾ƒoƒbƒtƒ@i\‘¢‘Ì1j‚ÌƒAƒhƒŒƒX */
+
+void vdg_eminj_eminj_dataget( st_EMINJ_EMINJ *ptt_retval ); /* •¬Ëî•ñæ“¾ˆ—i\‘¢‘Ì2j */
+                                                            /* ƒR[ƒ‹Œ³ :•¬ËSACAAPL */
+                                                            /* ˆø” ptt_retval :•¬Ëî•ñæ“¾ƒoƒbƒtƒ@i\‘¢‘Ì2j‚ÌƒAƒhƒŒƒX */
 
 /*-------------------------------------------------------------------*/
-/* ï¿½Kï¿½ï¿½ï¿½è”                                                          */
+/* ŒöŠJ•Ï”                                                          */
 /*-------------------------------------------------------------------*/
-/* ï¿½ï¿½ï¿½ï¿½Jï¿½iï¿½ï¿½ï¿½iï¿½ï¿½ï¿½ï¿½ï¿½Ì‚İj */
-extern volatile const s2 s2s_eminj_NE_RCD;              /* m=eminj,lsb=(12800*2)/128/256,unit=rpm :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½è‡’l */
+extern st_EMINJ_EINJ stg_eminj_einj;                        /* •¬Ë•û®’²’â\‘¢‘Ì */
+#define u2g_eminj_einjmod   (stg_eminj_einj.u2_einjmod)     /* m=eminj,lsb=1 :•¬Ëƒ‚[ƒh */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+#define s2g_eminj_eainjp1   (stg_eminj_einj.s2_eainjp1)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ƒ|[ƒg1‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjp1   (stg_eminj_einj.f4_eainjp1)     /* m=eminj,unit=BTDC :ƒ|[ƒg1‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s2g_eminj_eainjp2   (stg_eminj_einj.s2_eainjp2)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ƒ|[ƒg2‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjp2   (stg_eminj_einj.f4_eainjp2)     /* m=eminj,unit=BTDC :ƒ|[ƒg2‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s2g_eminj_eainjp3   (stg_eminj_einj.s2_eainjp3)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ƒ|[ƒg3‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjp3   (stg_eminj_einj.f4_eainjp3)     /* m=eminj,unit=BTDC :ƒ|[ƒg3‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s2g_eminj_eainjp4   (stg_eminj_einj.s2_eainjp4)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ƒ|[ƒg4‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjp4   (stg_eminj_einj.f4_eainjp4)     /* m=eminj,unit=BTDC :ƒ|[ƒg4‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s2g_eminj_einjend   (stg_eminj_einj.s2_einjend)     /* m=eminj,lsb=1024/128/256,unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
+extern f4 f4g_eminj_einjend;                                /* m=eminj,unit=BTDC :ƒ|[ƒg•¬ËI—¹Šú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+                                                            /*          : ]—ˆ‚æ‚èQÆ‚µ‚Ä‚¢‚é•”•i‚ÌƒIƒuƒWƒFƒNƒg‚ª•Ï‚í‚é‚½‚ßf4Œ^•Ï”‚Íƒ}ƒNƒ’è‹`‚Ö‚Ì•ÏX‹Ö~ */
+
+#define s2g_eminj_eainjcutp (stg_eminj_einj.s2_eainjcutp)   /* m=eminj,lsb=1024/128/256,unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
+#define f4g_eminj_eainjcutp (stg_eminj_einj.f4_eainjcutp)   /* m=eminj,unit=BTDC :Îß°Ä•¬Ë‹­§¶¯ÄŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s2g_eminj_eainjd1   (stg_eminj_einj.s2_eainjd1)     /* m=eminj,lsb=1024/128/256,unit=BTDC :“›“à1‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjd1   (stg_eminj_einj.f4_eainjd1)     /* m=eminj,unit=BTDC :“›“à1‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+#define s2g_eminj_eainjd2   (stg_eminj_einj.s2_eainjd2)     /* m=eminj,lsb=1024/128/256,unit=BTDC :“›“à2‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjd2   (stg_eminj_einj.f4_eainjd2)     /* m=eminj,unit=BTDC :“›“à2‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+#define s2g_eminj_eainjd3   (stg_eminj_einj.s2_eainjd3)     /* m=eminj,lsb=1024/128/256,unit=BTDC :“›“à3‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjd3   (stg_eminj_einj.f4_eainjd3)     /* m=eminj,unit=BTDC :“›“à3‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+#define s2g_eminj_eainjd4   (stg_eminj_einj.s2_eainjd4)     /* m=eminj,lsb=1024/128/256,unit=BTDC :“›“à4‰ñ–Ú•¬ËŠJnŠú */
+#define f4g_eminj_eainjd4   (stg_eminj_einj.f4_eainjd4)     /* m=eminj,unit=BTDC :“›“à4‰ñ–Ú•¬ËŠJnŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+#define s2g_eminj_eainjcutd (stg_eminj_einj.s2_eainjcutd)   /* m=eminj,lsb=1024/128/256,unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
+#define f4g_eminj_eainjcutd (stg_eminj_einj.f4_eainjcutd)   /* m=eminj,unit=BTDC :“›“à•¬Ë‹­§¶¯ÄŠú */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+#define s4g_eminj_eqinjstp1 (stg_eminj_einj.s4_eqinjstp1)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg1‰ñ–Ún“®•¬Ë—Ê */
+#define f4g_eminj_eqinjstp1 (stg_eminj_einj.f4_eqinjstp1)   /* m=eminj,unit=mg/st :ƒ|[ƒg1‰ñ–Ún“®•¬Ë—Ê */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s4g_eminj_eqinjstp2 (stg_eminj_einj.s4_eqinjstp2)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg2‰ñ–Ún“®•¬Ë—Ê */
+#define f4g_eminj_eqinjstp2 (stg_eminj_einj.f4_eqinjstp2)   /* m=eminj,unit=mg/st :ƒ|[ƒg2‰ñ–Ún“®•¬Ë—Ê */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s4g_eminj_eqinjstp3 (stg_eminj_einj.s4_eqinjstp3)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg3‰ñ–Ún“®•¬Ë—Ê */
+#define f4g_eminj_eqinjstp3 (stg_eminj_einj.f4_eqinjstp3)   /* m=eminj,unit=mg/st :ƒ|[ƒg3‰ñ–Ún“®•¬Ë—Ê */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s4g_eminj_eqinjstp4 (stg_eminj_einj.s4_eqinjstp4)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒg4‰ñ–Ún“®•¬Ë—Ê */
+#define f4g_eminj_eqinjstp4 (stg_eminj_einj.f4_eqinjstp4)   /* m=eminj,unit=mg/st :ƒ|[ƒg4‰ñ–Ún“®•¬Ë—Ê */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define s4g_eminj_eqinjstd1 (stg_eminj_einj.s4_eqinjstd1)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à1‰ñ–Ún“®•¬Ë—Ê */
+extern f4 f4g_eminj_eqinjstd1;                              /* m=eminj,unit=mg/st :“›“à1‰ñ–Ún“®•¬Ë—Ê */
+
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+                                                            /*          : ]—ˆ‚æ‚èQÆ‚µ‚Ä‚¢‚é•”•i‚ÌƒIƒuƒWƒFƒNƒg‚ª•Ï‚í‚é‚½‚ßf4Œ^•Ï”‚Íƒ}ƒNƒ’è‹`‚Ö‚Ì•ÏX‹Ö~ */
+
+#define s4g_eminj_eqinjstd2 (stg_eminj_einj.s4_eqinjstd2)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à2‰ñ–Ún“®•¬Ë—Ê */
+extern f4 f4g_eminj_eqinjstd2;                              /* m=eminj,unit=mg/st :“›“à2‰ñ–Ún“®•¬Ë—Ê */
+
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+                                                            /*          : ]—ˆ‚æ‚èQÆ‚µ‚Ä‚¢‚é•”•i‚ÌƒIƒuƒWƒFƒNƒg‚ª•Ï‚í‚é‚½‚ßf4Œ^•Ï”‚Íƒ}ƒNƒ’è‹`‚Ö‚Ì•ÏX‹Ö~ */
+
+#define s4g_eminj_eqinjstd3 (stg_eminj_einj.s4_eqinjstd3)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à3‰ñ–Ún“®•¬Ë—Ê */
+extern f4 f4g_eminj_eqinjstd3;                              /* m=eminj,unit=mg/st :“›“à3‰ñ–Ún“®•¬Ë—Ê */
+
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+                                                            /*          : ]—ˆ‚æ‚èQÆ‚µ‚Ä‚¢‚é•”•i‚ÌƒIƒuƒWƒFƒNƒg‚ª•Ï‚í‚é‚½‚ßf4Œ^•Ï”‚Íƒ}ƒNƒ’è‹`‚Ö‚Ì•ÏX‹Ö~ */
+
+#define s4g_eminj_eqinjstd4 (stg_eminj_einj.s4_eqinjstd4)   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“à4‰ñ–Ún“®•¬Ë—Ê */
+extern f4 f4g_eminj_eqinjstd4;                              /* m=eminj,unit=mg/st :“›“à4‰ñ–Ún“®•¬Ë—Ê */
+
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+                                                            /*          : ]—ˆ‚æ‚èQÆ‚µ‚Ä‚¢‚é•”•i‚ÌƒIƒuƒWƒFƒNƒg‚ª•Ï‚í‚é‚½‚ßf4Œ^•Ï”‚Íƒ}ƒNƒ’è‹`‚Ö‚Ì•ÏX‹Ö~ */
+
+extern s4 s4g_eminj_eqfc[u1g_EJCC_NCYL];                    /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :FC’†•¬Ë—Ê */
+extern f4 f4g_eminj_eqfc[u1g_EJCC_NCYL];                    /* m=eminj,unit=mg/st :FC’†•¬Ë—Ê */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+#define s4g_eminj_eqinjexp  (stg_eminj_einj.s4_eqinjexp)    /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :–c’£s’ö•¬Ë—Ê */
+#define f4g_eminj_eqinjexp  (stg_eminj_einj.f4_eqinjexp)    /* m=eminj,unit=mg/st :–c’£s’ö•¬Ë—Ê */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :y½ÌßÚ°¶Ş²ÄŞz*/
+
+#define s2g_eminj_ek1f      (stg_eminj_einj.s2_ek1f)        /* m=eminj,lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+#define f4g_eminj_ek1f      (stg_eminj_einj.f4_ek1f)        /* m=eminj,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+#define s2g_eminj_ek2f      (stg_eminj_einj.s2_ek2f)        /* m=eminj,lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+#define f4g_eminj_ek2f      (stg_eminj_einj.f4_ek2f)        /* m=eminj,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+#define s2g_eminj_ek3f      (stg_eminj_einj.s2_ek3f)        /* m=eminj,lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+#define f4g_eminj_ek3f      (stg_eminj_einj.f4_ek3f)        /* m=eminj,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+extern s2 s2g_eminj_ek1fn[u1g_EJCC_NOX];                    /* m=eminj,lsb=(1*4)/128/256,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+extern f4 f4g_eminj_ek1fn[u1g_EJCC_NOX];                    /* m=eminj,unit=”{ :1‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+extern s2 s2g_eminj_ek2fn[u1g_EJCC_NOX];                    /* m=eminj,lsb=(1*4)/128/256,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+extern f4 f4g_eminj_ek2fn[u1g_EJCC_NOX];                    /* m=eminj,unit=”{ :2‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+extern s2 s2g_eminj_ek3fn[u1g_EJCC_NOX];                    /* m=eminj,lsb=(1*4)/128/256,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê)  */
+extern f4 f4g_eminj_ek3fn[u1g_EJCC_NOX];                    /* m=eminj,unit=”{ :3‰ñ–Ú•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê)  */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+extern f4 f4g_eminj_ek1ffix;                                /* m=eminj,unit=”{ :Šm’è1‰ñ–Ú•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+
+extern f4 f4g_eminj_ek2ffix;                                /* m=eminj,unit=”{ :Šm’è2‰ñ–Ú•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+
+extern f4 f4g_eminj_ek3ffix;                                /* m=eminj,unit=”{ :Šm’è3‰ñ–Ú•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+
+#define big_eminj_exqinjast (stg_eminj_einj.bi_exqinjast)   /* m=eminj,lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+#define u1g_eminj_exqinjast ((u1)stg_eminj_einj.bi_exqinjast)   /* m=eminj,lsb=1 :n“®Œã•¬Ë—Ê—v‹ƒtƒ‰ƒO */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+                                                            /* ’ˆÓ–€ : ON = n“®Œã•¬Ë—Ê—v‹—L */
+
+#define u1g_eminj_explreq   (stg_eminj_einj.u1_explreq)     /* m=eminj,lsb=1 :PL•¬ËÀ{—v‹ */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+                                                            /* ’ˆÓ–€ : ON = PL•¬ËÀ{—v‹—L */
+                                                            /*          :yÃŞ­±ÙINJzORyD-4z*/
+
+#define f4g_eminj_ekpfit    (stg_eminj_einj.f4_ekpfit)      /* m=eminj,unit=”{ :–Ú•Wƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+extern s2 s2g_eminj_ekpfit;                                 /* m=eminj,lsb=(1*4)/128/256,unit=”{ :–Ú•Wƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+                                                            /*          : ]—ˆ‚æ‚èQÆ‚µ‚Ä‚¢‚é•”•i‚ÌƒIƒuƒWƒFƒNƒg‚ª•Ï‚í‚é‚½‚ßs2Œ^•Ï”‚Íƒ}ƒNƒ’è‹`‚Ö‚Ì•ÏX‹Ö~ */
+
+extern s2 s2g_eminj_ekpfitn[u1g_EJCC_NOX];                  /* m=eminj,lsb=(1*4)/128/256,unit=”{ :–Ú•Wƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+extern f4 f4g_eminj_ekpfitn[u1g_EJCC_NOX];                  /* m=eminj,unit=”{ :–Ú•Wƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+
+#define s2g_eminj_ek1fpt    (stg_eminj_einj.s2_ek1fpt)      /* m=eminj,lsb=(1*4)/128/256,unit=”{ :Îß°Ä•¬Ë‚Ì‚İ—v‹‚Ì–Ú•WÎß°Ä1‰ñ–Ú•¬Ë—ÊZoŒW” */
+#define f4g_eminj_ek1fpt    (stg_eminj_einj.f4_ek1fpt)      /* m=eminj,unit=”{ :Îß°Ä•¬Ë‚Ì‚İ—v‹‚Ì–Ú•WÎß°Ä1‰ñ–Ú•¬Ë—ÊZoŒW” */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+#define f4g_eminj_ekpfiegr  (stg_eminj_einj.f4_ekpfiegr)    /* m=eminj,unit=”{ :EGR-ON‚Ì–Ú•Wƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzANDyEGR§Œä—Lz*/
+
+extern f4 f4g_eminj_ekpfiegrn[u1g_EJCC_NOX];                /* m=eminj,unit=”{ :EGR-ON‚Ì–Ú•Wƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+                                                            /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzANDyEGR§Œä—Lz*/
+
+extern u2 u2g_eminj_einjmodfix;             /* m=eminj,lsb=1 :Œ»İŠm’è•¬ËÓ°ÄŞ */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : 8msm */
+
+extern s2 s2g_eminj_ekpfix;                 /* m=eminj,lsb=(1*4)/128/256,unit=”{ :Îß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+extern f4 f4g_eminj_ekpfix;                 /* m=eminj,unit=”{ :Îß°Ä•¬Ë—ÊZoŒW”(ÊŞİ¸ŠÔ•½‹Ï’l(Â²İ¾İ»)) */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+
+extern s2 s2g_eminj_ekpfi;                  /* m=eminj,lsb=(1*4)/128/256,unit=”{ :ƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+extern f4 f4g_eminj_ekpfi;                  /* m=eminj,unit=”{ :ƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒNŠÔ•½‹Ï’l(ƒcƒCƒ“ƒZƒ“ƒT)) */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+
+extern s2 s2g_eminj_ekpfin[u1g_EJCC_NOX];   /* m=eminj,lsb=(1*4)/128/256,unit=”{ :ƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+extern f4 f4g_eminj_ekpfin[u1g_EJCC_NOX];   /* m=eminj,unit=”{ :ƒ|[ƒg•¬Ë—ÊZoŒW”(ƒoƒ“ƒN•Ê) */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+
+extern s2 s2g_eminj_eprreq;                 /* m=eminj,lsb=(32*2)/128/256,unit=MPa :‚ˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
+extern f4 f4g_eminj_eprreq;                 /* m=eminj,unit=MPa :‚ˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : 8msm */
+                                            /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern s2 s2g_eminj_eqfreq;                 /* m=eminj,lsb=512/128/256,unit=L/h :”R—¿ƒ|ƒ“ƒv“fo—¬—Ê */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : 8msm */
+                                            /* ’ˆÓ–€ :y‰Â•Ï”Rˆ³§Œä–³z*/
+
+extern s2 s2g_eminj_eprreql;                /* m=eminj,lsb=1280/128/256,unit=kPa :’áˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
+extern f4 f4g_eminj_eprreql;                /* m=eminj,unit=kPa :’áˆ³ƒ|ƒ“ƒv–Ú•W”Rˆ³ */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+                                            /* ’ˆÓ–€ :y‰Â•Ï”Rˆ³§Œä—Lz*/
+
+extern s2 s2g_eminj_ekrichx;                /* m=eminj,lsb=(32*2)/128/256,unit=”{ :•¬Ë—Ê•â³ŒW” */
+extern f4 f4g_eminj_ekrichx;                /* m=eminj,unit=”{ :•¬Ë—Ê•â³ŒW” */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+
+extern s2 s2g_eminj_ekrchref[u1g_EJCC_NOX]; /* m=eminj,lsb=(32*2)/128/256,unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+extern f4 f4g_eminj_ekrchref[u1g_EJCC_NOX]; /* m=eminj,unit=”{ :•¬Ë—Ê•â³ŒW”(ƒoƒ“ƒN•Ê) */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : pwon,8msm */
+
+extern u1 u1g_eminj_einjmedislid;           /* m=eminj,lsb=1 :•¬Ë•û®”½‰f¯•Êq */
+                                            /* XVƒ^ƒCƒ~ƒ“ƒO : 8msm */
+
+extern st_EMINJ_EMINJ stg_eminj_eminj;                              /* •¬Ë•û®’²’â\‘¢‘Ì */
+
+#define u4g_eminj_einjptn       (stg_eminj_eminj.u4_einjptn)        /* m=eminj,lsb=1 :•¬Ëƒpƒ^[ƒ“ */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO : 8msm */
+
+extern s2 s2g_eminj_eainjpn[5];                                     /* m=eminj,lsb=1024/128/256,unit=BTDC :ƒ|[ƒgn‰ñ–Ú•¬ËŠJnŠú(•¬Ë‰ñ””z—ñ) */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+extern f4 f4g_eminj_eainjpn[5];                                     /* m=eminj,unit=BTDC :ƒ|[ƒgn‰ñ–Ú•¬ËŠJnŠú(•¬Ë‰ñ””z—ñ) */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                                    /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+extern f4 f4g_eminj_eainjd1fix;                                     /* m=eminj,unit=BTDC :Šm’è“›“à1‰ñ–Ú•¬ËŠJnŠú */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern f4 f4g_eminj_eainjd2fix;                                     /* m=eminj,unit=BTDC :Šm’è“›“à2‰ñ–Ú•¬ËŠJnŠú */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern f4 f4g_eminj_eainjd3fix;                                     /* m=eminj,unit=BTDC :Šm’è“›“à3‰ñ–Ú•¬ËŠJnŠú */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern f4 f4g_eminj_eainjd4fix;                                     /* m=eminj,unit=BTDC :Šm’è“›“à4‰ñ–Ú•¬ËŠJnŠú */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern f4 f4g_eminj_eainjd5fix;                                     /* m=eminj,unit=BTDC :Šm’è“›“à5‰ñ–Ú•¬ËŠJnŠú */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern f4 f4g_eminj_eainjd6fix;                                     /* m=eminj,unit=BTDC :Šm’è“›“à6‰ñ–Ú•¬ËŠJnŠú */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F 8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern s2 s2g_eminj_eainjdn[6];                                     /* m=eminj,lsb=1024/128/256,unit=BTDC :“›“àn‰ñ–Ú•¬ËŠJnŠú(•¬Ë‰ñ””z—ñ) */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
+extern f4 f4g_eminj_eainjdn[6];                                     /* m=eminj,unit=BTDC :“›“àn‰ñ–Ú•¬ËŠJnŠú(•¬Ë‰ñ””z—ñ) */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern s4 s4g_eminj_eqinjstpn[5];                                   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :ƒ|[ƒgn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+extern f4 f4g_eminj_eqinjstpn[5];                                   /* m=eminj,unit=mg/st :ƒ|[ƒgn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* 2025”N‚Ì5‰ñ•¬Ë‚Ü‚Ål—¶‚µ”z—ñ—v‘f‚Í[5]‚Æ‚µ‚Ä’è‹`‚·‚é */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                                    /* ’ˆÓ–€ :yD-4ˆÈŠOz*/
+
+extern s4 s4g_eminj_eqinjstdn[6];                                   /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :“›“àn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
+extern f4 f4g_eminj_eqinjstdn[6];                                   /* m=eminj,unit=mg/st :“›“àn‰ñ–Ún“®•¬Ë—Êi•¬Ë‰ñ””z—ñj */ /* n“®‚ÉÅ‘å6‰ñ•¬Ë(’¼•¬‚Ì‚İ) */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+                                                                    /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+
+extern s4 s4g_eminj_eqinjflfix[8];                                  /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :FLŒÅ’è•¬Ë—Ê */
+extern f4 f4g_eminj_eqinjflfix[8];                                  /* m=eminj,unit=mg/st :FLŒÅ’è•¬Ë—Ê */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
+
+extern s4 s4g_eminj_eqinjplfix[8];                                  /* m=eminj,lsb=(4096*1024)/128/256/256/256,unit=mg/st :PLŒÅ’è•¬Ë—Ê */
+extern f4 f4g_eminj_eqinjplfix[8];                                  /* m=eminj,unit=mg/st :PLŒÅ’è•¬Ë—Ê */
+                                                                    /* XVƒ^ƒCƒ~ƒ“ƒO F pwon,8msm */
 
 /*-------------------------------------------------------------------*/
-/* ï¿½ï¿½ï¿½Jï¿½Å’ï¿½è”                                                      */
+/* “K‡’è”                                                          */
 /*-------------------------------------------------------------------*/
-extern volatile const u1 u1g_eminj_BENCH_PRI;           /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½ï¿½Ë—vï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½ï¿½pï¿½ï¿½Ä—Lï¿½zORï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Kï¿½ï¿½Ó°ï¿½Ş—Lï¿½z*/
-extern volatile const u1 u1g_eminj_DEFLAIR_PRI;         /* m=eminj,lsb=1 :ï¿½Hï¿½ê´±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_EGSTPVS_PRI;         /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½Ë’ï¿½~ï¿½Ì—Dï¿½ï¿½x */
-extern volatile const u1 u1g_eminj_STPHV_PRI;           /* m=eminj,lsb=1 :HVï¿½ï¿½~ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zORï¿½yEG-MGï¿½ï¿½ï¿½ï¿½ï¿½z*/
-extern volatile const u1 u1g_eminj_WUPCAT_PRI;          /* m=eminj,lsb=1 :ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yALL HVï¿½z*/
-extern volatile const u1 u1g_eminj_STPSS_PRI;           /* m=eminj,lsb=1 :SSï¿½ï¿½~ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½ySSï¿½ï¿½ï¿½ï¿½Lï¿½zORï¿½yEG-MGï¿½×¯ï¿½ï¿½z*/
-extern volatile const u1 u1g_eminj_RDNVES_PRI;          /* m=eminj,lsb=1 :ï¿½İ¼ï¿½İ’ï¿½~ï¿½Eï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ÌUï¿½ï¿½ï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yALL HVï¿½z*/
-extern volatile const u1 u1g_eminj_RDPN_PRI;            /* m=eminj,lsb=1 :PNï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yALL HVï¿½zANDï¿½yD-4ï¿½ÈŠOï¿½z*/
-extern volatile const u1 u1g_eminj_RDPN_ST_PRI;         /* m=eminj,lsb=1 :PNï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½(ï¿½nï¿½ï¿½ï¿½ï¿½)ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yALL HVï¿½zANDï¿½yï¿½ß°Äz*/
-extern volatile const u1 u1g_eminj_STAHV_PRI;           /* m=eminj,lsb=1 :HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yALL HVï¿½zANDï¿½yHVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_STASS_PRI;           /* m=eminj,lsb=1 :SSï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½ySSï¿½ï¿½ï¿½ï¿½Lï¿½zORï¿½yEG-MGï¿½×¯ï¿½ï¿½z*/
-extern volatile const u1 u1g_eminj_STAFRG_PRI;          /* m=eminj,lsb=1 :ï¿½É’á‰·ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_RESTAHOT_PRI;        /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½ï¿½ï¿½Änï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-extern volatile const u1 u1g_eminj_KCST_PRI;            /* m=eminj,lsb=1 :ï¿½nï¿½ï¿½ï¿½ï¿½É¯ï¿½ï¿½hï¿½~ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-extern volatile const u1 u1g_eminj_SJC_PRI;             /* m=eminj,lsb=1 :ï¿½Gï¿½}ï¿½}ï¿½ï¿½ï¿½gï¿½@ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-extern volatile const u1 u1g_eminj_STRATIST_PRI;        /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½wï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-extern volatile const u1 u1g_eminj_FCINJCTR_PRI;        /* m=eminj,lsb=1 :FCï¿½ï¿½ï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-extern volatile const u1 u1g_eminj_RTNFC_PRI;           /* m=eminj,lsb=1 :FCï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_CLRDEPI_PRI;         /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½ï¿½Ùï¿½ï¿½İ¼Şªï¿½ï¿½ï¿½ï¿½ï¿½ßï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_FPLDLV_PRI;          /* m=eminj,lsb=1 :ï¿½áˆ³ï¿½ï¿½ï¿½ï¿½ï¿½Ø“ï¿½ï¿½Rï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ğ§Œï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½Â•Ï”Rï¿½ï¿½ï¿½ï¿½ï¿½ä–³ï¿½z*/
-extern volatile const u1 u1g_eminj_FCFRCTRL_PRI;        /* m=eminj,lsb=1 :1ï¿½Cï¿½ï¿½FCï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yGPFï¿½Lï¿½zANDï¿½y1ï¿½Cï¿½ï¿½FCï¿½ï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_STACM_PRI;           /* m=eminj,lsb=1,:ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½è§ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :(ï¿½yï¿½Ó°Äºï¿½ï¿½Û°Ù—Lï¿½zORï¿½yï¿½ï¿½Şºï¿½ï¿½Û°Ù—Lï¿½z)ANDï¿½ySUB-CPUï¿½ÈŠOï¿½zANDï¿½yï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã‚ªï¿½è§ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_DTHRCTRL_PRI;        /* m=eminj,lsb=1 :ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Ş¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_ACTLFG_PRI;          /* m=eminj,lsb=1 :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ÄŠwï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :(ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z)ANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ÄŠwï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_INJIMB_PRI;          /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½Ëï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yAFï¿½Cï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½İ½ï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_ACTAREFUEL_PRI;      /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yFFVï¿½ï¿½ï¿½ï¿½Lï¿½z*/
-extern volatile const u1 u1g_eminj_ACTOBD_PRI;          /* m=eminj,lsb=1 :OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_ACTGAF_PRI;          /* m=eminj,lsb=1 :A/Fï¿½wï¿½Kï¿½Ìˆ×‚Ì±ï¿½Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_IMBRQ_PRI;           /* m=eminj,lsb=1, :ï¿½ï¿½ï¿½ï¿½ï¿½İ½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yAFï¿½Cï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½İ½ï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½ï¿½İ½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_MFINJRQ_PRI;         /* m=eminj,lsb=1, :ï¿½ï¿½ï¿½ï¿½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½ï¿½ï¿½ï¿½OBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FKGDRQ_PRI;          /* m=eminj,lsb=1, :ï¿½Rï¿½ï¿½ï¿½nOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Rï¿½ï¿½OBDï¿½Lï¿½zANDï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zANDï¿½yï¿½Rï¿½ï¿½ï¿½nOBDï¿½vï¿½ï¿½ï¿½É‚ï¿½é±¸Ã¨ï¿½Şï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_KCTRN_PRI;           /* m=eminj,lsb=1 :ï¿½ï¿½ï¿½iÉ¯ï¿½ï¿½hï¿½~ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½zORï¿½yD-4ï¿½z*/
-extern volatile const u1 u1g_eminj_RDVAP_PRI;           /* m=eminj,lsb=1 :ï¿½Ş°ï¿½ß°ï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_DWNPR_PRI;           /* m=eminj,lsb=1 :ï¿½Rï¿½ï¿½ï¿½áŒ¸ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_PRVDIL_PRI;          /* m=eminj,lsb=1 :ï¿½ï¿½Ôï¿½ï¿½ï¿½ß–hï¿½~ï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ş­ï¿½ï¿½INJï¿½z*/
-extern volatile const u1 u1g_eminj_PWRUP_PRI;           /* m=eminj,lsb=1 :ï¿½oï¿½Íï¿½ï¿½\ï¿½ï¿½ï¿½ã§ï¿½ï¿½Ì—Dï¿½ï¿½x */
-
-extern volatile const u1 u1g_eminj_BINJPLCTR_PRI;       /* m=eminj,lsb=1 :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_BINJPLCTR_WC_PRI;    /* m=eminj,lsb=1 :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½)ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yALL HVï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(ï¿½Gï¿½}ï¿½gï¿½@ï¿½ï¿½)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_BINJPLCTR_STAHV_PRI; /* m=eminj,lsb=1 :ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ä)ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yEG-MGï¿½Vï¿½ï¿½ï¿½Ş±ï¿½zANDï¿½yFFVï¿½ï¿½ï¿½ä–³ï¿½zANDï¿½yPLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë—Lï¿½zANDï¿½yï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½Ä•ï¿½ï¿½Ë‚ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½Ëï¿½ï¿½ï¿½(HVï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ä)ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½z*/
-
-extern volatile const u1 u1g_eminj_FREE0_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½0ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½0ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE1_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½1ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½1ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE2_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½2ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½2ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE3_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½3ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½3ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE4_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½4ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½4ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE5_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½5ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½5ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE6_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½6ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½6ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE7_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½7ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½7ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE8_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½8ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½8ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE9_PRI;           /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½9ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½9ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE10_PRI;          /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½10ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½10ï¿½gï¿½pï¿½z*/
-extern volatile const u1 u1g_eminj_FREE11_PRI;          /* m=eminj,lsb=1 :ï¿½Ø°ï¿½ß°ï¿½11ï¿½pï¿½ï¿½ï¿½ï¿½Ì—Dï¿½ï¿½x */
-                                                        /* ï¿½ï¿½ï¿½Óï¿½ï¿½ï¿½ :ï¿½yï¿½Ø°ï¿½ß°ï¿½11ï¿½gï¿½pï¿½z*/
+/* ”ñŒöŠJi•”•i“à•”‚Ì‚İj */
+extern volatile const s2 s2s_eminj_NE_RCD;              /* m=eminj,lsb=(12800*2)/128/256,unit=rpm :ˆ—Às”»’èè‡’l */
 
 /*-------------------------------------------------------------------*/
-/* ï¿½Kï¿½ï¿½ï¿½}ï¿½bï¿½v                                                        */
+/* ŒöŠJŒÅ’è’è”                                                      */
+/*-------------------------------------------------------------------*/
+extern volatile const u1 u1g_eminj_BENCH_PRI;           /* m=eminj,lsb=1 :ÍŞİÁ“K‡—p•¬Ë—v‹‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÍŞİÁ“K‡—p¿ÌÄ—LzORyÍŞİÁ“K‡Ó°ÄŞ—Lz*/
+extern volatile const u1 u1g_eminj_DEFLAIR_PRI;         /* m=eminj,lsb=1 :Hê´±”²‚«§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_EGSTPVS_PRI;         /* m=eminj,lsb=1 :•¬Ë’â~‚Ì—Dæ“x */
+extern volatile const u1 u1g_eminj_STPHV_PRI;           /* m=eminj,lsb=1 :HV’â~§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yEG-MG—V¯·Ş±zORyEG-MG’¼Œ‹z*/
+extern volatile const u1 u1g_eminj_WUPCAT_PRI;          /* m=eminj,lsb=1 :G”}’g‹@§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yALL HVz*/
+extern volatile const u1 u1g_eminj_STPSS_PRI;           /* m=eminj,lsb=1 :SS’â~§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :ySS§Œä—LzORyEG-MG¸×¯Áz*/
+extern volatile const u1 u1g_eminj_RDNVES_PRI;          /* m=eminj,lsb=1 :´İ¼Şİ’â~En“®‚ÌU“®’áŒ¸§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yALL HVz*/
+extern volatile const u1 u1g_eminj_RDPN_PRI;            /* m=eminj,lsb=1 :PN’áŒ¸§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yALL HVzANDyD-4ˆÈŠOz*/
+extern volatile const u1 u1g_eminj_RDPN_ST_PRI;         /* m=eminj,lsb=1 :PN’áŒ¸§Œä(n“®)‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yALL HVzANDyÎß°Äz*/
+extern volatile const u1 u1g_eminj_STAHV_PRI;           /* m=eminj,lsb=1 :HVn“®§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yALL HVzANDyHVn“®§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_STASS_PRI;           /* m=eminj,lsb=1 :SSn“®§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :ySS§Œä—LzORyEG-MG¸×¯Áz*/
+extern volatile const u1 u1g_eminj_STAFRG_PRI;          /* m=eminj,lsb=1 :‹É’á‰·n“®§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_RESTAHOT_PRI;        /* m=eminj,lsb=1 :‚‰·Än“®§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+extern volatile const u1 u1g_eminj_KCST_PRI;            /* m=eminj,lsb=1 :n“®É¯¸–h~§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+extern volatile const u1 u1g_eminj_SJC_PRI;             /* m=eminj,lsb=1 :G”}‹}‘¬’g‹@§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+extern volatile const u1 u1g_eminj_STRATIST_PRI;        /* m=eminj,lsb=1 :¬‘wn“®§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+extern volatile const u1 u1g_eminj_FCINJCTR_PRI;        /* m=eminj,lsb=1 :FC’†”R—¿•¬Ë§Œä‚Ì—Dæ“x */
+extern volatile const u1 u1g_eminj_RTNFC_PRI;           /* m=eminj,lsb=1 :FC•œ‹A§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_CLRDEPI_PRI;         /* m=eminj,lsb=1 :±²ÄŞÙ²İ¼Şª¸ÀÃŞÎßœ‹§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_FPLDLV_PRI;          /* m=eminj,lsb=1 :’áˆ³ÃŞØÊŞØ“à”R—¿–¬“®‰ñ”ğ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzANDy‰Â•Ï”Rˆ³§Œä–³z*/
+extern volatile const u1 u1g_eminj_FCFRCTRL_PRI;        /* m=eminj,lsb=1 :1‹C“›FC§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yGPF—LzANDy1‹C“›FC§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_STACM_PRI;           /* m=eminj,lsb=1,:n“®‚¯ã‚ª‚è§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :(yØÓ°ÄºİÄÛ°Ù—LzORyÅËŞºİÄÛ°Ù—Lz)ANDySUB-CPUˆÈŠOzANDyn“®‚¯ã‚ª‚è§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_DTHRCTRL_PRI;        /* m=eminj,lsb=1 :‹C“›•ÊÃŞ¨»Ş§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_ACTLFG_PRI;          /* m=eminj,lsb=1 :Êß°¼¬ÙØÌÄŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :(yÃŞ­±ÙINJzORyD-4z)ANDyÊß°¼¬ÙØÌÄŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_INJIMB_PRI;          /* m=eminj,lsb=1 :²İÊŞ×İ½‚Ì•¬Ë§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yAF‹C“›ŠÔ²İÊŞ×İ½—LzANDyÃŞ­±ÙINJzANDy²İÊŞ×İ½‚Ì•¬Ë§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_ACTAREFUEL_PRI;      /* m=eminj,lsb=1 :‹‹–ûŒã‚Ì•¬‚«•ª‚¯±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzANDyFFV§Œä—Lz*/
+extern volatile const u1 u1g_eminj_ACTOBD_PRI;          /* m=eminj,lsb=1 :OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzANDyOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_ACTGAF_PRI;          /* m=eminj,lsb=1 :A/FŠwK‚Ìˆ×‚Ì±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_IMBRQ_PRI;           /* m=eminj,lsb=1, :²İÊŞ×İ½OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yAF‹C“›ŠÔ²İÊŞ×İ½—LzANDyÃŞ­±ÙINJzANDy²İÊŞ×İ½OBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_MFINJRQ_PRI;         /* m=eminj,lsb=1, :¸‰ÎOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :y¸‰ÎOBD—LzANDyÃŞ­±ÙINJzANDy¸‰ÎOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_FKGDRQ_PRI;          /* m=eminj,lsb=1, :”R—¿ŒnOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :y”R—¿OBD—LzANDyÃŞ­±ÙINJzANDy”R—¿ŒnOBD—v‹‚É‚æ‚é±¸Ã¨ÌŞ§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_KCTRN_PRI;           /* m=eminj,lsb=1 :”­iÉ¯¸–h~§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJzORyD-4z*/
+extern volatile const u1 u1g_eminj_RDVAP_PRI;           /* m=eminj,lsb=1 :ÍŞ°Êß°—}§§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_DWNPR_PRI;           /* m=eminj,lsb=1 :”Rˆ³’áŒ¸§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_PRVDIL_PRI;          /* m=eminj,lsb=1 :—âŠÔŠóß–h~§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÃŞ­±ÙINJz*/
+extern volatile const u1 u1g_eminj_PWRUP_PRI;           /* m=eminj,lsb=1 :o—Í«”\Œüã§Œä‚Ì—Dæ“x */
+
+extern volatile const u1 u1g_eminj_BINJPLCTR_PRI;       /* m=eminj,lsb=1 :Êß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä—v‹g—pz*/
+extern volatile const u1 u1g_eminj_BINJPLCTR_WC_PRI;    /* m=eminj,lsb=1 :Êß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(G”}’g‹@)‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yALL HVzANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(G”}’g‹@)—v‹g—pz*/
+extern volatile const u1 u1g_eminj_BINJPLCTR_STAHV_PRI; /* m=eminj,lsb=1 :Êß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(HVn“®§Œä)‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yEG-MG—V¯·Ş±zANDyFFV§Œä–³zANDyPLÏÙÁ•¬Ë—LzANDyÊß°¼¬ÙØÌÄ•¬Ë‚ğ—p‚¢‚½Šî–{•¬Ë§Œä(HVn“®§Œä)—v‹g—pz*/
+
+extern volatile const u1 u1g_eminj_FREE0_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä0—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä0g—pz*/
+extern volatile const u1 u1g_eminj_FREE1_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä1—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä1g—pz*/
+extern volatile const u1 u1g_eminj_FREE2_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä2—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä2g—pz*/
+extern volatile const u1 u1g_eminj_FREE3_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä3—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä3g—pz*/
+extern volatile const u1 u1g_eminj_FREE4_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä4—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä4g—pz*/
+extern volatile const u1 u1g_eminj_FREE5_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä5—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä5g—pz*/
+extern volatile const u1 u1g_eminj_FREE6_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä6—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä6g—pz*/
+extern volatile const u1 u1g_eminj_FREE7_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä7—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä7g—pz*/
+extern volatile const u1 u1g_eminj_FREE8_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä8—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä8g—pz*/
+extern volatile const u1 u1g_eminj_FREE9_PRI;           /* m=eminj,lsb=1 :ÌØ°Îß°Ä9—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä9g—pz*/
+extern volatile const u1 u1g_eminj_FREE10_PRI;          /* m=eminj,lsb=1 :ÌØ°Îß°Ä10—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä10g—pz*/
+extern volatile const u1 u1g_eminj_FREE11_PRI;          /* m=eminj,lsb=1 :ÌØ°Îß°Ä11—p§Œä‚Ì—Dæ“x */
+                                                        /* ’ˆÓ–€ :yÌØ°Îß°Ä11g—pz*/
+
+/*-------------------------------------------------------------------*/
+/* “K‡ƒ}ƒbƒv                                                        */
 /*-------------------------------------------------------------------*/
 
 /*-------------------------------------------------------------------*/
-/* ï¿½Iï¿½[ï¿½gï¿½Jï¿½Eï¿½ï¿½ï¿½^                                                    */
+/* ƒI[ƒgƒJƒEƒ“ƒ^                                                    */
 /*-------------------------------------------------------------------*/
-extern s2 s2g_eminj_ecqinjast_8m;          /* m=eminj,lsb=268435.456/128/256,unit=ms :ï¿½nï¿½ï¿½ï¿½ã•¬ï¿½Ë—Ê—vï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+extern s2 s2g_eminj_ecqinjast_8m;          /* m=eminj,lsb=268435.456/128/256,unit=ms :n“®Œã•¬Ë—Ê—v‹Œp‘±¶³İÀ */
 
 #endif  /* EMINJ_H */
 /**** End of File ****************************************************/
