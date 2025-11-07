@@ -3088,6 +3088,11 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
 #if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_WC_MEDI == ON) /*【ALL HV】AND【PLﾏﾙﾁ噴射有】AND【ﾊﾟｰｼｬﾙﾘﾌﾄ噴射を用いた基本噴射制御(触媒暖機時)要求使用】*/
         { &vdg_ebinjplctr_wc_emedi_dataget,  u1g_EMINJ_BINJPLCTR_WC_ID   },    /* 優先度=22 :ﾊﾟｰｼｬﾙﾘﾌﾄ噴射を用いた基本噴射制御(触媒暖機時) */
 #endif /* JEALLHV_E,JEPLMLT_E,EMINJ_BINJPLCTR_WC_MEDI */
+#if JEEFI == u1g_EJCC_DUAL      /*【ﾃﾞｭｱﾙINJ】*/
+ #if JEFFV != u1g_EJCC_NOT_USE  /*【FFV制御有】*/
+        { &vds_eminj_dummy_emedi_dataget2,   u1g_EMINJ_CIMPALC_ID   },    /* 優先度=46 :ｱﾙｺｰﾙ燃料燃焼改善制御 */
+ #endif /* JEFFV */
+#endif /* JEEFI */
 #if (JEEGMG_E == u1g_EJCC_HVPLGR_E) && (JEFFV == u1g_EJCC_NOT_USE) && (JEPLMLT_E == u1g_EJCC_USE) && (EMINJ_BINJPLCTR_STAHV_MEDI == ON) /*【EG-MG遊星ｷﾞｱ】AND【FFV制御無】AND【PLﾏﾙﾁ噴射有】AND【ﾊﾟｰｼｬﾙﾘﾌﾄ噴射を用いた基本噴射制御(HV始動制御時)要求使用】*/
         { &vdg_ebinjplctr_stahv_emedi_dataget, u1g_EMINJ_BINJPLCTR_STAHV_ID },    /* 優先度=48 :ﾊﾟｰｼｬﾙﾘﾌﾄ噴射を用いた基本噴射制御(HV始動制御時) */
 #endif /* JEEGMG_E,JEFFV,JEPLMLT_E,EMINJ_BINJPLCTR_STAHV_MEDI */
@@ -3101,6 +3106,10 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
         { &vdg_ebinjplctr_emedi_dataget,    u1g_EMINJ_BINJPLCTR_ID   },  /* 優先度=98 :ﾊﾟｰｼｬﾙﾘﾌﾄ噴射を用いた基本噴射制御 */
  #endif /* EMINJ_BINJPLCTR_MEDI */
 #endif /* JEPLMLT_E */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E    /*【噴霧誘導燃焼】*/
+        { &vds_eminj_dummy_emedi_dataget2,  u1g_EMINJ_GORO_ID    },     /* 優先度=100 :ｺﾞﾛｺﾞﾛ音対策実現部要求 */
+        { &vds_eminj_dummy_emedi_dataget2,  u1g_EMINJ_DTHRCTRL_ID    },     /* 優先度=64 :気筒別ﾃﾞｨｻﾞ制御 */
+#endif /* JECOMBCCPT_E */
 #if EMINJ_FREE2 == ON   /*【ﾌﾘｰﾎﾟｰﾄ2使用】*/
         { &vdg_eminj_efree2_emedi_dataget,  u1g_EMINJ_FREE2_ID    },     /* 優先度=202 :ﾌﾘｰﾎﾟｰﾄ2用噴射要求 */
 #endif /* EMINJ_FREE2 */
