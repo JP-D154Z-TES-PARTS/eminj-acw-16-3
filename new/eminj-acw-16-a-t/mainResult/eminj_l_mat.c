@@ -2876,7 +2876,7 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
         { &vds_eminj_erestahot_rap_dataget, u1s_EMINJ_RESTAHOT_ID }, /* —Dæ“x=32 :‚‰·ÄŽn“®§Œä */
         { &vdg_ekcst_emedi_dataget,         u1s_EMINJ_KCST_ID     }, /* —Dæ“x=34 :Žn“®ŽžÉ¯¸–hŽ~§Œä */
 #endif /* JEEFI */
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_PORT)      /*yALL HVzANDyÎß°Äz*/
+#if JEEFI == u1g_EJCC_PORT      /*yÎß°Äz*/
         { &vds_eminj_erdpn_rap_dataget,     u1g_EMINJ_RDPN_ST_ID  }, /* —Dæ“x=36 :PN’áŒ¸§Œä(Žn“®Žž) */
                                                                      /* ’Êí—v‹‚Ì‚o‚m’áŒ¸§Œä‚ÆŽæ“¾ŠÖ”‚ª•ª‚©‚ê‚½ê‡‚ÍA */
                                                                      /* Žn“®Žž—v‹’²’âA’ÊíŽž—v‹’²’â‚Ì‚o‚m’áŒ¸§Œä‚Ì”»’èArapŠÖ”‚ðíœ‚·‚é‚±‚Æ */
@@ -3017,7 +3017,7 @@ vds_eminj_eminj_hpri( st_EMINJ_EMINJ_DEF *ptt_datsel, const st_EMINJ_EMINJ_DEF *
         { &vds_eminj_erestahot_rap_dataget, u1s_EMINJ_RESTAHOT_ID }, /* —Dæ“x=32 :‚‰·ÄŽn“®§Œä */
 #endif /* JEEFI */
         { &vdg_efcinjctr_emedi_dataget,     u1g_EMINJ_FCINJCTR_ID }, /* —Dæ“x=50 :FC’†”R—¿•¬ŽË§Œä */
-#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI != u1g_EJCC_D4)       /*yALL HVzANDyD-4ˆÈŠOz*/
+#if ((JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_DUAL)) || (JEEFI == u1g_EJCC_PORT)       /*yALL HVzANDyÃÞ­±ÙINJz OR yÎß°Äz*/
         { &vds_eminj_erdpn_rap_dataget,     u1g_EMINJ_RDPN_ID     }, /* —Dæ“x=52 :PN’áŒ¸§Œä */
                                                                      /* Žn“®Žž—v‹‚Ì‚o‚m’áŒ¸§Œä‚ÆŽæ“¾ŠÖ”‚ª•ª‚©‚ê‚½ê‡‚ÍA */
                                                                      /* Žn“®Žž—v‹’²’âA’ÊíŽž—v‹’²’â‚Ì‚o‚m’áŒ¸§Œä‚Ì”»’è,rapŠÖ”‚ðíœ‚·‚é‚±‚Æ */
@@ -4462,6 +4462,13 @@ vds_eminj_einj_datacopy2( st_EMINJ_EMINJ_BUF *ptt_data, const st_EMINJ_EMINJ_BUF
     {
         ptt_data->s4_eqinjflfix[u1t_injnum]  = ptt_copy->s4_eqinjflfix[u1t_injnum];
         ptt_data->s4_eqinjplfix[u1t_injnum]  = ptt_copy->s4_eqinjplfix[u1t_injnum];
+    }
+
+    /* ‹C“›•Ê•¬ŽË—Ê•â³‚ÌƒRƒs[ */
+    ptt_data->u1_stepkcyl = ptt_copy->u1_stepkcyl;
+    for ( u1t_cyl = (u1)0U; u1t_cyl < u1t_ncyl_c; u1t_cyl++ )
+    {
+        ptt_data->f4_kqcyl[u1t_cyl] = ptt_copy->f4_kqcyl[u1t_cyl];
     }
 
 }
