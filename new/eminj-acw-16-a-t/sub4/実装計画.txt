@@ -1,0 +1,287 @@
+eminj-acw-16-a-t 実装計画書
+================================
+
+本ドキュメントは、ロジック変更シート acw-16-a-t に基づく
+eminj_l_mat.c および eminj.h への変更を完全に実装するための
+詳細な実装計画を記載します。
+
+================================
+前提条件
+================================
+
+以下のモジュールの最新版が必要です:
+1. ewupcat-ac1 (触媒暖機制御 - 構造体2対応版)
+2. esjc-ac1 (触媒急速暖機制御 - 構造体2対応版)
+3. ecimpalc-ac0-00-a (アルコール燃料時の燃焼改善制御)
+4. egoro (ゴロゴロ音対策実現部)
+5. edthrctrl-ac0-00-c (気筒別ディザ制御)
+6. ekcylcat-ac0-00-a (気筒別当量比学習制御)
+
+これらのモジュールから以下の情報が必要:
+- 関数シグネチャ (vdg_***_emedi_dataget, vdg_***_emedi_dataget2)
+- 要求構造体の定義
+- CSW条件の詳細
+
+
+================================
+実装手順
+================================
+
+## ステップ1: eminj.h への新規ID定義追加
+-------------------------------------------
+
+### 1.1 新規ID定義の追加 (行690付近に追加)
+
+```c
+/* 構造体2対応の新規ID */
+#define u1g_EMINJ_WUPCAT_ID2 ((u1)(((24.)/(1.))+0.5))      /* 触媒暖機制御(構造体2) */
+#define u1g_EMINJ_SJC_ID2 ((u1)(((20.)/(1.))+0.5))         /* 触媒急速暖機制御(構造体2) */
+
+/* 新規機能のID */
+#if JEEFI == u1g_EJCC_DUAL      /* 【デュアルINJ】 */
+ #if JEFFV != u1g_EJCC_NOT_USE  /* 【FFV制御有】 */
+#define u1g_EMINJ_ECIMPALC_ID ((u1)(((46.)/(1.))+0.5))     /* アルコール燃料時の燃焼改善制御 */
+ #endif /* JEFFV */
+#endif /* JEEFI */
+
+/* ゴロゴロ音対策関連 (CSW条件は仕様書で確認必要) */
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E    /* 【ゴロゴロ音対策仕様適用】*/
+#define u1g_EMINJ_EGORO_ID ((u1)(((XX.)/(1.))+0.5))       /* ゴロゴロ音対策実現部 (XXは優先度) */
+#define u1g_EMINJ_EDTHRCTRL_ID ((u1)(((XX.)/(1.))+0.5))   /* 気筒別ディザ制御 (XXは優先度) */
+#endif /* JECOMBCCPT_E */
+```
+
+### 1.2 CSWの削除
+
+以下のID定義から不要なCSW条件を削除:
+- u1g_EMINJ_BINJPLCTR_WC_ID (EMINJ_BINJPLCTR_WC_MEDI条件を削除)
+- u1g_EMINJ_FCFRCTRL_ID (EMINJ_FCFRCTRL_MEDI条件を削除)
+- u1g_EMINJ_STACM_ID
+- u1g_EMINJ_STAHV_ID (EMINJ_STAHV_MEDI条件を削除)
+- u1g_EMINJ_BINJPLCTR_STAHV_ID (EMINJ_BINJPLCTR_STAHV_MEDI条件を削除)
+- u1g_EMINJ_ACTLFG_ID (EMINJ_ACTLFG_MEDI条件を削除)
+- u1g_EMINJ_INJIMB_ID (EMINJ_INJIMB_MEDI条件を削除)
+- u1g_EMINJ_ACTOBD_ID (EMINJ_ACTOBD_MEDI条件を削除)
+- u1g_EMINJ_MFINJRQ_ID (EMINJ_MFINJRQ_MEDI条件を削除)
+- u1g_EMINJ_FKGDRQ_ID (EMINJ_FKGDRQ_MEDI条件を削除)
+- u1g_EMINJ_BINJPLCTR_ID (EMINJ_BINJPLCTR_MEDI条件を削除)
+
+
+## ステップ2: 構造体の更新
+-------------------------------------------
+
+### 2.1 st_EMINJ_EMINJ_BUF 構造体への追加
+
+気筒別噴射量補正関連のメンバーを追加:
+
+```c
+typedef struct
+{
+    /* 既存のメンバー */
+    ...
+    
+    /* 気筒別噴射量補正関連 (新規追加) */
+    u1 u1_xekcylcatrq;                          /* 気筒別噴射量補正要求有識別子 */
+    u1 u1_ekcylcatstg;                          /* 気筒別噴射量補正段 */
+    f4 f4_ekcylcat[u1g_EJCC_NCYL];             /* 気筒別噴射量補正係数 */
+    
+} st_EMINJ_EMINJ_BUF;
+```
+
+
+## ステップ3: eminj_l_mat.c の変更
+-------------------------------------------
+
+### 3.1 外部関数宣言の追加 (行26付近のインクルード後に追加)
+
+```c
+/* 構造体2対応の新規関数 */
+#if JEALLHV_E == u1g_EJCC_ALLHV_E
+extern void vdg_ewupcat_emedi_dataget2( st_EMINJ_EMINJ_BUF *ptt_store );
+#endif
+
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)
+extern void vdg_esjc_emedi_dataget2( st_EMINJ_EMINJ_BUF *ptt_store );
+#endif
+
+#if JEEFI == u1g_EJCC_DUAL
+ #if JEFFV != u1g_EJCC_NOT_USE
+extern void vdg_ecimpalc_emedi_dataget( st_EMINJ_EMINJ_BUF *ptt_store );
+ #endif
+#endif
+
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E
+extern void vdg_egoro_emedi_dataget( st_EMINJ_EMINJ_BUF *ptt_store );
+extern void vdg_edthrctrl_emedi_dataget( st_EMINJ_EMINJ_BUF *ptt_store );
+#endif
+```
+
+### 3.2 sts_eminj_eminj_tbl2 テーブルへの追加
+
+以下のエントリを適切な優先度順に追加 (行3082-3113):
+
+```c
+static volatile const st_EMINJ_EMINJ_TBL2 sts_eminj_eminj_tbl2[] = 
+{
+    /* 既存エントリ ... */
+    
+#if JEALLHV_E == u1g_EJCC_ALLHV_E
+    { &vdg_ewupcat_emedi_dataget2,       u1g_EMINJ_WUPCAT_ID2   },    /* 優先度=24 :触媒暖機制御(構造体2) */
+#endif
+
+#if (JEEFI == u1g_EJCC_DUAL) || (JEEFI == u1g_EJCC_D4)
+    { &vdg_esjc_emedi_dataget2,          u1g_EMINJ_SJC_ID2      },    /* 優先度=20 :触媒急速暖機制御(構造体2) */
+#endif
+
+#if JEEFI == u1g_EJCC_DUAL
+ #if JEFFV != u1g_EJCC_NOT_USE
+    { &vdg_ecimpalc_emedi_dataget,       u1g_EMINJ_ECIMPALC_ID  },    /* 優先度=46 :ｱﾙｺｰﾙ燃料時の燃焼改善制御 */
+ #endif
+#endif
+
+#if JECOMBCCPT_E == u1g_EJCC_SPRAYG_E
+    { &vdg_egoro_emedi_dataget,          u1g_EMINJ_EGORO_ID     },    /* 優先度=XX :ｺﾞﾛｺﾞﾛ音対策実現部 */
+    { &vdg_edthrctrl_emedi_dataget,      u1g_EMINJ_EDTHRCTRL_ID },    /* 優先度=XX :気筒別ﾃﾞｨｻﾞ制御 */
+#endif
+
+    /* ... */
+    { &vds_eminj_dummy_emedi_dataget2,  u1g_EMINJ_NONE_ID }         /* ダミー(最後) */
+};
+```
+
+### 3.3 erdpn関連のCSW変更
+
+#### 3.3.1 始動時テーブル sts_eminj_eminjst_tbl の変更
+
+```c
+/* 変更前 */
+#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_PORT)
+
+/* 変更後 */
+#if JEEFI == u1g_EJCC_PORT
+```
+
+#### 3.3.2 通常時テーブル sts_eminj_eminj_tbl の変更
+
+erdpn関連エントリのCSW条件を変更:
+
+```c
+/* 変更前 */
+#if (JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI != u1g_EJCC_D4)
+
+/* 変更後 */
+#if ((JEALLHV_E == u1g_EJCC_ALLHV_E) && (JEEFI == u1g_EJCC_DUAL)) || (JEEFI == u1g_EJCC_PORT)
+```
+
+
+### 3.4 ゴロゴロ音対策ロジックの追加
+
+vdg_eminj_8msm() 関数内に、ゴロゴロ音領域での基本情報書き換え処理を追加。
+詳細は ac0-03-c-t-k9432a のロジック変更シートを参照して実装。
+
+
+### 3.5 気筒別噴射量補正の調停処理追加
+
+vds_eminj_eminj_hpri() 関数内に、気筒別噴射量補正関連の調停ロジックを追加:
+
+```c
+/* 気筒別噴射量補正の調停 */
+if ( ptt_datsel2->u1_xekcylcatrq == (u1)ON )
+{
+    /* 気筒別噴射量補正段の調停 */
+    ptt_datsel2->u1_ekcylcatstg = ptt_data->u1_ekcylcatstg;
+    
+    /* 気筒別噴射量補正係数の調停 */
+    for ( u1t_cyl = 0; u1t_cyl < u1g_EJCC_NCYL; u1t_cyl++ )
+    {
+        ptt_datsel2->f4_ekcylcat[u1t_cyl] = ptt_data->f4_ekcylcat[u1t_cyl];
+    }
+}
+```
+
+
+## ステップ4: 初期値の設定
+-------------------------------------------
+
+vdg_eminj_pwon() 関数内で、新規追加した変数の初期値を設定:
+
+```c
+stt_injdat2.u1_xekcylcatrq = (u1)OFF;
+stt_injdat2.u1_ekcylcatstg = 0;
+for ( u1t_cyl = 0; u1t_cyl < u1g_EJCC_NCYL; u1t_cyl++ )
+{
+    stt_injdat2.f4_ekcylcat[u1t_cyl] = 1.0f;  /* 補正係数のデフォルト値は1.0 */
+}
+```
+
+
+## ステップ5: 公開変数の追加
+-------------------------------------------
+
+必要に応じて、気筒別噴射量補正関連の公開変数を追加:
+
+```c
+u1 u1g_eminj_xekcylcatrq;                      /* 気筒別噴射量補正要求有識別子 */
+u1 u1g_eminj_ekcylcatstg;                      /* 気筒別噴射量補正段 */
+f4 f4g_eminj_ekcylcat[u1g_EJCC_NCYL];         /* 気筒別噴射量補正係数 */
+```
+
+
+================================
+検証事項
+================================
+
+実装後、以下を検証する必要があります:
+
+1. コンパイル可能性の確認
+   - 全CSW組み合わせでのコンパイル成功確認
+   - 警告・エラーの解消
+
+2. 構造体サイズの確認
+   - st_EMINJ_EMINJ_BUF のサイズが許容範囲内か確認
+   - スタック使用量の確認
+
+3. 調停テーブルの優先順位確認
+   - 各機能の優先度が正しく設定されているか
+   - 複数回参照の扱いが正しいか
+
+4. CSW条件の確認
+   - erdpnのCSW変更が正しく反映されているか
+   - 新規機能のCSW条件が正しいか
+
+5. 初期値の確認
+   - 全変数の初期値が正しく設定されているか
+
+6. IF整合性の確認
+   - 参照先部品とのIF整合性
+   - 構造体メンバーの一致
+
+
+================================
+参照ドキュメント
+================================
+
+必須参照ドキュメント:
+- ewupcat-ac1-00-a ロジック変更シート
+- esjc-ac1-00-a ロジック変更シート  
+- ecimpalc-ac0-00-a ロジック変更シート
+- ekcylcat-ac0-00-a ロジック変更シート
+- egoro ロジック変更シート (ac0-03-c-t-k9432a)
+- edthrctrl-ac0-00-c-k9430a ロジック変更シート
+- erdpninj-ac0-03-a ロジック変更シート
+- eqinj-ac0-14-a ロジック変更シート
+
+
+================================
+実装時の注意事項
+================================
+
+1. 文字コードは CP932 で保存すること
+2. 既存のコーディングスタイルを厳密に維持すること
+3. CSW条件は慎重に設定し、不要な組み合わせを避けること
+4. 優先度の設定は他機能との整合性を考慮すること
+5. rap関数の必要性を検討すること（複数回参照の場合）
+6. スタック使用量に注意すること
+7. 全ての変数を適切に初期化すること
+8. デバッグモニタ変数も忘れずに追加すること
+
